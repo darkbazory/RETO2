@@ -1,0 +1,121 @@
+/*Importamos las fuentes que vamos a usar*/
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(../Fuentes/Quicksand/Quicksand-SemiBold.ttf);
+    src: url(../Fuentes/Quicksand/Quicksand-Bold.ttf)
+}
+
+/* elementos comunes en toda la página */
+h1{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+h3{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: red;
+}
+
+p{
+    font-family: "Quicksand-Bold" ;
+    font-size: 21px;
+}
+
+/* elementos con clase */
+.p_final{
+    padding-top: 2%;
+}
+
+.contenedor{
+    width: 60%;
+    font-family: 'Quicksand';
+}
+
+/* imagen introduccion */
+.img_intro{
+    display: block; /* añadimos un display block para hacer
+                     que el comportamiento del elemento sea como un bloque. */
+    align-items: center; /* lo alineamos en el centro */
+    width: 500px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* imagenes de tipos de residuos*/
+.img_residuos{
+    display: block; /* añadimos un display block para hacer
+                     que el comportamiento del elemento sea como un bloque. */
+    align-items: center; /* lo alineamos en el centro */
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* hacemos bloque el contenedor de las listas */
+.ul_left{
+    display: block;
+    padding-left: 5%;
+    
+}
+
+/* ponemos estilo a la lista */
+.li_re{
+    font-family: "Quicksand-Bold" ;
+    font-size: 20px;
+    list-style: disc;
+    padding-top: 1%;
+    padding-top: 1%;
+}
+ /* CSS enlaces */
+.a_color{ /*le damos color a los enlaces */
+    text-decoration: none;
+    color: rgb(11, 214, 194);  
+}
+/* CSS Tabla distintos residuos */
+
+.tl_residuos{
+    width: 80%;
+}
+
+.tl_residuos th{ /* le damos un estilo a la cabecera para diferenciar del cuerpo */
+    padding: 5px;
+    font-size: 16px;
+    background-color: #83aec0;
+    /* le ponemos una imagen de color de fondo para que parezca degradado */
+    background-image: url(../Imagenes/fondo_th.png);
+    /* hacemos que se repita la imagen en el eje x */
+    background-repeat: repeat-x;
+    color: white;
+    /* le añadimos bordes y colores distintos */
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-color: #558FA6;
+    border-bottom-color: #558FA6;
+    font-family: “Trebuchet MS”, Arial;
+    /* hacemos que el texto salga en mayusculas */
+    text-transform: uppercase;
+}
+
+.tl_residuos td {
+    background-image: url(../Imagenes/fondo_tr01.png);
+    background-position: left top;
+    font-size: 15px;
+    font-weight:bold;
+    text-align: center;
+    background-color: #e2ebef;
+    background-repeat: repeat-x;
+    color: #34484E;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-color: #A4C4D0;
+    border-bottom-color: #A4C4D0;
+    }

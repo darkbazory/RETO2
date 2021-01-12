@@ -1,0 +1,177 @@
+/*Importamos las fuentes que vamos a usar*/
+@font-face {
+  font-family: 'Quicksand';
+  src: url(../Fuentes/Quicksand/Quicksand-SemiBold.ttf);
+  src: url(../Fuentes/Quicksand/Quicksand-Bold.ttf);
+}
+
+/* Elementos basicos*/
+
+h1{
+  font-family: 'Quicksand';
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  color: red;
+  
+}
+h2{
+  font-family: 'Quicksand';
+  font-size: 20px;
+  text-align: center;
+  color:black;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+h3{
+  font-family: 'Quicksand';
+  font-size: 20px;
+  text-align: left;
+  color:red;
+  padding-left: 10px;
+}
+
+p{
+  font-family: 'Quicksand-bold';
+  padding: 15px;
+  font-size: 20px;
+  text-align: justify;
+  margin: 0 20px 0 20px; 
+}
+
+ul{
+  text-align: center;
+}
+
+#lista_secciones{
+  background-color: white;
+}
+
+.li_secciones{
+  background-color: white;
+  margin-top: 15px;
+  display:inline-block;
+  text-align: center;
+ 
+  
+ 
+}
+.li_secciones a{
+  font-family: 'Quicksand';
+  background-color: white;
+  margin-top: 100px;
+  color:black;
+  text-decoration: none;
+
+}
+
+.div_mecanica{
+  background-color: lightgray;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.div_mantenimiento{
+  background-color: lightgray;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.div_electricidad{
+  background-color: lightgray;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.div_aire{
+  background-color: lightgray;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.div_componentes{
+  background-color: lightgray;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titulo2{
+  color: darkred;
+}
+
+.imgTexto{
+  height: 40%;
+  width: 40%;
+  margin: 0 auto;
+}
+
+#tabla{
+  margin: 0 20px 0 20px;
+}
+.tltTabla{
+  font-size: 25px;
+  color: darkred;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.imgTabla{
+  width: 60%;
+  display: block;
+  margin: auto;
+  transition: transform .2s; 
+}
+.imgTabla:hover {
+  transform: scale(1.7); 
+}
+
+.tdTabla{
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: justify;
+  vertical-align: top;
+}
+
+/* Flecha */
+
+.to-top{
+	color: black;
+	display:inline-block;
+	border-color: black;
+	text-decoration:none;
+  transition:all .3s ease-out;
+  padding: 20px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin: 0;
+  padding-top: 30px;
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em black;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:red;
+	border-color: red;
+}
+
+

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Titulo que queremos que tenga la pagina en concreto-->
+    <title>Artículos</title>
+    <meta charset="UTF-8">
+    <!--Elementos clave para cuando se quiera buscar en internet esta pagina-->
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Manera de trabajar debido al COVID-19">
+    <meta name="author" content="María, Urko, Sonia, & Jon">
+    <!--Creamos el favicon-->
+    <link rel="icon" href="../Imagenes/Favicon.ico" style="height: 5px; width: 5px;" type="image/ico">
+    <!--Importamos los CSS-->
+    <link rel="stylesheet" href="../Hojas CSS/CSS_Artículos.css">
+    <link rel="stylesheet" href="../Hojas CSS/CSS_Header_Footer.css">
+</head>
+
+<body>
+    <!--Iniciamos la cabecera-->
+    <header>
+        <!--APARTADO COVID-->
+        <!--Link que lleva a la pagina sobre como trabajamos teniendo en cuenta el covid-->
+        <a id="Enlace_Covid" href="COVID.html">
+            <p class="Titulo_covid">INFORMACIÓN COVID</p>
+            <!--Se crea una tabla para introducir las imagenes y los textos, haciendo un pequeño resumen-->
+            <table>
+                <tbody>
+                    <!-- Tabla de las imagenes y el texto sobre el covid-->
+                    <tr>
+                        <td><img class="Imagenes_covid" src="../Imagenes/icon_distancia.svg"></td>
+                        <td class="Texto_covid">DISTANCIA >2M DE SEGURIDAD</td>
+                        <td><img class="Imagenes_covid" src="../Imagenes/icon_lava_coche.svg"></td>
+                        <td class="Texto_covid">DESINFECCIÓN DE PUNTOS BÁSICOS DEL VEHÍCULO</td>
+                        <td><img class="Imagenes_covid" src="../Imagenes/icon_tecnico.svg"></td>
+                        <td class="Texto_covid">NUESTROS TÉCNICOS PROTEGIDOS</td>
+                        <td><img class="Imagenes_covid" src="../Imagenes/icon_mampara.svg"></td>
+                        <td class="Texto_covid">MAMPARAS DE PROTECCIÓN EN ATENCIÓN AL CLIENTE</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p class="Titulo_covid">Cuidamos de tu vehículo y de tí. Consulta nuestro protocolo de seguridad COVID-19</p>
+        </a>
+
+        <div class="cab_art">
+            <!-- Banner -->
+            <div id="banner_cab">
+                <!--<section class="container">
+                  <h2></h2>
+                  <p></p>
+                </section>-->
+            </div>
+
+        </div>
+
+        <!--APARTADO BARRA DE NAVEGACIÓN-->
+        <nav>
+            <!--El logo esta fuera de la lista para que los recuadros no fuesen de distintos tamaños-->
+            <a href="INDEX.html" id="Logo_coche"><img src="../Imagenes/Logo.png"></a>
+            <!--Lista con todos los links a las distintas paginas creadas-->
+            <ul id="desplegable">
+                <a href="QUIENES_SOMOS.html">
+                    <li class="botones">¿Quiénes somos?</li>
+                </a>
+                <a href="CONSEJOS.html">
+                    <li class="botones">Consejos</li>
+                </a>
+                <a href="COMPROMISO.html">
+                    <li class="botones">Compromiso Medioambiental</li>
+                </a>
+                <a href="CONTACTO.html">
+                    <li class="botones">Contacto</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!--Hemos creado dos botones para que sea más facil acceder a las diferentes secciones-->
+    <div id="boton_art">
+        <a href="#aceite">
+            <div id="rec_articulos">
+                <img src="../Imagenes/Articulos.png" alt="">
+            </div>
+        </a>
+
+        <a href="#titulo_radio">
+            <div id="rec_radio">
+                <img id="autofm" src="../Imagenes/AutoFM.png" alt="">
+            </div>
+        </a>
+    </div>
+    <!--Apartado con los artículos-->
+    <div id="barra">
+        <p id="Titulo_art">Últimas noticias</p>
+    </div>
+    <!--SECCIÓN 1-->
+    <div id="fondo_izq">
+        <!--Artículo 1-->
+        <div id="art_1">
+            <img id="aceite" src="../Imagenes/CambioAceite.jpg">
+            <p class="Subtítulos">¿Cada cuánto hay que hacer un cambio de filtro?</p>
+            <p class="Fechas">10 OCTUBRE, 2020</p>
+            <p class="textos">
+                Por el entramado de las cámaras de combustión de un motor circulan siempre tres tipos de fluidos: el combustible, el aceite y el aire. Todos ellos deben estar completamente limpios de partículas para poder asegurar un buen estado general del motor, y
+                para obtener esta limpieza es necesario disponer de los filtros correspondientes para cada uno. A estos tres filtros se les añade un cuarto que se denomina “filtro de habitáculo”, y que se encarga de la calidad del aire que se respira
+                dentro del propio vehículo. <br><br>El problema de los filtros es que con su uso habitual se van atascando y llenando de impurezas, por eso al cabo de un tiempo es necesario cambiarlos para poder asegurar la longevidad
+                del motor y la calidad del aire que se respira en el interior. <br><br>Los filtros de coche se deben cambiar respetando las indicaciones del fabricante con el fin de mejorar el rendimiento y la vida útil del motor. Normalmente, estos intervalos
+                van desde los 7.500 kilómetros hasta los 15.000 kilómetros.
+            </p>
+        </div>
+
+        <!--Artículo 2-->
+        <div id="art_2">
+            <img id="diesel" src="../Imagenes/Diesel.jpg">
+            <p class="Subtítulos">La importancia de la bomba de combustible</p>
+            <p class="Fechas">05 SEPTIEMBRE, 2020</p>
+            <p class="textos">
+                La función de la bomba de combustible es fundamental, ya que se trata del elemento encargado de trasladar el combustible desde el carburante hasta el sistema de inyección. Suele tratarse de una bomba eléctrica con una potencia de 12 V, que se sitúa en
+                el interior del depósito, aunque en algunos vehículos más antiguos (los que llevaban carburador) estaba ubicada en el propio motor.
+            </p>
+
+            <p class="textos">
+                Las bombas de combustible eléctricas están consideradas como las más recomendables en lo referente a la seguridad, ya que incorporan varios dispositivos que permiten que esta deje de operar en caso de que el coche funcione de forma anómala. Además, tiene
+                la ventaja de estar ubicada en el depósito del coche, lo que reduce el riesgo de incendio respecto a las mecánicas, que se ubican en el propio motor.
+            </p>
+        </div>
+
+        <!--Artículo 3-->
+        <div id="art_3">
+            <img id="bujias" src="../Imagenes/Bujias.jpg">
+            <p class="Subtítulos">¿Cómo se limpian las bujías del coche?</p>
+            <p class="Fechas">15 AGOSTO, 2020</p>
+            <p class="textos">
+                Las bujías son un elemento clave en el sistema de arranque de un vehículo. Su función es producir el encendido de la mezcla de combustible y oxígeno dentro de cada cilindro mediante una chispa que puede ir de los 12.000 a los 40.000 voltios.
+            </p>
+
+            <p class="textos">
+                Los fabricantes suelen establecer la sustitución de las bujías entre los 60.000-90.000 kilómetros, bastantes en comparación con los 10.000- 15.000 que duraban las bujías de los coches más antiguos.
+            </p>
+
+            <p id="textos_b">Así sería el proceso de limpiado:</p>
+            <ul id="textos_lista">
+                <li class="lista_art">
+                    Desmontar el cable de bujía o la bobina de encendido con sumo cuidado.
+                </li>
+
+                <li class="lista_art">
+                    Aflojar la bujía y limpiar todo el contorno de la misma con aire a presión.
+                </li>
+
+                <li class="lista_art">
+                    Retirar la bujía y ponerla encima de un trapo. Marcar cada bujía para asignar a cada cilindro la suya.
+                </li>
+
+                <li class="lista_art">
+                    Utilizar alcohol de 90º o un limpiador específico. También se puede utilizar limpiador de carburador. Secarla bien con aire a presión.
+                </li>
+
+                <li class="lista_art">
+                    Limpiar bien la rosca con un cepillo metálico. La limpieza del hollin y carbonilla depositada en las roscas de las bujías se elimina con descarbonizantes o limpiadores de carburadores o inyectores. Una de las mejores opciones en este sentido es LOCTITE
+                    SF 7235, un limpiador y desengrasante de acción rápida y eficaz.
+                </li>
+
+                <li class="lista_art">
+                    Comprobar la distancia del electrodo. Como referencia debe ser de unos 0,6 o 0,7 milímetros como mucho.
+                </li>
+
+                <li class="lista_art">
+                    Una vez limpia y revisada procedemos a montarla. Hay que asegurarse de que está totalmente seca.
+                </li>
+
+                <li class="lista_art">
+                    Colocar la bujía y apretarla según el par descrito por el fabricante.
+                </li>
+            </ul>
+        </div>
+
+        <!--Artículo 4-->
+        <!--La utilización de id se debe a que los necesitamos en el index para enlazar con puntos concretos en el apartado -->
+        <iframe id="video_ruedas" src="https://www.youtube.com/embed/l0S4H1gLyPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p id="art_4" class="Subtítulos">Neumático pinchado o desinflado. Como conocer el estado de tus ruedas.</p>
+        <p class="Fechas">01 JULIO, 2020</p>
+        <p class="textos">
+            ¿Tengo el neumático pinchado o desinflado? Esa es la pregunta que nos realizamos todos cuando vemos que una de nuestras ruedas «está floja». Se han dado casos de gente moviendo atrás y adelante un coche, para determinar si es una u otra avería. Incluso,
+            gente que se agacha y pega el oído a la rueda, mientras la toca, con la esperanza de poder oír aire saliendo.
+        </p>
+
+        <p class="textos_c">Neumático desinflado</p>
+        <p class="textos">
+            Si está el neumático desinflado, la duración de la banda de rodadura dura menos. Notarás como ha sufrido cierto desgaste, sobretodo si lleva tiempo a menor presión de la recomendada. El llevar el neumático desinflado hace que aumente su desgaste por los
+            bordes externos, los hombros del neumático.Además, notarás que el neumático está más caliente que el resto. Por último, aunque esto es más difícil de detectar, llevar el neumático desinflado hace que se gaste más combustible. Esto es porque
+            aumenta la resistencia a la rodadura del mismo. ¿Qué hacer con un neumático desinflado? Cada neumático tiene una presión óptima diferente. Esta viene indicada en el manual de usuario del vehículo y en una pegatina próxima a la puerta correspondiente
+            al conductor. Una vez la averiguas, mete aire al neumático desinflado hasta alcanzar la presión óptima.
+        </p>
+
+        <p class="textos_c">Neumático pinchado</p>
+        <p class="textos">
+            Si, por el contrario, el neumático está pinchado y éste requiere reparación, los síntomas son diferentes. De hecho, aunque veamos el pincho, clavo o elemento que ha perforado o cortado el neumático, el daño puede ser mayor. Para determinarlo, hay que
+            inspeccionar el interior del neumático. En estos casos, precisamente por eso, hay que contar con profesionales.
+        </p>
+
+        <p class="textos">
+            Un profesional del motor se abstendrá, por ejemplo, de reparar la rueda con un tapón. Es poco fiable y peligroso hacer esto. Pinchazos o cortes de hasta 6 milímetros pueden ser reparados, sin necesidad de cambiar el neumático.
+        </p>
+
+        <p class="textos">¿Qué hacemos si tenemos un neumático pinchado?</p>
+        <p class="textos">
+            Una solución es la colocación de un parche de goma en el interior de la rueda, rellenando el agujero con caucho. Esto puede hacerse siempre y cuando el pinchazo no sea mayor a los 6 milímetros. Si es mayor o si el neumático está ya muy desgastado, no
+            merece la pena. Hay que proceder al reemplazo del neumático pinchado.
+        </p>
+    </div>
+    <!--Apartado de la radio-->
+    <div id="fondo_derc">
+        <div id="titulo_radio"><img src="../Imagenes/AutoFM.png" alt=""></div>
+        <div id="txt_conj">
+            <p class="titulo_texto">
+                AutoFM es la radio-web de motor más importante de España. En cada programa se recoge noticias sobre las mejores marcas de automóviles, eventos y productos.
+            </p>
+            <p class="titulo_texto">
+                De Lunes a Viernes te informaremos del mundo del motor con píldoras divulgativas. Repartidas durante la mañana, tarde y noche en la programación de Que!Radio.
+            </p>
+        </div>
+
+        <div id="fondo_rad">
+            <!--Podcast-->
+            <div class="rec_post">
+                <img class="img_prog" src="../Imagenes/Programa 1.jpg" alt="">
+                <p class="tit_prog">Podcast: Seguridad Activa.</p>
+                <p class="parrafo">Os contamos qué son y para que sirven los ADAS. Las ayudas a la conducción o ADAS son todos aquellos sistemas que nuestro vehículo equipo y que trabajan en silencio para que nuestro viaje sea más seguro.</p>
+                <!--Ponemos el audio en diferentes tipos-->
+                <audio controls="controls"><source class="audio" src="../Audios/Programa 1.mp3">
+                    <source class="audio" src="../Audios/Programa 1.ogg" type="audio/ogg">
+                    <source class="audio" src="../Audios/Programa 1.wav" type="audio/wav">
+                    <!--Introducimos un mensaje por si no funcionaran-->
+                    Lo sentimos. Este audio no puede ser reproducido en tu navegador.<br>       
+                </audio>
+            </div>
+
+            <div class="rec_post">
+                <img class="img_prog" src="../Imagenes/Programa 2.jpg" alt="">
+                <p class="tit_prog">Podcast: Guía Plan Renove.</p>
+                <p class="parrafo">Acaban de llegar las ayudas para la compra de vehículos en España. Por eso os hemos preparado esta Guía Plan Renove 2020. En esta guía trataremos de responderos a las siguiente batería de preguntas</p>
+                <audio controls="controls"><source class="audio" src="../Audios/Programa 2.mp3">
+                        <source class="audio" src="../Audios/Programa 2.ogg" type="audio/ogg">
+                        <source class="audio" src="../Audios/Programa 2.wav" type="audio/wav">
+                        <!--Introducimos un mensaje por si no funcionaran-->
+                        Lo sentimos. Este audio no puede ser reproducido en tu navegador.<br>  
+                </audio>
+            </div>
+            <div id="Podcast3" class="rec_post">
+                <img class="img_prog" src="../Imagenes/Programa 3.jpg" alt="">
+                <p class="tit_prog">Podcast: Plásticos. ¿Cuáles son de mayor calidad para tu coche?</p>
+                <p class="parrafo">Analizamos los tipos de plásticos de automoción que puede llevar tu automóvil. <br> Su uso historia y utilización de los plásticos en automoción.</p>
+                <audio controls="controls"><source class="audio" src="../Audios/Programa 3.mp3">
+                    <source class="audio" src="../Audios/Programa 3.ogg" type="audio/ogg">
+                    <source class="audio" src="../Audios/Programa 3.wav" type="audio/wav">
+                    <!--Introducimos un mensaje por si no funcionaran-->
+                    Lo sentimos. Este audio no puede ser reproducido en tu navegador.<br>  
+                </audio>
+            </div>
+
+            <div class="rec_post">
+                <img class="img_prog" src="../Imagenes/Programa 4.jpg" alt="">
+                <p class="tit_prog">Podcast: El airbag. Pasado, presente y futuro.</p>
+                <p class="parrafo">
+                    El Airbag es un elemento de seguridad pasiva, cuya función es mejorar la seguridad de los ocupantes del vehículo trabajando junto con el cinturón de seguridad
+                </p>
+                <audio controls="controls"><source class="audio" src="../Audios/Programa 4.mp3">
+                    <source class="audio" src="../Audios/Programa 4.ogg" type="audio/ogg">
+                    <source class="audio" src="../Audios/Programa 4.wav" type="audio/wav">
+                    <!--Introducimos un mensaje por si no funcionaran-->
+                        Lo sentimos. Este audio no puede ser reproducido en tu navegador.<br>  
+                </audio>
+            </div>
+            <div class="rec_post">
+                <img class="img_prog" src="../Imagenes/Programa 5.jpg" alt="">
+                <p class="tit_prog">Podcast: ¿Qué es y cómo afecta un golpe de calor?</p>
+                <p class="parrafo">Como afecta el aumento de la temperatura del cuerpo por encima de su temperatura habitual. ¿Cómo afecta un golpe de calor al conductor? ¿Y a los niños?</p>
+                <audio controls="controls"><source class="audio" src="../Audios/Programa 5.mp3">
+                    <source class="audio" src="../Audios/Programa 5.ogg" type="audio/ogg">
+                    <source class="audio" src="../Audios/Programa 5.wav" type="audio/wav">
+                    <!--Introducimos un mensaje por si no funcionaran-->
+                    Lo sentimos. Este audio no puede ser reproducido en tu navegador.<br>  
+                </audio>
+            </div>
+            <div class="rec_post">
+                <img class="img_prog" src="../Imagenes/Programa 6.jpg" alt="">
+                <p class="tit_prog">Podcast: Seguridad Vial con Fernando García Poves</p>
+                <p class="parrafo">Para hablar sobre lo que está pasando en la Guardia Civil con respecto a la problemática del tráfico hemos invitado al secretario de la Asociación Española de Guardias Civiles.</p>
+                <audio id="controles" controls="controls"><source class="audio" src="../Audios/Programa 6.mp3">
+                    <source class="audio" src="../Audios/Programa 6.ogg" type="audio/ogg">
+                    <source class="audio" src="../Audios/Programa 6.wav" type="audio/wav">
+                    <!--Introducimos un mensaje por si no funcionaran-->
+                    Lo sentimos. Este audio no puede ser reproducido en tu navegador.<br>  
+                </audio>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer id="Pie">
+        <p id="Copyright">Todos los derechos reservados ©2020</p>
+        <p id="Aviso"> Aviso legal - Designed by <b><i>Turborepair</i></b>. Diseño y mantenimiento de sitios web corporativos, gestores de contenidos y blogs. Planes SEO continuos.
+            <br>Web Marketing. Diseño gráfico, identidad corporativa, logos.
+        </p>
+    </footer>
+</body>
+
+</html>
