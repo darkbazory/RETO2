@@ -11,6 +11,12 @@
 a {
     text-decoration: underline;
 }
+h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /* Container */
 
@@ -70,3 +76,47 @@ a {
         font-size: 20px;
     
     }
+    .btn_cita{
+        position: absolute;
+        top: 55%;
+        right: 22%;
+        width: 10%;
+        padding-top: 20px;
+        height: 40px;
+        transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
+        font-size: 20px;
+        border: 2px solid white;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+    
+    .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
+        background-color: darkorange;
+        border: darkorange;
+        color:white;
+    }
+    /* ------Seccion Servicios--------*/
+    #servicios {
+        
+
+    }
+    .grid {
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+     
+    .iconos{
+        display: flex;
+        
+    }
+     
+
+    .circulos{
+        
+    }
+
+
+    
