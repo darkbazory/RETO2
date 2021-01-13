@@ -17,7 +17,7 @@ a {
 .container {
     margin: 0 auto;
     max-width: 100%;
-    width: 1200px;
+   
 }
 
 #header > .container {
@@ -69,4 +69,35 @@ a {
         right: 15%;
         font-size: 20px;
     
+    }
+    .btn_cita{
+        position: absolute;
+        top: 55%;
+        right: 22%;
+        padding-top: 12px;
+        width: 10%;
+        height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
+        font-size: 20px;
+        border: 2px solid white;;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
+        background-color: darkorange;
+        color:white;
+    }
+    /* ---------------Seción ventajas---------------*/
+
+    #ventajas {
+        text-align: center;
+        
+    }
+    .tl_horario {
+      align-items: center;
+
+        background-color: thistle;
     }
