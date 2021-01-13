@@ -11,6 +11,22 @@
 a {
     text-decoration: underline;
 }
+tr {
+    border: 2px solid black;
+     
+}
+th {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  
+
+}
+td {
+    padding: 1%;
+    text-align: center;
+    font-size: 15px;
+}
 
 /* Container */
 
@@ -93,11 +109,31 @@ a {
     /* ---------------Seción ventajas---------------*/
 
     #ventajas {
-        text-align: center;
+
+        
+      
         
     }
     .tl_horario {
-      align-items: center;
+      float: 50px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
 
-        background-color: thistle;
+        background-color: whitesmoke;
     }
+    #telefono {
+        color: cornflowerblue;
+        font-size: 20px;
+    }
+ /*----------------------servicios---------------------------*/
+ .servicios {
+     display: flex
+ }
+
+.iconos {
+    display: grid;
+}
+.imagen {
+    display: inline;
+}
