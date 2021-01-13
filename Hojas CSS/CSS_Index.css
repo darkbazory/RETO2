@@ -90,3 +90,14 @@ a {
         background-color: darkorange;
         color:white;
     }
+    /* ---------------Seción ventajas---------------*/
+
+    #ventajas {
+        text-align: center;
+        
+    }
+    .tl_horario {
+      align-items: center;
+
+        background-color: thistle;
+    }
