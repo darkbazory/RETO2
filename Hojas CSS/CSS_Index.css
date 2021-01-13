@@ -162,15 +162,15 @@ td {
 }
 .btn_servicios{
     position: absolute;
-    right: 50%;
-    padding: 2%;
-    width: 150px;
+    right: 45%;
+    padding: 1%;
+    width: 130px;
     text-align: center;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid lightgrey;
-    color:lightgrey;
+    color:grey;
     text-decoration: none;
 }
 
@@ -178,4 +178,13 @@ td {
     background-color: darkorange;
     color:white;
 }
+/*----------------------------sobre nosotros------------------------*/
+
+.about {
+    display: flex;
+}
+.historia {
+    display: inline;
+}
+
 
