@@ -4,61 +4,75 @@
 <head>
   <title>Contacto</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Insertamos el favicon-->
+
+  <!--Iconos y css-->
   <link rel="icon" href="../Imagenes/Favicon.ico" type="image/ico">
-  <!-- Cargamos las páginas de eltilo con las que vamos a trabajar-->
-
-  <!--link rel=stylesheet href="../Hojas CSS/CSS_Contacto.css" type="text/css" -->
+  <link rel=stylesheet href="../Hojas CSS/CSS_Contacto.css" type="text/css">
   
   
 </head>
 
 <body>
-   
+<!-- Header-->
+<section id="header">
+  <div id="contenedor1">
+      <!-- Logo -->
+      <a href="INDEX.html" id="LogoCoche"><img src="../Imagenes/LOGO2.png"></a>
+
+      <!-- Barra de navegación-->
+      <nav id="nav">
+          <a href="SERVICIOS.html">Servicios</a>
+          <a href="SOBRE_NOSOTROS.html">Sobre Nosotros</a>
+          <a href="COMPROMISO.html">Compromiso Medioambiental</a>
+          <a href="CONTACTO.html">Contacto</a>
+      </nav>
+
+  </div>
+</section>   
 <!-- Contacto -->
-<section id="contacto">
-  <div class="div_datos">
-  <h4 class="center">Nos gusta escucharte</h4>
-    <form class="contacto"> <!--Creamos un formulario de contacto-->
+<section id="contenedor2">
+  <div id="contacto">
+  <h4>Nos gusta escucharte</h4>
+    <form>  <!--Creamos un formulario de contacto-->
       <label>Tu Nombre:
       <br>
       </label><input type='text' value=''>
       <br>
-      <label>Tu Email:</label><input type='email' value=''>
+      <label>Tu Email:</label>      
+      <br>        
+      <input type='email' value=''>
       <br>
-      <label>Teléfono:</label><input type='tel' value=''>
+      <label>Teléfono:</label>     
+      <br>         
+      <input type='tel' value=''>
       <br>
       <label>Escríbenos tus observaciones:</label>
       <br>
-      <textarea class="txt_mensaje" rows="15" cols="60"></textarea>
+      <textarea class="txt_mensaje" rows="10" cols="30"></textarea>
       <br>
       <label>Como de satisfecho estas del 0 al 10?</label>
       <br>
       <h10>0</h10><input type="range" min="0" max="10"><h11>10</h11>
       <br>
-      <label>Enviar</label>
+      <label>Envíanos tu reseña</label>
       <br>
       <input type="submit"> 
     </form>
   </div>
-    <div class="div_redes"> <!--Creamos un contenedor que va a tener los enlaces a las redes y el formulario del mensaje-->
-      <h5>Síguenos en las redes</h5>
-      <div class="social">
-        <a href="https://es-es.facebook.com/"><img class="iconos" src="../icons/facebook.png" alt="facebook"></a>
-        <a href="https://twitter.com/?logout=1604833095859"><img class="iconos" src="../icons/Twitter.png" alt="twitter"></a>
-        <a href="https://www.youtube.com/"><img class="iconos" src="../icons/YouTube.png" alt="youtube"></a>
-      </div>
-    </div>
+  <div id="redes"> <!--contenedor que tiene los enlaces a las redes-->
+  <h5>Síguenos en las redes</h5>
+    <a href="https://es-es.facebook.com/">              <img src="../Imagenes/facebook.png" alt="facebook">   </a>
+    <a href="https://twitter.com/?logout=1604833095859"><img src="../Imagenes/twitter.png" alt="twitter">     </a>
+    <a href="https://www.youtube.com/">                 <img src="../Imagenes/youtube.png" alt="youtube">     </a>
+</div>
+<br>
 </section>
 
-<!-- Seccion mapa ubicacion-->
-<section id="Inicio">
-  <div id="mapa2">
-    <iframe id="mapa"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.699182971157!2d-2.9049657842864005!3d43.25772598593063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fac87437727%3A0x364f27e82def0130!2sCIFP%20Txurdinaga%20LHII!5e0!3m2!1ses!2ses!4v1603715023254!5m2!1ses!2ses"
-      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-  </div>
-</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1833.0935782386866!2d-2.9028874576721195!3d43.25752642319394!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1603354304109!5m2!1ses!2ses" width="500" height="480" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+
+
+
 </body>
 </html>
