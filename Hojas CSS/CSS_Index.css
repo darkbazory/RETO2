@@ -74,9 +74,7 @@ header label:hover {
 
 @media (max-width: 740px){
 
-    header {
-        background: ;
-    }
+   
  
     header a img {
         display: none;
