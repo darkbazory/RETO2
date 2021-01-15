@@ -1,18 +1,36 @@
+
+@font-face {
+    font-family: "Lato";
+    src: url("../Fuentes/Lato-Regular.ttf");
+    src: url("../Fuentes/Lato-Light.ttf");
+    src: url("../Fuentes/Lato-Bold.ttf");
+  }
+
+
 body {
+    font-family:'Lato';
     margin: 0;
 
 }
 header {
     width: 100%;
-    background: blue ;
+    font-size: 15px;
+
 }
 
-header a img {
-    display: inline-flex;
+
+
+header nav a {
+    text-transform: uppercase;
 }
 
-.menu {
+
+.padre {
     display: flex;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+
 }
 
 #btn-menu {
@@ -24,12 +42,12 @@ header label {
     width: 48px;
     height: 48px;
     padding: 10px;
-    
+
 }
 
 header label:hover {
     cursor: pointer;
-    
+
 }
 
 .menu ul {
@@ -37,8 +55,7 @@ header label:hover {
     list-style: none;
     padding: 0;
     display: inline-flex;
-    justify-content: flex-end;
-   
+
 }
 
 
@@ -46,7 +63,7 @@ header label:hover {
     padding: 15px 20px;
     color: black;
     text-decoration: none;
-    justify-content: flex-end;
+
 }
 
 
@@ -56,6 +73,10 @@ header label:hover {
 }
 
 @media (max-width: 740px){
+
+    header {
+        background: ;
+    }
  
     header a img {
         display: none;
@@ -65,27 +86,26 @@ header label:hover {
     }
 
     .menu {
-        position: absolute;
-        background: #00587a ;
-        width: 70%;
-        margin-left: -70%;
-        transition: all 1s;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
     }
 
-    .menu ul {
+    .padre {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-color: blue;
+        position: relative;
+        left: 0;
+        top: 70px;
         flex-direction: column;
-    }
-
-    .menu li {
-        border-top: 1px solid #00587a;
-    }
-    
-    #btn-menu:checked ~ .menu {
-        margin: 0;
-
 
     }
-
-    
-
 }
