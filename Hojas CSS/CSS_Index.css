@@ -1,5 +1,6 @@
 body {
     margin: 0;
+
 }
 header {
     width: 100%;
@@ -11,15 +12,70 @@ header {
 }
 
 header label {
-    display: block;
-    width: 30px;
-    height: 30px;
+    display: none;
+    width: 68px;
+    height: 68px;
     padding: 10px;
-    border-right: 1px solid white;
+    border-right: 1px solid #008891;
 
 }
 
 header label:hover {
     cursor: pointer;
-    background-color:#0f3057 ;
+   background: #008891 ;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+   
+}
+
+.menu li {
+   border-right: 1px solid white;
+}
+
+.menu li:hover {
+    background: #008891;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background: #00587a ;
+        width: 70%;
+        margin-left: -70%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid #00587a;
+    }
+    
+    #btn-menu:checked ~ .menu {
+
+        margin: 0;
+
+
+    }
+
+    
+
 }
