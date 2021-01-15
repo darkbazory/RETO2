@@ -5,6 +5,8 @@
     <!--Titulo que queremos que tenga la pagina en concreto-->
     <title>Inicio</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--Añadimos las distintas vistas-->
+    <meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <!-- Damos palabras claves para los buscadores-->
     <meta name="description" content="Somos una empresa eficiente." />
     <meta name="keywords" content="taller; neumáticos; piezas; coche" />
@@ -16,122 +18,23 @@
 </head>
 
 <body>
-     <!-- Header-->
-        <section id="header">
-            <div class="container">
-                <!-- Logo -->
-                <a href="INDEX.html" id="LogoCoche"><img src="../Imagenes/LOGO2.png"></a>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="../Iconos/hamburger_menu_icon.png" alt="">
+    </label>
+        <nav class="menu">
+            <ul>
+                <li><a href=""><img src="../Imagenes/LOGO2.png"></a></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Sericios</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
 
-                <!-- Barra de navegación-->
-                <nav id="nav">
-                    <a href="SERVICIOS.html">Servicios</a>
-                    <a href="SOBRE_NOSOTROS.html">Sobre Nosotros</a>
-                    <a href="COMPROMISO.html">Compromiso Medioambiental</a>
-                    <a href="CONTACTO.html">Contacto</a>
-                </nav>
-
-            </div>
-            <div class="banner">
-                <img src="../Imagenes/Inicio.jpg"/>
-                <div class="texto1">Cuidamos de ti </br>
-                    y de tu familia
-                </div>
-                <div class="texto2">Un cambio de aceite gratis con tu primera revisión</div>
-                <a href="#cita" class="btn_cita">Pide tu cita</a>    
-            </div>
-        </section>
-        <section id="ventajas">
-            <table class="tl_horario">
-                <tr>
-                    <th>Nuestras Ventajas</th>
-                    <th>Horario</th>
-                    <th>Contacto</th>
-                </tr>
-                <tr>
-                    <td>&#10004  Diagnóstico gratuito y comprobación de frenos</td>
-                    <td><b>Entre semana:  </b>5:00 - 22:00</td>
-                    <td id="telefono">(944) 123 321</td>
-                </tr>
-                <tr>
-                    <td>&#10004  Servicios de reparación certificado</td>
-                    <td><b>Sábados:  </b>10:00 - 16:00</td>
-                    <td><b>Móvil:  </b>674 549 661</td>
-                </tr>
-                <tr>
-                    <td>&#10004  Presupuesto a un precio justo</td>
-                    <td><b>Domingos:  </b>10:00 - 15:00</td>
-                    <td><b>Fax:  </b>94 546 78 90</td>
-                </tr>
-            </table>
-        </section>
-        <section id="servicios">
-            <h2>Servicios reparación vehículos</h2>
-            <p class="parrafo_gris">
-                Somos uno de los principales talleres de reparación de automóviles 
-                que atiende a los clientes de la zona.</br>Todos los servicios de reparación son
-                 realizados por mecánicos altamente calificados.</p>
-            <div class="servicios">
-                <div class="iconos">  
-                    <div class="item">
-                        <img id="ic1" src="../Iconos/circulos1-1.png"/>
-                        <p>Aire acondicionado</p>
-                    </div>
-                    <div class="item">
-                        <img id="ic2" src="../Iconos/circulos2-2.png"/>
-                        <p>Cambio aceite</p>
-                    </div>
-                    <div class="item">
-                        <img id="ic3" src="../Iconos/circulos3-3.png"/>
-                        <p>Llantas</p>
-                    </div>
-                    <div class="item">
-                        <img id="ic4" src="../Iconos/circulos4-4.png"/>
-                        <p>Mantenimiento</p>
-                    </div>
-                    <div class="item">
-                        <img id="ic5" src="../Iconos/circulos5-5.png"/>
-                        <p>Grúa</p>
-                    </div>
-                    <div class="item">
-                        <img id="ic6" src="../Iconos/circulos6-6.png"/>
-                        <P>Bateria</P> 
-                    </div> 
-                    <div>
-                        <a  href="../Hojas HTML/SERVICIOS.html" class="btn_servicios">Ver servicios</a>
-                    </div>
-                </div>
-                <div class="imagen">
-                    <img src="../Imagenes/Piezas.jpg"/>
-                </div>
-            </div>
-            
-        </section>
-        <section id="nosotros">
-            <div class="about">
-                <h2>Sobre nosotros</h2>
-                <div class="historia">
-                    <h3>Trabajamos desde 2002</h3>
-                    <p class="parrafo_nosotros">Ofrecemos una gama completa de servicios mecánicos a los propietarios 
-                        de vehículos de la zona. Nuestros profesionales saben cómo manejar
-                         una amplia gama de servicios de automóviles. 
-                         Ya sea un turismo, un camión mediano 
-                         o un SUV, nuestros mecánicos se esfuerzan por garantizar 
-                         que su vehículo funcione de la mejor manera antes de salir 
-                         de nuestro taller de reparación. Sabemos cómo cuidar su vehículo.</p>
-                    <a href="../Hojas HTML/QUIENES_SOMOS.html" class="btn_saber">Saber más</a>
-                </div>
-                <div class="sede">
-                    <p>asfdasffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                        ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-                        sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-                        fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                        ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
+    
+    </header>
+  
     
         
             
