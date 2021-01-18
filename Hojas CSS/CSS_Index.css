@@ -16,8 +16,13 @@ body {
 
 }
 header {
+
     width: 100%;
+    left: 0;
+    top: 0;
     font-size: 15px;
+    position:fixed; /*fijamos la barra*/
+    background-color: white;
 }
 
 
@@ -55,7 +60,8 @@ header label:hover {
     margin: 0;
     list-style: none;
     padding: 0;
-    display: inline-flex;
+    display: inline-flex; 
+    background-color: white;
 
 }
 
@@ -64,6 +70,7 @@ header label:hover {
     padding: 15px 20px;
     color: black;
     text-decoration: none;
+    
 
 }
 
@@ -73,11 +80,12 @@ header label:hover {
 
 }
 
- /* se pone posicion relativa para poder colocar elementos dentro*/
+ 
  .banner{
-    position: relative;
-    display: inline-block;
+    padding-top:120px; /*le ponemos separacion para que no tape la barra*/
+    
  }
+
  /*se le da posicion absoluta y se indica donde irá*/
  .texto1{
      position: absolute;
@@ -85,8 +93,8 @@ header label:hover {
      right: 20%;
      font-family: Georgia, 'Times New Roman', Times, serif;
      font-size: 30px;
-     text-transform: uppercase;
-     color: white;
+     text-transform: uppercase; /*trasformamos en mayusculas*/
+     color: black;
 
  }
  .texto2{
@@ -94,6 +102,7 @@ header label:hover {
      top: 45%;
      right: 15%;
      font-size: 20px;
+     color: black;
  
  }
  .btn_cita{
@@ -131,7 +140,7 @@ header label:hover {
      font-size: 20px;
  }
 /*----------------------servicios---------------------------*/
-.servicios {
+.servicios { 
   display: flex
 }
 .parrafo_gris {
