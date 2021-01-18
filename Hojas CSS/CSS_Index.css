@@ -19,7 +19,6 @@ header {
 }
 
 
-
 header nav a {
     text-transform: uppercase;
 }
@@ -90,16 +89,19 @@ header label:hover {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(0,0,0, 0.9);
+        background-color: blue;
         overflow-x: hidden;
         transition: 0.5s;
+    }
+
+    .menu:hover {
+     background-color: cyan;
     }
 
     .padre {
         display: flex;
         width: 100%;
         height: auto;
-        background-color: blue;
         position: relative;
         left: 0;
         top: 70px;
