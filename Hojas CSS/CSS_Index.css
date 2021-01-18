@@ -6,7 +6,10 @@
     src: url("../Fuentes/Lato-Bold.ttf");
   }
 
-
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
 body {
     font-family:'Lato';
     margin: 0;
@@ -15,7 +18,6 @@ body {
 header {
     width: 100%;
     font-size: 15px;
-
 }
 
 
@@ -116,12 +118,6 @@ header label:hover {
  }
  /* ---------------Seción ventajas---------------*/
 
- #ventajas {
-
-     
-   
-     
- }
  .tl_horario {
    float: 50px;
    width: 60%;
@@ -163,7 +159,7 @@ text-align: center;
 .btn_servicios{
  position: absolute;
  right: 45%;
- top: 162%;
+ top: 152%;
  padding: 1%;
  width: 130px;
  text-align: center;
@@ -181,6 +177,15 @@ text-align: center;
 }
 /*----------------------------sobre nosotros------------------------*/
 
+#nosotros{
+    background-color: royalblue;
+}
+
+.white {
+    padding-top: 20px;
+    color: white;
+}
+
 .parrafo_nosotros {
  text-align: justify;
  font-size: 20px;
@@ -190,21 +195,23 @@ text-align: center;
 
 
 .about {
- padding-top: 2%;
- height: 500px;
+ padding-top: 1%;
  background-color: royalblue;
  display: flex;
 }
 
 .historia {
- padding-left: 20%;
+ padding-left: 15%;
  width: 400px;
  height: 300px;
  
 }
 .sede {
+ margin-left: 15%;
+ padding-left: 5%;
+ padding-right: 5%;
  display: inline;
- width: 600px;
+ width: 500px;
  height: 400px;
  background-color: steelblue;
 }
