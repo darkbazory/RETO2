@@ -34,7 +34,8 @@ header::after{
     transition: clip-path ease-in-out 700ms;
 }
 .site-nav-open{
-    clip-path: circle(150% at top right);
+    clip-path: circle(150% at top right); /* al hacer click se abre
+                                         de manera circular*/
 }
 .site-nav ul{
     margin-top: 40px;
@@ -58,7 +59,7 @@ header::after{
 .site-nav a:focus{
     color: darkorange;
 }
-
+/* le damos forma a los iconos de dentro del menu*/
 .site-nav--icon{
     display: inline-block;
     font-size: 1.5em;
@@ -75,6 +76,7 @@ header::after{
     right: .5em;  
     
 }
+/* Hacemos una animacion girando las lineas para que seas aspas*/
 .menu-open .hamburger{
     transform: rotate(45deg);
 }
