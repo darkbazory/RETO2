@@ -1,84 +1,118 @@
 
-@font-face {
-    font-family: "Lato";
-    src: url("../Fuentes/Lato-Regular.ttf");
-    src: url("../Fuentes/Lato-Light.ttf");
-    src: url("../Fuentes/Lato-Bold.ttf");
-  }
+body{
+    background: white;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    background:royalblue;
+    color:darkorange;
+    padding: 1em 0;
+    position: relative;
+}
 
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo{
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.logo span{
+    font-weight: 300;
+}
+.site-nav{
+    top:100%;
+    right:0;
+    position: absolute;
+    background:royalblue;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+}
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+}
+.site-nav a{
+    color: #ebedb3;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    background: #e4b363;
+    color: #464655;
+}
+
+.site-nav--icon{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+
+.menu-toggle{
+   
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    
+}
+.menu-open .hamburger{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+    opacity: 0;
+}
+.menu-open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
 h2 {
     text-align: center;
     text-transform: uppercase;
 }
-body {
-    font-family:'Lato';
-    margin: 0;
 
-}
-header {
-
-    width: 100%;
-    left: 0;
-    top: 0;
-    font-size: 15px;
-    position:fixed; /*fijamos la barra*/
-    background-color: white;
-}
-
-
-header nav a {
-    text-transform: uppercase;
-}
-
-
-.padre {
-    display: flex;
-    position: absolute;
-    right: 10px;
-    top: 50px;
-
-}
-
-#btn-menu {
-    display: none;
-}
-
-header label {
-    display: none;
-    width: 48px;
-    height: 48px;
-    padding: 10px;
-
-}
-
-header label:hover {
-    cursor: pointer;
-
-}
-
-.menu ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: inline-flex; 
-    background-color: white;
-
-}
-
-
-.menu li a {
-    padding: 15px 20px;
-    color: black;
-    text-decoration: none;
-    
-
-}
-
-
-.menu li a:hover {
-    color: darkorange;
-
-}
 
  
  .Inicio{
@@ -241,36 +275,32 @@ text-align: center;
  color:white;
 }
 
-@media only screen and (max-width: 740px){
-
-   
- 
-    header a img {
+@media (min-width:700px){
+    .menu-toggle{
         display: none;
-    }
-    header label {
-        display: block;
-    }
-
-    .menu {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        transition: 0.5s;
-    }
-
-    .padre {
-        display: flex;
-        width: 100%;
+    } 
+    .site-nav{
         height: auto;
         position: relative;
-        left: 0;
-        top: 70px;
-        flex-direction: column;
-
+        background: transparent;
+        float: right;
+        margin-right: 10px;
+        clip-path: initial;
+    } 
+    .site-nav li{
+        display: inline-block;
+        border: none;
+    }
+  
+    .site-nav a{
+        padding: 0;
+        margin-left: 3em;
+    }
+    .site-nav--icon{
+        display: none;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus{
+        background: transparent;
     }
 }
