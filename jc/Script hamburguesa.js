@@ -1,11 +1,11 @@
 var menuMostrado = false
 
-function sonia() {
+function BarraMenu() {
     menuMostrado = !menuMostrado
-    var soniaBoton = document.getElementById("menu");
+    var Barbutton = document.getElementById("menu");
     if (menuMostrado) {
-        soniaBoton.style.width = "300px";
+        Barbutton.style.width = "300px";
     } else {
-        soniaBoton.style.width = "0";
+        Barbutton.style.width = "0";
     }
 }
