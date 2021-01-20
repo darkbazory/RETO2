@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <!--Titulo que queremos que tenga la pagina en concreto-->
-    <title>Inicio</title>
+    <!-- Formato-->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <!--Añadimos las distintas vistas-->
-    <meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Damos palabras claves para los buscadores-->
     <meta name="description" content="Somos una empresa eficiente." />
     <meta name="keywords" content="taller; neumáticos; piezas; coche" />
@@ -14,24 +13,29 @@
     <link rel="icon" href="../Imagenes/Favicon.ico" type="image/ico">
     <!-- Cargamos las hojas de estilo que va a utilizar la página-->
     <link rel="stylesheet" href="../Hojas CSS/CSS_Index.css">
-    <link rel="stylesheet" href="">
-    <script src="../jc/Script hamburguesa.js"></script>
+    <!--  Cargamos la fuente y los iconos del menu de googleapis y fontawesome-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<!--Titulo que queremos que tenga la pagina en concreto-->
+<title>Inicio</title>
 </head>
-
 <body>
     <header>
-        <a href="INDEX.html"><img src="../Imagenes/LOGO2.png" alt="RecordAutoak LOGO" class="nav-logo"></a>
-        <input type="checkbox" onclick="BarraMenu()" id="btn-menu">
-        <label for="btn-menu"><img src="../Iconos/menu_hamburguesa_48.png" alt="boton">
-    </label>
-        <nav id="menu" class="menu">
-            <ul class="padre">
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#compromiso">Compromiso medioambiente</a></li>
-                <li><a href="../Hojas HTML/CONTACTO.html">Contacto</a></li>
+        <div class="container">
+            <a class="logo" href="INDEX.html"><img src="../Imagenes/LOGO2.png" alt="RecordAutoak LOGO"></a>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="#"><i class="fa fa-home site-nav--icon"></i>"Home</a></li>
+                <li><a href="#"><i class=fa fa-home site-nav--icon></i>Servicios</a></li>
+                <li><a href="#"><i class="fa fa-info site-nav--icon"></i>Nosotros</a></li>
+                <li><a href="#"><i class=fa fa-home site-nav--icon></i>Compromiso medioambiente</a></li>
+                <li><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
             </ul>
         </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
     </header>
     <div class="Inicio">
         <img src="../Imagenes/Inicio.jpg"/>
@@ -142,7 +146,7 @@
 
 
     <!--Footer-->
-
+    <script src="../jc/Menu.js"></script>
 </body>
 
 </html>
