@@ -1,20 +1,57 @@
 /*Importamos las fuentes que vamos a usar*/
 
+<<<<<<< HEAD
 
+=======
+@font-face {
+    font-family: 'Quicksand';
+    src: url(../Fuentes/Quicksand/Quicksand-SemiBold.ttf);
+    src: url(../Fuentes/Quicksand/Quicksand-Bold.ttf)
+}
+>>>>>>> 122f148135a1f23f3c91abcc12a2805b2072cd42
 
 /* Elementos comunes en toda la pagina*/
 
 a {
     text-decoration: underline;
 }
+<<<<<<< HEAD
 
+=======
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 1%;
+    text-transform: uppercase;
+}
+
+tr {
+    border: 2px solid black;
+     
+}
+th {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+td {
+    padding: 1%;
+    text-align: center;
+    font-size: 15px;
+}
+>>>>>>> 122f148135a1f23f3c91abcc12a2805b2072cd42
 
 /* Container */
 
 .container {
     margin: 0 auto;
     max-width: 100%;
+<<<<<<< HEAD
     width: 1200px;
+=======
+   
+>>>>>>> 122f148135a1f23f3c91abcc12a2805b2072cd42
 }
 
 #header > .container {
@@ -44,3 +81,93 @@ a {
         color: darkorange;
         
     }
+<<<<<<< HEAD
+=======
+    /* se pone posicion relativa para poder colocar elementos dentro*/
+    .banner{
+       position: relative;
+       display: inline-block;
+    }
+    
+ /*----------------------servicios---------------------------*/
+ /*.servicios {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     flex-direction: row;
+
+ }*/
+ .parrafo_gris {
+     text-align: center;
+     font-size: 20px;
+     color: gray;
+ }
+/*-----------------iconos-------------------------*/
+
+.iconos {
+    display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     flex-direction: row;
+}
+.item {
+    display: flexbox;
+    flex: 0 0 200px;
+    /*height: 300px;*/
+    
+    padding: 10px;
+   text-align: center;
+   
+}
+.item:hover { /* le decimos que cambie de color cuando pase por encima */
+    background-color: darkorange;
+    color:white;
+}
+img{
+    width: 170px;
+    height: 150px;
+}
+.btn_servicios{
+    position: absolute;
+    right: 45%;
+    padding: 1%;
+    width: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
+    font-size: 15px;
+    border: 2px solid lightgrey;
+    color:grey;
+    text-decoration: none;
+}
+
+.btn_servicios:hover { /* le decimos que cambie de color cuando pase por encima */
+    background-color: darkorange;
+    color:white;
+}
+/*----------------------------sobre nosotros------------------------*/
+
+.about {
+    display: flex;
+}
+.historia {
+    display: inline;
+}
+#desplegar1{
+    display:none;
+}
+#desplegar2{
+    display:none;
+}
+#desplegar3{
+    display:none;
+}
+#desplegar4{
+    display:none;
+}
+[id^="mas"]{
+    cursor: pointer;
+}
+
+
+>>>>>>> 122f148135a1f23f3c91abcc12a2805b2072cd42

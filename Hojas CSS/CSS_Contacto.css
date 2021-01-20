@@ -1,146 +1,285 @@
-/*Importamos las fuentes que vamos a usar*/
+/*PC*/
 
-@font-face {
-    font-family: 'Quicksand';
-    src: url(../Fuentes/Quicksand/Quicksand-SemiBold.ttf);
-    src: url(../Fuentes/Quicksand/Quicksand-Bold.ttf)
-}
+    body {
+      background-color: #e7e7de;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-/* elementos bsicos que se repiten en la página*/
+    /*seccion principal*/
+    
+    #contenedor1 {
+        margin: 0 auto;
+        max-width: 100%;
+       
+    }
+    
+    header > #contenedor1 {
+        position: relative;
+        min-height: 100px;
+        display: flex;
+    }
+    #logo {
+        margin-left: 15%;
+    }
+    header nav {
+        margin-left: 15%;
+        right: 0;
+        bottom: 50px;
+        
+    }
+    
+        #header nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            margin-left: 20px;
+            outline: 0;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+    
+        #header nav a:hover {
+            color: darkorange;
+            
+        }
+    
+        /*formulario*/
 
-h4 {
-    font-size: 36px;
-    line-height: 41px;
-    font-family: 'Quicksand-Bold';
-    padding-bottom: 50px;
-}
-
-h5 {
-    font-family: 'Quicksand-Bold';
-    margin-left: 10px;
-    font-size: 25px;
-    padding: 1%;
-    margin-top:0px;
-}
-
-.center{
-    text-align: center;
-}
-
-input{
-    width: 90%;
-    padding: 2%;
-    margin-bottom: 20px;
-}
+        #contenedor2 {
+        
+            display: flex;
+            margin-left: 25%;
+            margin-right: 25%;
+            
+            
+        }
+        #contacto {
+            width: 80%;
+            padding-top: 0,5em;
+            display: flex;
+            flex-direction: column;
+        }
 
 
-/* Wrapper */
-.wrapper {
-    padding: 6em 0em 4em 0em;
-    display: block;
-}
 
-	.wrapper.style1 {
-		padding: 0em;
-		background: #222222 url(../Imagenes/ba_contacto.jpg) no-repeat;
-		background-size: cover;
-	}
+        /*redes*/
+        #redes img, h5{
+            display: flex;
+            flex-direction: column;
+            margin-left: 5em;
+            height: 50px;
+            width: 50px;
+            margin-bottom: 10px;
+        }
 
-/* Banner */
-#banner{
-    width: 1903px;
-    height: 316px;
-}
+    /*mapa*/
 
-/* seccion contacto */
+    #contenedor3 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        margin-top: 20px;
+    }
 
-#contacto{ /*utilizamos un contenedor */
-    background-color: #fbfbfb ;
-    display: flex;
-}
+    iframe {
+        
+        height: 400px;
+        width: 600px;
+        
+        
+    }
 
-.div_datos{
-    padding: 40px;
-    width: 50%; 
-} 
 
-.contacto{
-    margin-top: 10px;
-}
-
-/* redes sociales*/ 
-
-.div_redes { /* creamos un contenedor para agrupar los links a las redes y el 
-                formulario de mensaje */
-    display: inline-block; /* el display es inline-block, que crea cajas que son de bloque
-                             y en línea de forma simultánea. Una caja de tipo inline-block 
-                             se comporta como si fuera de bloque, pero respecto a los elementos
-                              que la rodean es una caja en línea. */
-    width: 40%;
-}
-
-.social{
-    margin-left: 55%;
-}
-
-.iconos{
-    margin: 1%;
-    border-radius: 15px; /* le damos un pequeño radio a las imagenes */
-}
-
-/* seccion mensaje */
-
- .txt_mensaje{
-    width: 550px;
-    height: 220px;
-    margin: 5%;
-    overflow: hidden;
- }
     
 
-/* boton */
+    /* enviar */
+    /*
+    .btn_enviar{
+        width: 87%;
+        height: 2.725rem;
+        margin: 1%;
+        display: inline-block;
+        transition: all 0.2s;
+        font-size: 20px;
+        border: 0.125rem solid #14bf98;
+        border-radius: 0.25rem;
+        background-color: #14bf98;
+        color: #fff;
+    }
 
-.btn_enviar{
-    width: 87%;
-    height: 2.725rem;
-    margin: 1%;
-    display: inline-block;
-    transition: all 0.2s;
-    font-size: 20px;
-    border: 0.125rem solid #14bf98;
-    border-radius: 0.25rem;
-    background-color: #14bf98;
-    color: #fff;
+    .btn_enviar:hover { /*cambia de color al pasar por encima
+        background-color: transparent;
+        color: #14bf98;
+    }
+
+    */
+
+
+
+
+/*MOVILES*/
+@media only screen and (max-width: 420px) {
+    body {
+      
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    /*seccion principal*/
+    
+    
+        /*formulario*/
+
+        
+        
+        #contenedor2 {
+        
+            display: flex;
+            margin-left: 25%;
+            margin-right: 25%;
+            
+            
+        }
+        #contacto {
+            width: 80%;
+            padding-top: 0,5em;
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /*redes*/
+
+        #redes img, h5{
+
+            margin-left: 5em;
+            height: 50px;
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+     
+    /*mapa*/
+    
+
+    #contenedor3 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+
+    iframe {
+        
+        height: 200px;
+        width: 100px;
+        
+        
+    }
+
+    
+
+    /* enviar */
+    /*
+    .btn_enviar{
+        width: 87%;
+        height: 2.725rem;
+        margin: 1%;
+        display: inline-block;
+        transition: all 0.2s;
+        font-size: 20px;
+        border: 0.125rem solid #14bf98;
+        border-radius: 0.25rem;
+        background-color: #14bf98;
+        color: #fff;
+    }
+
+    .btn_enviar:hover { /*cambia de color al pasar por encima
+        background-color: transparent;
+        color: #14bf98;
+    }
+
+    */
 }
 
-.btn_enviar:hover { /*cambia de color al pasar por encima*/
-    background-color: transparent;
-    color: #14bf98;
-}
+/*TABLETS*/
+@media only screen and (max-width: 768px) {
+    body {
+      
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    /*seccion principal*/
+    
+    
+        /*formulario*/
+
+        #contacto {
+            width: 80%;
+            padding-top: 0,5em;
+            display: inline-block;
+            
+            display: flex;
+            flex-direction: column;
+        }
 
 
-/* --------------------------------COMENTAR POR JON-----------------------*/
-/*Tamaño del mapa*/
-#mapa {
-    height: 400px;
-    width: 50%;
-    margin-top: 20px;
-}
 
-/*Para que el mapa se centre en el medio*/
-#mapa2{    
-	margin-right: auto;
-	text-align: center;
-}
+        /*redes*/
 
-.opcion {
-    clear: right;
-    display: inline-block;
-    margin: auto;    
-    background-color: rgb(122, 211, 129);
-}
+        #redes img, h5{
 
-.form {
-    display: flex;
-    align-items: center;
+            margin-left: 5em;
+            height: 50px;
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+     
+    /*mapa*/
+    #contenedor3 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+
+    iframe {
+        
+        height: 200px;
+        width: 400px;
+        
+        
+    }
+
+
+   
+  
+
+    /* enviar */
+    /*
+    .btn_enviar{
+        width: 87%;
+        height: 2.725rem;
+        margin: 1%;
+        display: inline-block;
+        transition: all 0.2s;
+        font-size: 20px;
+        border: 0.125rem solid #14bf98;
+        border-radius: 0.25rem;
+        background-color: #14bf98;
+        color: #fff;
+    }
+
+    .btn_enviar:hover { /*cambia de color al pasar por encima
+        background-color: transparent;
+        color: #14bf98;
+    }
+
+    */
 }
