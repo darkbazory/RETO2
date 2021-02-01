@@ -107,9 +107,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
 }
-table > tr > th{
-    text-transform: uppercase;
-}
+
 
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
@@ -165,6 +163,15 @@ body > div{
      display: block;
 
  }
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+.horas{
+    padding-left: 150px;
+    color: gray;
+}
 
 
 
