@@ -6,7 +6,7 @@ body{
 
 header{
     background:royalblue;
-    color:darkorange;
+    color:darksalmon;
     position: relative;
     display: flex;
 }
@@ -34,6 +34,7 @@ h3 {
 h4 {
     text-align: center;
 }
+
 /*-----------------------Barra de Navegacion--------------------------------*/
 .logo{
     margin: 0;
@@ -75,7 +76,7 @@ h4 {
 }
 .site-nav a:hover,
 .site-nav a:focus{
-    color: darkorange;
+    color: darksalmon;
 }
 /* le damos forma a los iconos de dentro del menu*/
 .site-nav--icon{
@@ -151,7 +152,7 @@ body > div{
 
  .btn_cita{
     position: absolute;
-     margin-top: 75%;
+     margin-top: 80%;
      margin-left: 25%;
      padding-top: 10px;
      padding-bottom: 10px;
@@ -166,8 +167,8 @@ body > div{
  }
  
  .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
-     background-color: darkorange;
-     border: 2px solid darkorange;
+     background-color: darksalmon;
+     border: 2px solid darksalmon;
      color:white;
  }
  /* ---------------Seción informacion---------------*/
@@ -235,9 +236,9 @@ body > div{
 }
 
 .btn_servicios:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: darkorange;
-    border: 2px solid darkorange;
-    color:darkgray;
+    background-color: darksalmon;
+    border: 2px solid darksalmon;
+    color: white;
 }
 .imagen img{
     margin-top: 10%;
@@ -276,8 +277,8 @@ body > div{
     text-decoration: none; 
 }
 .btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: darkorange;
-    border: 2px solid darkorange;
+    background-color: darksalmon;
+    border: 2px solid darksalmon;
     color:white;
 }
 .sede{
@@ -309,6 +310,50 @@ body > div{
 }
 .gray{
     color: gray;
+}
+
+/*---------------------------------------- Mapa---------------------------------------*/
+#mapa {
+    margin:auto;
+    margin-left: 5%;
+
+}
+
+/*------------------------------- Menú rápido --------------------------------------------*/
+#menu_rapido {
+    background-color:rgb(32, 52, 114);
+}
+.icon {
+    margin-left: 12%; 
+}
+
+.icon img {
+    width: 10%;
+    display: inline;
+    margin-left: 5%;
+    margin-right: 5%;     
+}
+.icon img:hover {
+    -webkit-transform: scale(1.6); 
+    -moz-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+}
+.enlaces {
+    margin: 2%;
+}
+
+.atajos {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    padding-bottom: 100px;
+}
+.atajos:hover {
+    transition: 0.2s;
+    color: darksalmon;
+    text-decoration: underline;
 }
 
 /*----------------version tablet----------------*/
