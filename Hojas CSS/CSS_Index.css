@@ -1,13 +1,9 @@
-
+/*                     Elementos Comunes                 */
 body{
     background: white;
     font-family: 'Roboto', sans-serif;
 }
-.container{
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-}
+
 header{
     background:royalblue;
     color:darkorange;
@@ -20,8 +16,32 @@ header::after{
     clear: both;
     display: block;
 }
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    padding-bottom: 2%;
+}
+table{
+    margin: auto;
+}
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+h4 {
+    text-align: center;
+}
+/*-----------------------Barra de Navegacion--------------------------------*/
 .logo{
     margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .site-nav{
@@ -103,12 +123,6 @@ header::after{
     transform: translateY(3px);
 }
 /*-----------------------------------------------------------------------*/
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
     
@@ -191,13 +205,7 @@ body > div{
 }
 
 /*---------------------------------- Sección Servicios---------------------------------------*/
-p{
-    text-align: center;
-    padding-bottom: 2%;
-}
-table{
-    margin: auto;
-}
+
 .iconos{
     margin-left: auto;
     margin-right: auto;
@@ -277,6 +285,30 @@ table{
     padding: 20%;
     background-color:cornflowerblue;
 
+}
+/*-----------------------------------------opiniones--------------------------------------*/
+.sede{
+    display: inline-block;
+}
+.opiniones{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 15%;
+    
+}
+
+/*------------------------------------------ Trabajadores---------------------------------------*/
+.trabajador1 {
+    margin: 5%;
+    background-color:whitesmoke;
+
+}
+.img_equipo {
+    margin-left: 25%;
+    padding-top: 30px;
+}
+.gray{
+    color: gray;
 }
 
 /*----------------version tablet----------------*/
