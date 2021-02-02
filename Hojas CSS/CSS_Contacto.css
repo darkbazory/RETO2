@@ -122,10 +122,112 @@
 
 /*MOVILES*/
 @media only screen and (max-width: 420px) {
-    body {
-      
-      font-family: Arial, Helvetica, sans-serif;
+
+
+    body{
+        background: white;
+        font-family: 'Roboto', sans-serif;
     }
+    .container{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    header{
+        background:royalblue;
+        color:darkorange;
+        position: relative;
+        display: flex;
+    }
+    
+    header::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    .logo{
+        margin: 0;
+    }
+    
+    .site-nav{
+        right:0;
+        position: absolute;
+        background:royalblue;
+        clip-path: circle(0px at top right);
+        transition: clip-path ease-in-out 700ms;
+    }
+    .site-nav-open{
+        clip-path: circle(150% at top right); /* al hacer click se abre
+                                             de manera circular*/
+    }
+    .site-nav ul{
+        margin-top: 40px;
+        list-style: none;
+    }
+    .site-nav li{
+        border-bottom: 1px solid white;
+    }
+    .site-nav li:last-child{/* ponemos esto para que el ultimo 
+                               elemento no tenga borde*/
+        border-bottom: none;
+    }
+    .site-nav a{
+        color: white;
+        display: block;
+        padding: 2em 6em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus{
+        color: darkorange;
+    }
+    /* le damos forma a los iconos de dentro del menu*/
+    .site-nav--icon{
+        display: inline-block;
+        font-size: 1.5em;
+        margin-right: 1em;
+        width: 1.1em;
+        text-align: right;
+        color:white;
+    }
+    
+    .menu-toggle{
+        padding: 1em;
+        position: absolute;
+        top: .5em;
+        right: .5em;  
+        
+    }
+    /* Hacemos una animacion girando las lineas para que seas aspas*/
+    .menu-open .hamburger{
+        transform: rotate(45deg);
+    }
+    .menu-open .hamburger::before{
+        opacity: 0;
+    }
+    .menu-open .hamburger::after{
+        transform: translateY(-3px) rotate(-90deg);
+    }
+    /*configuramos el css para hacer un icono de menu tipo hambuerguesa*/
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after{
+        content: '';
+        display: block;
+        background: white;
+        height: 3px;
+        width: 1.75em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+    }
+    .hamburger::before{
+        transform: translateY(-6px);
+    }
+    .hamburger::after{
+        transform: translateY(3px);
+    }
+    
 
     
     /*seccion principal*/
@@ -150,18 +252,6 @@
             display: flex;
             flex-direction: column;
         }
-
-
-        /*redes*/
-
-        #redes img, h5{
-
-            margin-left: 5em;
-            height: 50px;
-            width: 50px;
-            margin-bottom: 10px;
-        }
-
      
     /*mapa*/
     

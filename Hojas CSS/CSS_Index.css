@@ -193,9 +193,7 @@ body > div{
 }
 
 /*---------------------------------- Sección Servicios---------------------------------------*/
-#servicion{
-    
-}
+
 .parrafo_gris{
     color: gray;
     font-size: 18px;
@@ -402,3 +400,4 @@ body > div{
     .site-nav a:focus{
         background: transparent;
     }
+}
