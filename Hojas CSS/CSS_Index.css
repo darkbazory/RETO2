@@ -355,6 +355,23 @@ body > div{
     color: darksalmon;
     text-decoration: underline;
 }
+.contactanos li {
+    color: white;
+    padding: 20px;
+}
+.contactanos i {
+    padding-left: 10px;
+}
+
+.contactanos  a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    
+    
+
+}
+
 
 /*----------------version tablet----------------*/
 @media (min-width:600px){
