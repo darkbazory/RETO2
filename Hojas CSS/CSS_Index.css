@@ -128,7 +128,8 @@ h4 {
 body > div{
     
      background-image: url('../Imagenes/Portada_movil.png');
-     height:667px ;
+     background-repeat:no-repeat;
+     height: 600px;
  }
  .texto1{
      text-align: center;
@@ -336,6 +337,7 @@ table{
 /*------------------------------- Menú rápido --------------------------------------------*/
 #menu_rapido {
     background-color:rgb(32, 52, 114);
+   
 }
 .icon {
     margin-left: 12%; 
@@ -354,7 +356,7 @@ table{
     transform: scale(1.6);
 }
 .enlaces {
-    margin: 2%;
+    margin-left:  2%;
 }
 
 .atajos {
@@ -372,6 +374,7 @@ table{
 .contactanos li {
     color: white;
     padding: 20px;
+    list-style: none;
 }
 .contactanos i {
     padding-left: 10px;
@@ -381,11 +384,24 @@ table{
     text-decoration: none;
     color: white;
     padding-left: 10px;
-    
-    
-
 }
-
+/*------------------------ Footer --------------------------------------*/
+footer {
+  
+    background-color: rgb(27, 27, 92);
+}
+.p_white {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.p_white a{
+    text-decoration: none;
+    color: white;
+}
+.p_white a:hover{
+    color:darksalmon;
+}
 
 /*----------------version tablet----------------*/
 @media (min-width:600px){
@@ -559,7 +575,7 @@ table{
 }
 
 /*-------------------------------Versión Web-------------------------------------*/
-@media (min-width:1200px){
+@media only screen and (min-width:1200px){
     .menu-toggle{
         display: none;
     } 
