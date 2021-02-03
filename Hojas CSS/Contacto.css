@@ -242,7 +242,7 @@
 
 
 /*------------PC-----------*/
-@media only screen and(min-width: 1200px){
+@media only screen and (min-width: 1200px){
 
 
 /*-----------------------Barra de Navegacion--------------------------------*/
@@ -420,8 +420,196 @@ height: 25em;
 width: 50em;
 }
 
-
-
 }
 
 
+
+
+
+
+
+
+
+/*------------TABLET-----------*/
+@media only screen and (min-width: 768px){
+
+
+    /*-----------------------Barra de Navegacion--------------------------------*/
+    
+    
+    .menu-toggle{
+        display: none;
+    } 
+    .site-nav{
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        margin-right: 10px;
+        clip-path: initial;
+    } 
+    .site-nav li{
+        display: inline-block;
+        border: none;
+    }
+    
+    .site-nav a{
+        padding: 0;
+        margin-left: 3em;
+    }
+    .site-nav--icon{
+        display: none;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus{
+        background: transparent;
+    }
+    
+    
+    
+    
+    
+    /*                     Elementos Comunes                 */
+    body{
+        background: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    header{
+        background:royalblue;
+        color:darkorange;
+        position: relative;
+        display: flex;
+    }
+    
+    header::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+                    -bottom: 2%;
+    }
+    table{
+        margin: auto;
+    }
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    
+    /*------------------------------formulario--------------------------------------*/
+    
+            
+            
+    .contenedor2 {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        border-radius: 4px;
+        
+    }
+    
+    .contacto {
+        width: 80%;
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    input[type="text"], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+    
+    input[type="tel"], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="email"], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+    
+    input[type=submit] {
+        width: 30%;
+        background-color: royalblue;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: rgb(40, 85, 219);
+    }
+    
+    input[type=submit]:active {
+        background-color: blue;
+    }
+    
+    textarea, select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="range"], select {
+        width: 50%;
+    
+    }
+    
+    
+    
+    /*mapa*/
+    
+    
+    #contenedor3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    }
+    
+    iframe {
+    
+    height: 25em;
+    width: 40em;
+    }
+    
+    }
+    
+    
+    
