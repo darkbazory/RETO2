@@ -179,34 +179,23 @@ body > div{
  }
  /* ---------------Seción informacion---------------*/
  #informacion {
-     display: block;
-
+    display: block;
  }
- table{
-     padding: 5%;
- }
- .contacto{
-     padding-left: 130px;
- }
-
-.horas{
-    padding-left: 140px;
+.titulo1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.tabla {
+    text-align: center;
+}
+span{
+    color: black;
+}
+.gris{
+    text-align: center;
     color: gray;
 }
-.titulo1{
-    padding: 4%;
-    text-transform: uppercase;
-}
-.titulo2{
-    padding-bottom: 4%;
-    text-transform: uppercase;
-    padding-left: 40%;
-}
-.titulo3{
-    padding-bottom: 10%;
-    text-transform: uppercase;
-    
-}
+
 #telefono{
     color: royalblue;
 }
@@ -511,27 +500,15 @@ footer {
         margin: 0px;
         padding: 0px;
     }
-  
-   
-   
-
+ /* ---------------Seción informacion---------------*/
+    #informacion {
+        display:flex;
+        justify-content: space-between;
+        background-color: whitesmoke;
     
- 
 
- /* ---------------Seción ventajas---------------*/
-
- .tl_horario {
-    float: 50px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    }
  
-      background-color: whitesmoke;
-  }
-  #telefono {
-      color: cornflowerblue;
-      font-size: 20px;
-  }
  /*----------------------servicios---------------------------*/
  .servicios { 
    display: flex
@@ -541,6 +518,10 @@ footer {
    font-size: 20px;
    color: gray;
  }
+ .imagen {
+     width: 100%;
+ }
+
  /*-----------------iconos-------------------------*/
  
  .iconos {
@@ -553,11 +534,8 @@ footer {
  .item {
  padding: 20px;
  text-align: center;
+ }
  
- }
- .imagen {
-  display: inline;
- }
  .btn_servicios{
   position: absolute;
   right: 45%;
