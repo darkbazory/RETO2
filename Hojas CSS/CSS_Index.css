@@ -1,16 +1,12 @@
-
+/*                     Elementos Comunes                 */
 body{
     background: white;
     font-family: 'Roboto', sans-serif;
 }
-.container{
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-}
+
 header{
     background:royalblue;
-    color:darkorange;
+    color:darksalmon;
     position: relative;
     display: flex;
 }
@@ -20,8 +16,33 @@ header::after{
     clear: both;
     display: block;
 }
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    padding-bottom: 2%;
+}
+table{
+    margin: auto;
+}
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+h4 {
+    text-align: center;
+}
+
+/*-----------------------Barra de Navegacion--------------------------------*/
 .logo{
     margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .site-nav{
@@ -55,7 +76,7 @@ header::after{
 }
 .site-nav a:hover,
 .site-nav a:focus{
-    color: darkorange;
+    color: darksalmon;
 }
 /* le damos forma a los iconos de dentro del menu*/
 .site-nav--icon{
@@ -103,12 +124,6 @@ header::after{
     transform: translateY(3px);
 }
 /*-----------------------------------------------------------------------*/
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
     
@@ -137,7 +152,7 @@ body > div{
 
  .btn_cita{
     position: absolute;
-     margin-top: 75%;
+     margin-top: 80%;
      margin-left: 25%;
      padding-top: 10px;
      padding-bottom: 10px;
@@ -152,8 +167,8 @@ body > div{
  }
  
  .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
-     background-color: darkorange;
-     border: 2px solid darkorange;
+     background-color: darksalmon;
+     border: 2px solid darksalmon;
      color:white;
  }
  /* ---------------Seción informacion---------------*/
@@ -192,6 +207,7 @@ body > div{
 
 /*---------------------------------- Sección Servicios---------------------------------------*/
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 p{
@@ -201,6 +217,9 @@ p{
 table{
     margin: auto;
 }
+=======
+
+>>>>>>> 82c92460d5c61c23369b7c68224b6edc071a43bc
 .iconos{
     margin-left: auto;
     margin-right: auto;
@@ -231,9 +250,9 @@ table{
 }
 
 .btn_servicios:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: darkorange;
-    border: 2px solid darkorange;
-    color:darkgray;
+    background-color: darksalmon;
+    border: 2px solid darksalmon;
+    color: white;
 }
 .imagen img{
     margin-top: 10%;
@@ -272,8 +291,8 @@ table{
     text-decoration: none; 
 }
 .btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: darkorange;
-    border: 2px solid darkorange;
+    background-color: darksalmon;
+    border: 2px solid darksalmon;
     color:white;
 }
 .sede{
@@ -282,6 +301,91 @@ table{
     background-color:cornflowerblue;
 
 }
+/*-----------------------------------------opiniones--------------------------------------*/
+.sede{
+    display: inline-block;
+}
+.opiniones{
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 15%;
+    
+}
+
+/*------------------------------------------ Trabajadores---------------------------------------*/
+.trabajador1 {
+    margin: 5%;
+    background-color:whitesmoke;
+
+}
+.img_equipo {
+    margin-left: 25%;
+    padding-top: 30px;
+}
+.gray{
+    color: gray;
+}
+
+/*---------------------------------------- Mapa---------------------------------------*/
+#mapa {
+    margin:auto;
+    margin-left: 5%;
+
+}
+
+/*------------------------------- Menú rápido --------------------------------------------*/
+#menu_rapido {
+    background-color:rgb(32, 52, 114);
+}
+.icon {
+    margin-left: 12%; 
+}
+
+.icon img {
+    width: 10%;
+    display: inline;
+    margin-left: 5%;
+    margin-right: 5%;     
+}
+.icon img:hover {
+    -webkit-transform: scale(1.6); 
+    -moz-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+}
+.enlaces {
+    margin: 2%;
+}
+
+.atajos {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    padding-bottom: 100px;
+}
+.atajos:hover {
+    transition: 0.2s;
+    color: darksalmon;
+    text-decoration: underline;
+}
+.contactanos li {
+    color: white;
+    padding: 20px;
+}
+.contactanos i {
+    padding-left: 10px;
+}
+
+.contactanos  a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    
+    
+
+}
+
 
 /*----------------version tablet----------------*/
 @media (min-width:600px){
