@@ -16,6 +16,9 @@ header::after{
     clear: both;
     display: block;
 }
+h1 {
+    text-align: center;
+}
 h2 {
     text-align: center;
     text-transform: uppercase;
@@ -35,7 +38,7 @@ h4 {
     text-align: center;
 }
 
-/*-----------------------Barra de Navegacion--------------------------------*/
+/*---------------Barra de Navegacion-----------------*/
 .logo{
     margin: 0;
 }
@@ -88,6 +91,7 @@ h4 {
     color:white;
 }
 
+/* ponemos las tres rayas para el menu*/
 .menu-toggle{
     padding: 1em;
     position: absolute;
@@ -123,7 +127,7 @@ h4 {
 .hamburger::after{
     transform: translateY(3px);
 }
-/*-----------------------------------------------------------------------*/
+
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
     
@@ -134,7 +138,7 @@ body > div{
  .texto1{
      text-align: center;
      padding:  5%;
-     font-size: 30px;
+     font-size: 15px;
      text-transform: uppercase; /*trasformamos en mayusculas*/
      color: white;
 
@@ -149,12 +153,13 @@ body > div{
 
  body > div > a{
      text-align: end;
+
  }
 
  .btn_cita{
     position: absolute;
-     margin-top: 80%;
-     margin-left: 25%;
+    margin-left: 100px;
+     margin-top: 180px;
      padding-top: 10px;
      padding-bottom: 10px;
      padding-left: 20px;
@@ -206,7 +211,7 @@ body > div{
     color: royalblue;
 }
 
-/*---------------------------------- Sección Servicios---------------------------------------*/
+/*--------- Sección Servicios-------------------*/
 
 
 
@@ -260,7 +265,7 @@ table{
     width:300px;
 }
 
-/*------------------------------------- Sobre Nosotros------------------------------------------------*/
+/*------------ Sobre Nosotros---------------*/
 #nosotros{
     background-color: royalblue;
 }
@@ -301,7 +306,7 @@ table{
     background-color:cornflowerblue;
 
 }
-/*-----------------------------------------opiniones--------------------------------------*/
+/*--------------opiniones----------------------*/
 .sede{
     display: inline-block;
 }
@@ -312,7 +317,7 @@ table{
     
 }
 
-/*------------------------------------------ Trabajadores---------------------------------------*/
+/*-------------- Trabajadores-------------------*/
 .trabajador1 {
     margin: 5%;
     background-color:whitesmoke;
@@ -326,14 +331,14 @@ table{
     color: gray;
 }
 
-/*---------------------------------------- Mapa---------------------------------------*/
+/*------------------------- Mapa--------------------*/
 #mapa {
     margin:auto;
     margin-left: 5%;
 
 }
 
-/*------------------------------- Menú rápido --------------------------------------------*/
+/*---------------------- Menú rápido -----------------*/
 #menu_rapido {
     background-color:rgb(32, 52, 114);
    
@@ -385,7 +390,7 @@ table{
     padding-left: 10px;
    
 }
-/*------------------------ Footer --------------------------------------*/
+/*------------------------ Footer -----------------*/
 footer {
   
     background-color: rgb(27, 27, 92);
@@ -404,56 +409,112 @@ footer {
     color:darksalmon;
 }
 
-/*----------------version tablet----------------*/
+/*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
     .menu-toggle{
-        display: none;
+        padding: 1em;
+        position: absolute;
+        top: .5em;
+        right: .5em;  
     } 
     .site-nav{
-        height: auto;
-        position: relative;
-        background: transparent;
-        float: right;
-        margin-right: 10px;
-        clip-path: initial;
-    } 
+        right:0;
+        position: absolute;
+        background:royalblue;
+        clip-path: circle(0px at top right);
+        transition: clip-path ease-in-out 700ms;
+    }
+    .site-nav-open{
+        clip-path: circle(150% at top right); /* al hacer click se abre
+                                             de manera circular*/
+    }
+    .site-nav ul{
+        margin-top: 40px;
+        list-style: none;
+    }
     .site-nav li{
-        display: inline-block;
-        border: none;
+        border-bottom: 1px solid white;
     }
-  
+    .site-nav li:last-child{/* ponemos esto para que el ultimo 
+                               elemento no tenga borde*/
+        border-bottom: none;
+    }
     .site-nav a{
-        padding: 0;
-        margin-left: 3em;
-    }
-    .site-nav--icon{
-        display: none;
+        color: white;
+        display: block;
+        padding: 2em 6em;
+        text-transform: uppercase;
+        text-decoration: none;
     }
     .site-nav a:hover,
     .site-nav a:focus{
-        background: transparent;
+        color: darksalmon;
     }
-    /*--------------------------inicio----------------------------------*/
-    body > div{
-        background-image: url(../Imagenes/Inicio.jpg);
-        height:650px ;
+    /* le damos forma a los iconos de dentro del menu*/
+    .site-nav--icon{
+        display: inline-block;
+        font-size: 1.5em;
+        margin-right: 1em;
+        width: 1.1em;
+        text-align: right;
+        color:white;
     }
 
+    /*--------------------------inicio----------------------------------*/
+    body > div{
+        background-image: url(../Imagenes/Inicio_Tablet.png);
+        
+        
+    }
+    .inicio {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .texto1{
+        text-align: justify;
+        padding:  1%;
+        padding-top: 100px;
+        margin-left: 50px;
+        font-size: 15px;
+        text-transform: uppercase; /*trasformamos en mayusculas*/
+        color: white;
+    }
     .texto2{
-        padding-bottom: 1%;
+        padding:20px;
+        margin-left: 150px;
+        font-size: 20px;
+        color: white;
+    
+    }
+    body > div > a{
+        align-content: center;
     }
 
     .btn_cita{
         position: absolute;
-        right: 0;
-        margin-top: 20px;
-        margin-right: 450px;
+        margin-top: 200px;
+        margin-left: 45%;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 20px;
         padding-right: 20px;
-       
     }
+
+    .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
+        background-color: darksalmon;
+        border: 2px solid darksalmon;
+        color:white;
+    }
+ 
+    .texto2 {
+        margin: 0px;
+        padding: 0px;
+    }
+  
+   
+   
+
     
  
 
