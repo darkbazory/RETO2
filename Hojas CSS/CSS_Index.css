@@ -20,6 +20,7 @@ h1 {
     text-align: center;
 }
 h2 {
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -211,8 +212,6 @@ p{
 table{
     margin: auto;
 }
-
-
 
 .iconos{
     margin-left: auto;
@@ -510,17 +509,17 @@ footer {
     }
  
  /*----------------------servicios---------------------------*/
- .servicios { 
-   display: flex
- }
+
  .parrafo_gris {
    text-align: center;
    font-size: 20px;
    color: gray;
  }
- .imagen {
-     width: 100%;
- }
+ .imagen img{
+    margin-top: 10%;
+    margin-left: 15%;
+    width:80%;   
+}
 
  /*-----------------iconos-------------------------*/
  
@@ -538,81 +537,36 @@ footer {
  
  .btn_servicios{
   position: absolute;
-  right: 45%;
-  top: 152%;
-  padding: 1%;
-  width: 130px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-  font-size: 15px;
-  border: 2px solid lightgrey;
-  color:grey;
-  text-decoration: none;
+  right: 35%;
+  top: 150%;
  }
  
- .btn_servicios:hover { /* le decimos que cambie de color cuando pase por encima */
-  background-color: darkorange;
-  color:white;
- }
+
  /*----------------------------sobre nosotros------------------------*/
  
- #nosotros{
-     background-color: royalblue;
- }
- 
- .white {
-     padding-top: 20px;
-     color: white;
- }
- 
- .parrafo_nosotros {
-  text-align: justify;
-  font-size: 20px;
-  color: white;
-  padding-bottom: 30px;
- }
- 
- 
- .about {
-  padding-top: 1%;
-  background-color: royalblue;
-  display: flex;
- }
- 
- .historia {
-  padding-left: 15%;
-  width: 400px;
-  height: 300px;
-  
- }
- .sede {
-  margin-left: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
-  display: inline;
-  width: 500px;
-  height: 400px;
-  background-color: steelblue;
- }
- .btn_saber{
-  padding: 1%;
-  width: 130px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-  font-size: 15px;
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
- }
- 
- .btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
-  background-color: darkorange;
-  color:white;
- }
- 
+.white{
+    padding-top: 10px;
 }
+.parrafo_nosotros{
+    padding-bottom: 10px;
+}
+.btn_saber{
+    margin-left: 40%;
+}
+.sede{
+    padding: 2%;
+}
+.opiniones{
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+}
+#float_rigth {
+    float: right;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+ 
 
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
