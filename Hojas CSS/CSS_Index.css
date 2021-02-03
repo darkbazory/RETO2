@@ -207,25 +207,24 @@ body > div{
 }
 
 /*---------------------------------- Sección Servicios---------------------------------------*/
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
+
+
 p{
     text-align: center;
-    padding-bottom: 2%;
+    padding-bottom:2%;
 }
 table{
     margin: auto;
 }
-=======
 
->>>>>>> 82c92460d5c61c23369b7c68224b6edc071a43bc
+
+
 .iconos{
     margin-left: auto;
     margin-right: auto;
 }
->>>>>>> de703bef851a99d440fc0e4965ee7918edb51989
+
 .parrafo_gris{
     color: gray;
     font-size: 18px;
