@@ -177,7 +177,34 @@
         box-sizing: border-box;
     
     }
+
+    input[type="date"], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
     
+    }
+
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin-top: 8px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+
+    input[type="checkbox"], select {
+        margin-bottom: 1em;
+    }
+
     input[type=submit] {
         width: 30%;
         background-color: royalblue;
@@ -335,8 +362,10 @@ h3 {
     margin-left: 25%;
     margin-right: 25%;
 }
+
+
 input[type="text"], select {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -347,7 +376,7 @@ input[type="text"], select {
 }
 
 input[type="tel"], select {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -357,7 +386,7 @@ input[type="tel"], select {
 }
 
 input[type="email"], select {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -367,8 +396,35 @@ input[type="email"], select {
 
 }
 
+input[type="date"], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+#hora {
+    width: 25%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type="checkbox"], select {
+    margin-bottom: 1em;
+}
+
 input[type=submit] {
-    width: 30%;
+    width: 10%;
     background-color: royalblue;
     color: white;
     padding: 14px 20px;
@@ -387,7 +443,7 @@ input[type=submit]:active {
 }
 
 textarea, select {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -397,8 +453,8 @@ textarea, select {
 }
 
 input[type="range"], select {
-    width: 50%;
-
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 
@@ -525,7 +581,7 @@ width: 50em;
         margin-right: 10%;
     }
     input[type="text"], select {
-        width: 50%;
+        width: 75%;
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
@@ -536,7 +592,7 @@ width: 50em;
     }
     
     input[type="tel"], select {
-        width: 50%;
+        width: 75%;
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
@@ -546,7 +602,7 @@ width: 50em;
     }
     
     input[type="email"], select {
-        width: 50%;
+        width: 75%;
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
@@ -557,7 +613,7 @@ width: 50em;
     }
     
     input[type=submit] {
-        width: 30%;
+        width: 15%;
         background-color: royalblue;
         color: white;
         padding: 14px 20px;
@@ -576,7 +632,7 @@ width: 50em;
     }
     
     textarea, select {
-        width: 50%;
+        width: 75%;
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
@@ -589,8 +645,18 @@ width: 50em;
         width: 50%;
     
     }
+
+    input[type="date"], select {
+        width: 25%;
+        padding: 12px 20px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
     
-    
+    }
     
     /*mapa*/
     

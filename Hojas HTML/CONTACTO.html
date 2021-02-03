@@ -28,11 +28,11 @@
         </div>
         <nav id="site-nav" class="site-nav">
             <ul>
-                <li><a href="#"><i class="fas fa-home site-nav--icon"></i>Home</a></li>
-                <li><a href="#"><i class="fas fa-tools site-nav--icon"></i>Servicios</a></li>
-                <li><a href="#"><i class="fa fa-info site-nav--icon"></i>Nosotros</a></li>
-                <li><a href="#"><i class="fas fa-tree site-nav--icon"></i>Compromiso medioambiente</a></li>
-                <li><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
+                <li><a href="INDEX.html"><i class="fas fa-home site-nav--icon"></i>Home</a></li>
+                <li><a href="SERVICIOS.html"><i class="fas fa-tools site-nav--icon"></i>Servicios</a></li>
+                <li><a href="QUIENES_SOMOS.html"><i class="fa fa-info site-nav--icon"></i>Nosotros</a></li>
+                <li><a href="COMPROMISO.html"><i class="fas fa-tree site-nav--icon"></i>Compromiso medioambiente</a></li>
+                <li><a href="CONTACTO.html"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
             </ul>
         </nav>
         <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
@@ -45,33 +45,90 @@
   <div class="contacto">
   <h4>Nos gusta escucharte</h4>
     <form>  <!--Creamos un formulario de contacto-->
-      <label>Tu Nombre:
+      <label>*Tu Nombre:
       <br>
-      </label><input type='text' value=''>
+      </label><input type='text' value='' required>
       <br>
-      <label>Tu Email:</label>      
+      <label>*Tu Email:</label>      
       <br>        
-      <input type='email' value=''>
+      <input type='email' value='' required>
       <br>
-      <label>Teléfono:</label>     
+      <label>*Teléfono:</label>     
       <br>         
-      <input type='tel' value=''>
+      <input type='tel' value='' required>
       <br>
-      <label>Escríbenos tus observaciones:</label>
+      <label>*Escríbenos tus observaciones:</label>
       <br>
-      <textarea class="txt_mensaje" rows="10" cols="35"></textarea>
+      <textarea class="txt_mensaje" rows="10" cols="35" required></textarea>
       <br>
       <label>Como de satisfecho estas del 0 al 10?</label>
       <br>
       <input type="range" min="0" max="10"><h11 class="opinion">
       <br>
+      <label>*¿Primer servicio?</label>
+      <br>
+      <br>
+      <input type="radio" id="Si" name="1er servicio" value="Si" required>
+      <label for="Si">Si</label>
+      <br>
+      <br>
+      <input type="radio"  name="1er servicio" value="No">
+      <label for="No">No</label>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <label>Puedes reservar una cita para uno o varios de los siguientes cambios por un descuento, si lo deseas.</label>
+      <br>
+      <br>
+      <input type="checkbox" id="servicioTipo" name="servicio1" value="Cambio aceite">
+      <label for="servicio1">Cambio de aceite </label>
+      <br>
+      <input type="checkbox" id="servicioTipo" name="servicio2" value="Cambio ruedas">
+      <label for="servicio2">Cambio de ruedas </label>
+      <br>
+      <input type="checkbox" id="servicioTipo" name="servicio3" value="Cambio pintura">
+      <label for="servicio3"> Cambio de pintura</label>
+      <br>
+      <label for="fecha"> Introduce la fecha en la desees acudir: </label>
+      <br>
+      <input type="date" name="fecha" id="fecha" />
+      <br>
+      <label for="fecha"> Introduce la hora en la desees acudir: </label>
+      <br>
+      <select name="hora" id="hora">
+        <option>08:00-09:00</option>
+        <option>09:00-10:00</option>
+        <option>10:00-11:00</option>
+        <option>11:00-12:00</option>
+        <option>12:00-13:00</option>
+        <option>13:00-14:00</option>
+        <option>14:00-15:00</option>
+        <option>15:00-16:00</option>
+        <option>16:00-17:00</option>
+        <option>17:00-18:00</option>
+        <option>18:00-19:00</option>
+        <option>19:00-20:00</option>
+      </select>
+
+
+
+      <br>
+      <br>
       <label>Envíanos tu reseña</label>
       <br>
+      <input type="submit" value="Enviar">
       <br>
-      <input type="submit" value="Enviar"> 
+      <br>
+      <label>* Es un campo obligatorio</label> 
     </form>
   </div>
  
+
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
