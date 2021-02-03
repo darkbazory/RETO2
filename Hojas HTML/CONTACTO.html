@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <title>Contacto</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <!--Iconos y css-->
-  <link rel="icon" href="../Imagenes/Favicon.ico" type="image/ico">
-  <link rel=stylesheet href="../Hojas CSS/CSS_Contacto.css" type="text/css">
-  
-  
-</head>
-
-<body>
-<!-- Header-->
+    <!-- Formato-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--Le decimos al navegador que el tamaño va a ser igual al dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Damos palabras claves para los buscadores-->
+    <meta name="description" content="Somos una empresa eficiente." />
+    <meta name="keywords" content="taller; neumáticos; piezas; coche" />
+    <!--Creamos el favicon-->
+    <link rel="icon" href="../Imagenes/Favicon.ico" type="image/ico">
+    <!-- Cargamos las hojas de estilo que va a utilizar la página-->
+    <link rel="stylesheet" href="../Hojas CSS/Contacto.css">
+    <!--  Cargamos la fuente y los iconos del menu de googleapis y fontawesome-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> <!--llama todos los iconos de fontawesome-->
     
-    <!-- Header-->
+<!--Titulo que queremos que tenga la pagina en concreto-->
+<title>Inicio</title>
+<script src="../jc/Menu.js"></script>
+</head>
+<body>
     <header>
-      <div class="container">
-        <a class="logo" href="INDEX.html"><img src="../Imagenes/Logo_48_white.png" alt="RecordAutoak LOGO"></a>
-      </div>
-      <nav id="site-nav" class="site-nav">
-        <ul>
-            <li><a href="#"><i class="fas fa-home site-nav--icon"></i>Home</a></li>
-            <li><a href="#"><i class="fas fa-tools site-nav--icon"></i>Servicios</a></li>
-            <li><a href="#"><i class="fa fa-info site-nav--icon"></i>Nosotros</a></li>
-            <li><a href="#"><i class="fas fa-tree site-nav--icon"></i>Compromiso medioambiente</a></li>
-            <li><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
-        </ul>
-      </nav>
-    <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
-        <div class="hamburger"></div>
-      </div>
+        <div class="container">
+            <a class="logo" href="INDEX.html"><img src="../Imagenes/Logo_48_white.png" alt="RecordAutoak LOGO"></a>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="#"><i class="fas fa-home site-nav--icon"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-tools site-nav--icon"></i>Servicios</a></li>
+                <li><a href="#"><i class="fa fa-info site-nav--icon"></i>Nosotros</a></li>
+                <li><a href="#"><i class="fas fa-tree site-nav--icon"></i>Compromiso medioambiente</a></li>
+                <li><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+
 <!-- Contacto -->
-<section id="contenedor2">
-  <div id="contacto">
+<section class="contenedor2">
+  <div class="contacto">
   <h4>Nos gusta escucharte</h4>
     <form>  <!--Creamos un formulario de contacto-->
       <label>Tu Nombre:
@@ -53,7 +59,7 @@
       <br>
       <label>Escríbenos tus observaciones:</label>
       <br>
-      <textarea class="txt_mensaje" rows="10" cols="30"></textarea>
+      <textarea class="txt_mensaje" rows="10" cols="35"></textarea>
       <br>
       <label>Como de satisfecho estas del 0 al 10?</label>
       <br>
@@ -62,7 +68,7 @@
       <label>Envíanos tu reseña</label>
       <br>
       <br>
-      <input type="submit"> 
+      <input type="submit" value="Enviar"> 
     </form>
   </div>
  
@@ -76,6 +82,7 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1833.0935782386866!2d-2.9028874576721195!3d43.25752642319394!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1603354304109!5m2!1ses!2ses" width="500" height="480" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
 </section>
 
-
+<!--Footer-->
+  
 </body>
 </html>

@@ -16,12 +16,12 @@
        
     }
     
-    header > #contenedor1 {
+    header > .container {
         position: relative;
         min-height: 100px;
         display: flex;
     }
-    #logo {
+    .logo {
         margin-left: 15%;
     }
     header nav {
@@ -128,6 +128,7 @@
         background: white;
         font-family: 'Roboto', sans-serif;
     }
+
     .container{
         width: 100%;
         max-width: 400px;
@@ -237,7 +238,7 @@
 
         
         
-        #contenedor2 {
+        #contenedor20 {
         
             display: flex;
             margin-left: 25%;
