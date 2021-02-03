@@ -309,6 +309,10 @@ table{
 .trabajador1 {
     margin: 5%;
     background-color:whitesmoke;
+}
+.trabajador2 {
+    margin: 5%;
+    background-color:whitesmoke;
 
 }
 .img_equipo {
@@ -320,28 +324,24 @@ table{
 }
 
 /*------------------------- Mapa--------------------*/
-#mapa {
-    margin:auto;
-    margin-left: 5%;
 
+.i_mapa{
+    width:600px;
+    height:300px; 
+    border: style 0;  
 }
 
 /*---------------------- Menú rápido -----------------*/
 #menu_rapido {
-    background-color:rgb(32, 52, 114);
-   
-}
-.icon {
-    margin-left: 12%; 
+    background-color:rgb(32, 52, 114); 
 }
 
-.icon img {
+.icon {
     width: 10%;
     display: inline;
-    margin-left: 5%;
-    margin-right: 5%;     
+    margin-left: 12%;     
 }
-.icon img:hover {
+.icon:hover {
     -webkit-transform: scale(1.6); 
     -moz-transform: scale(1.6);
     -o-transform: scale(1.6);
@@ -566,8 +566,64 @@ footer {
     margin-right: 200px;
     margin-top: 50px;
 }
- 
+/*-------------- Trabajadores-------------------*/
+.trabajador1 {
+    float: left;
+    margin-left: 10%;
+    width: 250px;
+}
+.trabajador2 {
+    float: left;
+    margin-left: 10%;
+    width: 250px;
 
+}
+.img_equipo {
+    margin-left: 20%;
+    padding-top: 15px;
+    
+}
+.tb_left{
+    text-align: center;
+}
+.gray{
+    text-align: center;
+}
+
+/*------------------------- Mapa--------------------*/
+.i_mapa{
+    width:1024px;
+    height:400px; 
+     
+}
+/*---------------------- Menú rápido -----------------*/
+#menu_rapido{
+    display: flex;
+}
+.icon{
+    width: 30px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 0%;     
+}
+
+.enlaces {
+    margin-left: 1%;
+}
+
+
+
+.contactanos li:hover {
+    color: darksalmon;
+    
+}
+.contactanos i {
+    padding-left: 10px;
+}
+
+
+
+}
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     .menu-toggle{
