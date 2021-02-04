@@ -149,27 +149,7 @@ td {
 
 /*----------------------------sobre nosotros------------------------*/
 
-.about {
-    display: flex;
-}
-.historia {
-    display: inline;
-}
-#desplegar1{
-    display:none;
-}
-#desplegar2{
-    display:none;
-}
-#desplegar3{
-    display:none;
-}
-#desplegar4{
-    display:none;
-}
-[id^="mas"]{
-    cursor: pointer;
-}
+
 
 /*---------------------- Menú rápido -----------------*/
 #menu_rapido {
