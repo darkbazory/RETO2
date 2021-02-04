@@ -145,7 +145,26 @@
         margin-left: 0%;
         margin-right: 0%;
     }
+
+    :focus {
+        color: rgb(8, 8, 8);
+        background-color: rgb(200, 225, 230);
+        font-size: medium;
+        font-weight: 600;
+    }
     
+    fieldset {
+        border: 1px solid royalblue;
+        border-radius: 4px;
+        margin-bottom: 3em;
+    }
+
+    #obligatorio  {
+        margin-bottom: 1em;
+        margin-left: 50%;
+        color: rgb(255, 60, 0);
+    }
+
     input[type="text"], select {
         width: 100%;
         padding: 12px 20px;
@@ -232,6 +251,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
     }
     
     input[type="range"], select {
