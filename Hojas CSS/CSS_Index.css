@@ -210,7 +210,7 @@ table{
     margin: auto;
 }
 
-.iconos{
+.item {
     margin-left: auto;
     margin-right: auto;
 }
@@ -530,12 +530,17 @@ footer {
  .item {
  padding: 20px;
  text-align: center;
+ margin-left: 70px;
  }
- 
+ .imagen {
+     margin-left: 100px;
+     width: 70%;
+ }
  .btn_servicios{
   position: absolute;
-  right: 35%;
-  top: 150%;
+  right: 38%;
+  top: 145%;
+  margin-top: 50px;
  }
  
 
@@ -658,6 +663,7 @@ footer {
     .texto1{
         position: absolute;
         padding:  1%;
+        font-size: 25px;
         padding-top: 150px;
         margin-left: 70%;
         font-size: 15px;
@@ -665,6 +671,7 @@ footer {
 
     .texto2{
         position: absolute;
+        font-size: 20px;
         padding:20px;
         margin-left: 65%;
         padding-top: 300px;
@@ -686,23 +693,49 @@ footer {
         padding-right: 20px;
     }
 
-/*----------------------servicios---------------------------*/
-  
-    .boton {
-        margin: 0px;
+ /*-----------------iconos-------------------------*/
+    h2 {
+        font-size: 30px;
+    }
+    .parrafo_gris {
+        font-size: 20px;
+    }
+    .padre {
+        display: grid;
+        grid-template-areas: "iconos imagen";
+    }
+    
+    .iconos {
+        align-self: space-between;
+        grid-area: iconos;
+        padding: 10px;
+        margin-left: 20%;
+   }
+   
+   .item {
         padding: 0px;
-    }
-    .btn_servicios{
-        margin-top: 100px;
-        margin-left: 0px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .imagen img{
-        margin-top: 10%;
-        margin-left: 33%;
-        width:35%;   
-    }
+        text-align: center;
+        margin-left: 60px;
+   }
+   .imagen {
+       margin: 0px;
+       padding: 0px;
+        grid-area: imagen;
+       width: 35%;
+   }
+   .btn_servicios{
+       position: absolute;
+        right: 38%;
+        top: 145%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+   }
+
+
+
+
+
 }
+
+
+
