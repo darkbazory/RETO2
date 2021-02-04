@@ -45,13 +45,13 @@
   <div class="contacto">
   
     <form action="/action_page.php" method="get" autocomplete="on">  <!--Creamos un formulario de contacto-->
-    <fieldset>
+    <fieldset id="form1">
       <legend>Nos gusta escucharte</legend>
       <label id="obligatorio">* Campo obligatorio</label>
       <br> 
       <label>*Tu Nombre:
       <br>
-      </label><input autofocus type='text' placeholder="Alguien" required pattern="[A-Za-z]" title="el nombre solo puede incluir caracteres alfabéticos y no contener espacios">
+      </label><input autofocus type='text' placeholder="Alguien" required pattern="[a-zA-Z0-9\s]+" title="el nombre solo puede incluir caracteres alfabéticos y no contener espacios">
       <br>
       <label>*Tu Email:</label>      
       <br>        
@@ -79,7 +79,7 @@
       <input type="radio"  name="1er servicio" value="No">
       <label for="No">No</label>
     </fieldset>
-    <fieldset>
+    <fieldset id="form2">
       <legend>Puedes reservar una cita para uno o varios de los siguientes cambios por un descuento, si lo deseas.</legend>
       <br>
       <br>

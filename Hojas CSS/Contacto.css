@@ -145,6 +145,14 @@
         margin-left: 0%;
         margin-right: 0%;
     }
+    /*Si el contenido del formulario es valido*/
+    #form1 :valid {
+        border: 1px solid rgb(97, 204, 97);
+    }
+    
+    #form1 :invalid {
+        border: 1px solid rgb(221, 46, 34);
+    }
 
     :focus {
         color: rgb(8, 8, 8);
