@@ -1,29 +1,45 @@
-/*Importamos las fuentes que vamos a usar*/
-
-<<<<<<< HEAD
-
-=======
-@font-face {
-    font-family: 'Quicksand';
-    src: url(../Fuentes/Quicksand/Quicksand-SemiBold.ttf);
-    src: url(../Fuentes/Quicksand/Quicksand-Bold.ttf)
+/*                     Elementos Comunes                 */
+body{
+    background: white;
+    font-family: 'Roboto', sans-serif;
 }
->>>>>>> 122f148135a1f23f3c91abcc12a2805b2072cd42
 
-/* Elementos comunes en toda la pagina*/
+header{
+    background:royalblue;
+    color:darksalmon;
+    position: relative;
+    display: flex;
+}
 
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    padding-bottom: 2%;
+}
+table{
+    margin: auto;
+}
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+h4 {
+    text-align: center;
+}
 a {
     text-decoration: underline;
-}
-<<<<<<< HEAD
-
-=======
-h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 1%;
-    text-transform: uppercase;
 }
 
 tr {
@@ -40,111 +56,97 @@ td {
     text-align: center;
     font-size: 15px;
 }
->>>>>>> 122f148135a1f23f3c91abcc12a2805b2072cd42
 
-/* Container */
-
-.container {
+/*---------------Barra de Navegacion-----------------*/
+.logo{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
-    max-width: 100%;
-<<<<<<< HEAD
-    width: 1200px;
-=======
-   
->>>>>>> 122f148135a1f23f3c91abcc12a2805b2072cd42
 }
 
-#header > .container {
-    position: relative;
-    min-height: 100px;
-    display: flex;
-}
-
-#header nav {
+.site-nav{
+    right:0;
     position: absolute;
-    right: 0;
-    bottom: 50px;
-    
+    background:royalblue;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
 }
-
-    #header nav a {
-        color: black;
-        text-decoration: none;
-        font-size: 15px;
-        margin-left: 20px;
-        outline: 0;
-        justify-content: center;
-        text-transform: uppercase;
-    }
-
-    #header nav a:hover {
-        color: darkorange;
-        
-    }
-<<<<<<< HEAD
-=======
-    /* se pone posicion relativa para poder colocar elementos dentro*/
-    .banner{
-       position: relative;
-       display: inline-block;
-    }
-    
- /*----------------------servicios---------------------------*/
- /*.servicios {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     flex-direction: row;
-
- }*/
- .parrafo_gris {
-     text-align: center;
-     font-size: 20px;
-     color: gray;
- }
-/*-----------------iconos-------------------------*/
-
-.iconos {
-    display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     flex-direction: row;
+.site-nav-open{
+    clip-path: circle(150% at top right); /* al hacer click se abre
+                                         de manera circular*/
 }
-.item {
-    display: flexbox;
-    flex: 0 0 200px;
-    /*height: 300px;*/
-    
-    padding: 10px;
-   text-align: center;
-   
+.site-nav ul{
+    margin-top: 40px;
+    list-style: none;
 }
-.item:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: darkorange;
-    color:white;
+.site-nav li{
+    border-bottom: 1px solid white;
 }
-img{
-    width: 170px;
-    height: 150px;
+.site-nav li:last-child{/* ponemos esto para que el ultimo 
+                           elemento no tenga borde*/
+    border-bottom: none;
 }
-.btn_servicios{
-    position: absolute;
-    right: 45%;
-    padding: 1%;
-    width: 130px;
-    text-align: center;
+.site-nav a{
+    color: white;
+    display: block;
+    padding: 2em 6em;
     text-transform: uppercase;
-    transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-    font-size: 15px;
-    border: 2px solid lightgrey;
-    color:grey;
     text-decoration: none;
 }
-
-.btn_servicios:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: darkorange;
+.site-nav a:hover,
+.site-nav a:focus{
+    color: darksalmon;
+}
+/* le damos forma a los iconos de dentro del menu*/
+.site-nav--icon{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
     color:white;
 }
+
+/* ponemos las tres rayas para el menu*/
+.menu-toggle{
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;  
+    
+}
+/* Hacemos una animacion girando las lineas para que seas aspas*/
+.menu-open .hamburger{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+    opacity: 0;
+}
+.menu-open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+/*configuramos el css para hacer un icono de menu tipo hambuerguesa*/
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: white;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
+
 /*----------------------------sobre nosotros------------------------*/
 
 .about {
@@ -168,6 +170,88 @@ img{
 [id^="mas"]{
     cursor: pointer;
 }
+}
+/*-------------------------------------------version tablet------------------------------------*/
+@media (min-width:600px){
+    .menu-toggle{
+        padding: 1em;
+        position: absolute;
+        top: .5em;
+        right: .5em;  
+    } 
+    .site-nav{
+        right:0;
+        position: absolute;
+        background:royalblue;
+        clip-path: circle(0px at top right);
+        transition: clip-path ease-in-out 700ms;
+    }
+    .site-nav-open{
+        clip-path: circle(150% at top right); /* al hacer click se abre
+                                             de manera circular*/
+    }
+    .site-nav ul{
+        margin-top: 40px;
+        list-style: none;
+    }
+    .site-nav li{
+        border-bottom: 1px solid white;
+    }
+    .site-nav li:last-child{/* ponemos esto para que el ultimo 
+                               elemento no tenga borde*/
+        border-bottom: none;
+    }
+    .site-nav a{
+        color: white;
+        display: block;
+        padding: 2em 6em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus{
+        color: darksalmon;
+    }
+    /* le damos forma a los iconos de dentro del menu*/
+    .site-nav--icon{
+        display: inline-block;
+        font-size: 1.5em;
+        margin-right: 1em;
+        width: 1.1em;
+        text-align: right;
+        color:white;
+    }
+}
+/*-------------------------------Versión Web-------------------------------------*/
+@media only screen and (min-width:1200px){
+    .menu-toggle{
+        display: none;
+    } 
+    .site-nav{
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        margin-right: 10px;
+        clip-path: initial;
+    } 
+    .site-nav li{
+        display: inline-block;
+        border: none;
+    }
+  
+    .site-nav a{
+        padding: 0;
+        margin-left: 3em;
+    }
+    .site-nav--icon{
+        display: none;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus{
+        background: transparent;
+    }
+}
 
 
->>>>>>> 122f148135a1f23f3c91abcc12a2805b2072cd42
+
