@@ -202,9 +202,6 @@ span{
 }
 
 /*--------- Sección Servicios-------------------*/
-
-
-
 p{
     text-align: center;
     padding-bottom:2%;
@@ -228,7 +225,7 @@ table{
 }
 
 .btn_servicios{
-    margin-left: 25%;
+    margin-left: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -620,7 +617,7 @@ footer {
 }
 
 }
-/*-------------------------------Versión Web-------------------------------------*/
+/*--------------------------------------------------------------------------------------Versión Web------------------------------------------------------------------*/
 @media only screen and (min-width:1200px){
     .menu-toggle{
         display: none;
@@ -690,15 +687,22 @@ footer {
     }
 
 /*----------------------servicios---------------------------*/
-
-     .parrafo_gris {
-        text-align: center;
-        font-size: 20px;
-        color: gray;
+  
+    .boton {
+        margin: 0px;
+        padding: 0px;
+    }
+    .btn_servicios{
+        margin-top: 100px;
+        margin-left: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .imagen img{
         margin-top: 10%;
-        margin-left: 15%;
-        width:45%;   
+        margin-left: 33%;
+        width:35%;   
     }
 }
