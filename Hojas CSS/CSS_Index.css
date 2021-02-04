@@ -512,36 +512,32 @@ footer {
         font-size: 20px;
         color: gray;
     }
-    .imagen img{
-        margin-top: 10%;
-        margin-left: 15%;
-        width:80%;   
-    }
+   
 
  /*-----------------iconos-------------------------*/
  
- .iconos {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  width: 70%;
- }
+    .iconos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        width: 70%;
+    }
  
- .item {
- padding: 20px;
- text-align: center;
- margin-left: 70px;
- }
- .imagen {
-     margin-left: 100px;
-     width: 70%;
- }
- .btn_servicios{
-  position: absolute;
-  right: 38%;
-  top: 145%;
-  margin-top: 50px;
- }
+    .item {
+        padding: 20px;
+        text-align: center;
+        margin-left: 70px;
+    }
+    .imagen {
+        margin-left: 200px;
+        width: 70%;
+    }
+    .btn_servicios{
+        position: absolute;
+        right: 38%;
+        top: 145%;
+        margin-top: 50px;
+    }
  
 
  /*----------------------------sobre nosotros------------------------*/
@@ -709,27 +705,75 @@ footer {
         align-self: space-between;
         grid-area: iconos;
         padding: 10px;
-        margin-left: 20%;
-   }
+        margin-left: 30%;
+    }
    
    .item {
         padding: 0px;
         text-align: center;
         margin-left: 60px;
-   }
+    }
+    .imagen img{
+        margin-top: 0%;
+        margin-left: 0%;
+        width:500px;
+    }
    .imagen {
-       margin: 0px;
-       padding: 0px;
+        align-self: center;
         grid-area: imagen;
-       width: 35%;
-   }
+        
+    }
+   
+   .boton {
+       padding: 50px;
+    }
    .btn_servicios{
-       position: absolute;
-        right: 38%;
-        top: 145%;
+        position: unset;
         margin-top: 50px;
         margin-bottom: 100px;
-   }
+        margin-left: 26%;
+    }
+/*------------ Sobre Nosotros---------------*/
+    #nosotros{
+        background-color: royalblue;
+    }
+.white{
+    color: white;
+    text-transform: uppercase;
+    padding-top: 10%;
+    text-align: center;
+
+}
+.parrafo_nosotros{
+    text-align: center;
+    color: white;
+    padding-bottom: 5%;
+
+}
+.btn_saber{
+    margin-left: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
+    font-size: 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none; 
+}
+.btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
+    background-color: darksalmon;
+    border: 2px solid darksalmon;
+    color:white;
+}
+.sede{
+    margin: 5%;
+    padding: 20%;
+    background-color:cornflowerblue;
+
+}
 
 
 
