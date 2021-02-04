@@ -1,21 +1,4 @@
-/*                     Elementos Comunes                 */
-body{
-    background: white;
-    font-family: 'Roboto', sans-serif;
-}
 
-header{
-    background:royalblue;
-    color:darksalmon;
-    position: relative;
-    display: flex;
-}
-
-header::after{
-    content: '';
-    clear: both;
-    display: block;
-}
 h1 {
     text-align: center;
 }
@@ -37,96 +20,6 @@ h3 {
 }
 h4 {
     text-align: center;
-}
-
-/*---------------Barra de Navegacion-----------------*/
-.logo{
-    margin: 0;
-}
-.container{
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.site-nav{
-    right:0;
-    position: absolute;
-    background:royalblue;
-    clip-path: circle(0px at top right);
-    transition: clip-path ease-in-out 700ms;
-}
-.site-nav-open{
-    clip-path: circle(150% at top right); /* al hacer click se abre
-                                         de manera circular*/
-}
-.site-nav ul{
-    margin-top: 40px;
-    list-style: none;
-}
-.site-nav li{
-    border-bottom: 1px solid white;
-}
-.site-nav li:last-child{/* ponemos esto para que el ultimo 
-                           elemento no tenga borde*/
-    border-bottom: none;
-}
-.site-nav a{
-    color: white;
-    display: block;
-    padding: 2em 6em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.site-nav a:hover,
-.site-nav a:focus{
-    color: darksalmon;
-}
-/* le damos forma a los iconos de dentro del menu*/
-.site-nav--icon{
-    display: inline-block;
-    font-size: 1.5em;
-    margin-right: 1em;
-    width: 1.1em;
-    text-align: right;
-    color:white;
-}
-
-/* ponemos las tres rayas para el menu*/
-.menu-toggle{
-    padding: 1em;
-    position: absolute;
-    top: .5em;
-    right: .5em;  
-    
-}
-/* Hacemos una animacion girando las lineas para que seas aspas*/
-.menu-open .hamburger{
-    transform: rotate(45deg);
-}
-.menu-open .hamburger::before{
-    opacity: 0;
-}
-.menu-open .hamburger::after{
-    transform: translateY(-3px) rotate(-90deg);
-}
-/*configuramos el css para hacer un icono de menu tipo hambuerguesa*/
-.hamburger,
-.hamburger::before,
-.hamburger::after{
-    content: '';
-    display: block;
-    background: white;
-    height: 3px;
-    width: 1.75em;
-    border-radius: 3px;
-    transition: all ease-in-out 500ms;
-}
-.hamburger::before{
-    transform: translateY(-6px);
-}
-.hamburger::after{
-    transform: translateY(3px);
 }
 
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
@@ -202,6 +95,9 @@ span{
 }
 
 /*--------- Sección Servicios-------------------*/
+
+
+
 p{
     text-align: center;
     padding-bottom:2%;
@@ -210,7 +106,7 @@ table{
     margin: auto;
 }
 
-.item {
+.iconos{
     margin-left: auto;
     margin-right: auto;
 }
@@ -225,7 +121,7 @@ table{
 }
 
 .btn_servicios{
-    margin-left: 80px;
+    margin-left: 25%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -328,123 +224,11 @@ table{
     border: style 0;  
 }
 
-/*---------------------- Menú rápido -----------------*/
-#menu_rapido {
-    background-color:rgb(32, 52, 114); 
-}
 
-.icon {
-    width: 10%;
-    display: inline;
-    margin-left: 12%;     
-}
-.icon:hover {
-    -webkit-transform: scale(1.6); 
-    -moz-transform: scale(1.6);
-    -o-transform: scale(1.6);
-    transform: scale(1.6);
-}
-.enlaces {
-    margin-left:  2%;
-}
-
-.atajos {
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
-    padding-bottom: 100px;
-}
-.atajos:hover {
-    transition: 0.2s;
-    color: darksalmon;
-    text-decoration: underline;
-}
-.contactanos li {
-    color: white;
-    padding: 20px;
-    list-style: none;
-}
-.contactanos i {
-    padding-left: 10px;
-}
-
-.contactanos  a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10px;
-   
-}
-/*------------------------ Footer -----------------*/
-footer {
-  
-    background-color: rgb(27, 27, 92);
-}
-.p_white {
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.p_white a{
-    text-decoration: none;
-    color: white;
-}
-.p_white a:hover{
-    color:darksalmon;
-}
 
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
-    .menu-toggle{
-        padding: 1em;
-        position: absolute;
-        top: .5em;
-        right: .5em;  
-    } 
-    .site-nav{
-        right:0;
-        position: absolute;
-        background:royalblue;
-        clip-path: circle(0px at top right);
-        transition: clip-path ease-in-out 700ms;
-    }
-    .site-nav-open{
-        clip-path: circle(150% at top right); /* al hacer click se abre
-                                             de manera circular*/
-    }
-    .site-nav ul{
-        margin-top: 40px;
-        list-style: none;
-    }
-    .site-nav li{
-        border-bottom: 1px solid white;
-    }
-    .site-nav li:last-child{/* ponemos esto para que el ultimo 
-                               elemento no tenga borde*/
-        border-bottom: none;
-    }
-    .site-nav a{
-        color: white;
-        display: block;
-        padding: 2em 6em;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-    .site-nav a:hover,
-    .site-nav a:focus{
-        color: darksalmon;
-    }
-    /* le damos forma a los iconos de dentro del menu*/
-    .site-nav--icon{
-        display: inline-block;
-        font-size: 1.5em;
-        margin-right: 1em;
-        width: 1.1em;
-        text-align: right;
-        color:white;
-    }
-
+   
     /*--------------------------inicio----------------------------------*/
     body > div{
         background-image: url(../Imagenes/Inicio_Tablet.png);
@@ -512,32 +296,31 @@ footer {
         font-size: 20px;
         color: gray;
     }
-   
+    .imagen img{
+        margin-top: 10%;
+        margin-left: 15%;
+        width:80%;   
+    }
 
  /*-----------------iconos-------------------------*/
  
-    .iconos {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        width: 70%;
-    }
+ .iconos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 70%;
+ }
  
-    .item {
-        padding: 20px;
-        text-align: center;
-        margin-left: 70px;
-    }
-    .imagen {
-        margin-left: 200px;
-        width: 70%;
-    }
-    .btn_servicios{
-        position: absolute;
-        right: 38%;
-        top: 145%;
-        margin-top: 50px;
-    }
+ .item {
+ padding: 20px;
+ text-align: center;
+ }
+ 
+ .btn_servicios{
+  position: absolute;
+  right: 35%;
+  top: 150%;
+ }
  
 
  /*----------------------------sobre nosotros------------------------*/
@@ -618,7 +401,7 @@ footer {
 }
 
 }
-/*--------------------------------------------------------------------------------------Versión Web------------------------------------------------------------------*/
+/*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     .menu-toggle{
         display: none;
@@ -659,7 +442,6 @@ footer {
     .texto1{
         position: absolute;
         padding:  1%;
-        font-size: 25px;
         padding-top: 150px;
         margin-left: 70%;
         font-size: 15px;
@@ -667,7 +449,6 @@ footer {
 
     .texto2{
         position: absolute;
-        font-size: 20px;
         padding:20px;
         margin-left: 65%;
         padding-top: 300px;
@@ -689,97 +470,16 @@ footer {
         padding-right: 20px;
     }
 
- /*-----------------iconos-------------------------*/
-    h2 {
-        font-size: 30px;
-    }
-    .parrafo_gris {
-        font-size: 20px;
-    }
-    .padre {
-        display: grid;
-        grid-template-areas: "iconos imagen";
-    }
-    
-    .iconos {
-        align-self: space-between;
-        grid-area: iconos;
-        padding: 10px;
-        margin-left: 30%;
-    }
-   
-   .item {
-        padding: 0px;
+/*----------------------servicios---------------------------*/
+
+     .parrafo_gris {
         text-align: center;
-        margin-left: 60px;
+        font-size: 20px;
+        color: gray;
     }
     .imagen img{
-        margin-top: 0%;
-        margin-left: 0%;
-        width:500px;
+        margin-top: 10%;
+        margin-left: 15%;
+        width:45%;   
     }
-   .imagen {
-        align-self: center;
-        grid-area: imagen;
-        
-    }
-   
-   .boton {
-       padding: 50px;
-    }
-   .btn_servicios{
-        position: unset;
-        margin-top: 50px;
-        margin-bottom: 100px;
-        margin-left: 26%;
-    }
-/*------------ Sobre Nosotros---------------*/
-    #nosotros{
-        background-color: royalblue;
-    }
-.white{
-    color: white;
-    text-transform: uppercase;
-    padding-top: 10%;
-    text-align: center;
-
 }
-.parrafo_nosotros{
-    text-align: center;
-    color: white;
-    padding-bottom: 5%;
-
-}
-.btn_saber{
-    margin-left: 30%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-transform: uppercase;
-    transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-    font-size: 20px;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none; 
-}
-.btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: darksalmon;
-    border: 2px solid darksalmon;
-    color:white;
-}
-.sede{
-    margin: 5%;
-    padding: 20%;
-    background-color:cornflowerblue;
-
-}
-
-
-
-
-
-}
-
-
-
