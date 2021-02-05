@@ -347,47 +347,88 @@ span{
 @media only screen and (min-width:1200px){
     
      /*--------------------------inicio----------------------------------*/
-     body > div{
+    body > div{
         background-image: url(../Imagenes/Inicio.jpg);   
     }
+
     .inicio {
         position: relative;
     }
 
     .texto1{
         position: absolute;
-        padding-top: 150px;
-        margin-left: 70%;
+        padding-top: 100px;
+        margin-left: 65%;
+        font-size: 20px;
     }
 
     .texto2{
         position: absolute;
         padding:20px;
         margin-left: 65%;
-        padding-top: 300px;
+        padding-top: 250px;
     }
   
     .btn_cita{
         position: absolute;
-        margin-top: 470px;
-        margin-left: 73%;
+        margin-top: 380px;
+        margin-left: 66%;
     }
 
  /* ---------------Seción informacion---------------*/
     #informacion {
+        position: absolute;
+            top: 650px;
+        box-shadow: 2px 2px 10px #666; /* Le ponemos un sombrado al contenedor
+                                            para dar sensación de volumen*/
         width: 900px;
         margin-left: 480px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: white;
     }
 
 /*----------------------servicios---------------------------*/
 
-     .parrafo_gris {
+    img {
+        margin: 0px;
+    }
+    
+    #servicios {
+        margin-top: 160px;
+    }
+
+    #servicios h2 {
+        font-size: 35px;
+    }
+
+    .padre {
+        display: grid;
+        grid-template-areas: "iconos imagen";
+    }
+
+    .iconos {
+        grid-area: iconos;
+        margin-left: 300px;
+    }
+
+    .imagen {
+        align-self: start;
+        grid-area: imagen;
+    }
+
+ 
+
+    .item p {
+        font-size: 20px;
+    }
+
+    .parrafo_gris {
         text-align: center;
         font-size: 20px;
         color: gray;
     }
+
     .imagen img{
         margin-top: 10%;
         margin-left: 15%;
