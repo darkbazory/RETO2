@@ -16,7 +16,29 @@ header::after{
     clear: both;
     display: block;
 }
-
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+    padding-bottom: 2%;
+}
+table{
+    margin: auto;
+}
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+h4 {
+    text-align: center;
+}
+/*--------------------------------------- Version Movil ---------------------------------------------*/
 /*---------------Barra de Navegacion-----------------*/
 .logo{
     margin: 0;
@@ -109,152 +131,95 @@ header::after{
 
 
 /*---------------------- Menú rápido -----------------*/
-#menu_rapido {
-    background-color:rgb(32, 52, 114); 
-}
 
-.icon {
-    width: 10%;
-    display: inline;
-    margin-left: 12%;     
-}
-.icon:hover {
-    -webkit-transform: scale(1.6); 
-    -moz-transform: scale(1.6);
-    -o-transform: scale(1.6);
-    transform: scale(1.6);
-}
-.enlaces {
-    margin-left:  2%;
-}
+    footer {
+        background-color: rgb(27, 27, 92);
+    }
 
-.atajos {
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
-    padding-bottom: 100px;
-}
-.atajos:hover {
-    transition: 0.2s;
-    color: darksalmon;
-    text-decoration: underline;
-}
-.contactanos li {
-    color: white;
-    padding: 20px;
-    list-style: none;
-}
-.contactanos i {
-    padding-left: 10px;
-}
+    #menu_rapido {
+        background-color:rgb(32, 52, 114);
+    }
 
-.contactanos  a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10px;
-   
-}
-/*------------------------ Footer -----------------*/
-footer {
-  
-    background-color: rgb(27, 27, 92);
-}
-.p_white {
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.p_white a{
-    text-decoration: none;
-    color: white;
-}
-.p_white a:hover{
-    color:darksalmon;
-}
-
-/*-------------------------------------------version tablet------------------------------------*/
-@media (min-width:600px){
-    .menu-toggle{
-        padding: 1em;
-        position: absolute;
-        top: .5em;
-        right: .5em;  
-    } 
-    .site-nav{
-        right:0;
-        position: absolute;
-        background:royalblue;
-        clip-path: circle(0px at top right);
-        transition: clip-path ease-in-out 700ms;
-    }
-    .site-nav-open{
-        clip-path: circle(150% at top right); /* al hacer click se abre
-                                             de manera circular*/
-    }
-    .site-nav ul{
-        margin-top: 40px;
-        list-style: none;
-    }
-    .site-nav li{
-        border-bottom: 1px solid white;
-    }
-    .site-nav li:last-child{/* ponemos esto para que el ultimo 
-                               elemento no tenga borde*/
-        border-bottom: none;
-    }
-    .site-nav a{
-        color: white;
-        display: block;
-        padding: 2em 6em;
-        text-transform: uppercase;
+    #menu_rapido a {
         text-decoration: none;
+        color: white;
     }
-    .site-nav a:hover,
-    .site-nav a:focus{
-        color: darksalmon;
+
+    .footer {
+        margin: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        color: white;
     }
-    /* le damos forma a los iconos de dentro del menu*/
-    .site-nav--icon{
-        display: inline-block;
-        font-size: 1.5em;
-        margin-right: 1em;
-        width: 1.1em;
-        text-align: right;
+
+    .parrafo_footer {
         color:white;
     }
 
+    .parrafo_footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .icon {
+        width: 10%;
+        display: inline;
+        margin-left: 12%;     
+    }
+
+    .icon:hover {
+        -webkit-transform: scale(1.6); 
+        -moz-transform: scale(1.6);
+        -o-transform: scale(1.6);
+        transform: scale(1.6);
+    }
+
+    .grid_footer{
+        display: grid;
+        grid-template-columns:150px 150px;
+        grid-template-rows: 40px 40px;
+        margin-left: 50px;
+    }
+
+    .grid_footer a{
+        text-transform: uppercase;
+        margin: 10px;
+    }
+
+    .color:hover {
+        color: darksalmon;
+    }
+   
+    .contactanos ul {
+        color: white;
+    }
+
+    .contactanos li {
+       list-style: none;
+    }
+
+    .contactanos i {
+        padding: 10px;
+    }
+
+ 
+
+    
 
 
-/*---------------------- Menú rápido -----------------*/
-#menu_rapido{
-    display: flex;
-}
-.icon{
-    width: 30px;
-    display: inline-block;
-    margin-left: 10%;
-    margin-right: 0%;     
-}
-.enlaces {
-    margin-left: 1%;
-}
-.contactanos li:hover {
-    color: darksalmon;   
-}
-.contactanos i {
-    padding-left: 10px;
-}
-.contactanos li a:hover {
-    color: darksalmon;
-}
+
+/*-------------------------------------------version tablet------------------------------------*/
+@media (min-width:600px){
+  
+
+
 
 }
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     .menu-toggle{
-        display: none;
+        display:none ;
     } 
     .site-nav{
         height: auto;

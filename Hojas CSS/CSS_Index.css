@@ -1,27 +1,4 @@
 
-h1 {
-    text-align: center;
-}
-h2 {
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-}
-p{
-    text-align: center;
-    padding-bottom: 2%;
-}
-table{
-    margin: auto;
-}
-h3 {
-    text-align: center;
-    text-transform: uppercase;
-}
-h4 {
-    text-align: center;
-}
-
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
     
@@ -374,30 +351,7 @@ table{
 /*------------------------- Mapa--------------------*/
 .i_mapa{
     width:1024px;
-    height:400px; 
-     
-}
-/*---------------------- Menú rápido -----------------*/
-#menu_rapido{
-    display: flex;
-}
-.icon{
-    width: 30px;
-    display: inline-block;
-    margin-left: 10%;
-    margin-right: 0%;     
-}
-.enlaces {
-    margin-left: 1%;
-}
-.contactanos li:hover {
-    color: darksalmon;   
-}
-.contactanos i {
-    padding-left: 10px;
-}
-.contactanos li a:hover {
-    color: darksalmon;
+    height:400px;  
 }
 
 }
