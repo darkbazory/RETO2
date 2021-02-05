@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--Titulo que queremos que tenga la pagina en concreto-->
-	<title>Compromiso medioambiental</title>
+    <!-- Formato-->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <!--Ponemos palabras clave para los buscadores-->
-	<meta name="description" content="Somos una empresa concienciada con el medio ambiente, gestionamos nuestros residuos acorde a la normativa y de manera eficiente." />
-	<meta name="keywords" content="medioambiente; residuos; reciclaje" />
+    <!--Le decimos al navegador que el tamaño va a ser igual al dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Damos palabras claves para los buscadores-->
+    <meta name="description" content="Somos una empresa eficiente." />
+    <meta name="keywords" content="taller; neumáticos; piezas; coche" />
     <!--Creamos el favicon-->
     <link rel="icon" href="../Imagenes/Favicon.ico" type="image/ico">
-    <!--Cargamos las hojas de estilos que vamos a utilizar-->
-    <link rel=stylesheet href="../Hojas CSS/CSS_Compromiso.css" type="text/css" />
-    <link rel="stylesheet" href="../Hojas CSS/CSS_Header_Footer.css">
-</head>
+    <!-- Cargamos las hojas de estilo que va a utilizar la página-->
+    <link rel="stylesheet" href="../Hojas CSS/CSS_General.css">
+    <link rel="stylesheet" href="../Hojas CSS/CSS_Compromiso.css">
+    <!--  Cargamos la fuente y los iconos del menu de googleapis y fontawesome-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> <!--llama todos los iconos de fontawesome-->
+    <!-- Insertamos javascrip flecha-->
+  
 
+<!--Titulo que queremos que tenga la pagina en concreto-->
+<title>Inicio</title>
+</head>
 <body>
     <header>
-       
-
-        <!-- Header Wrapper -->
-        <div class="wrapper style1"> <!-- La imagen esta como fondo en el css-->
-            <!-- Banner -->
-            <div id="banner">
-                <section class="container"> <!-- Ponemos un título por encima-->
-                    <h1 class="tit_banner">Nos importa el medio ambiente</h1>
-                    <p id="p_banner">GESTIONAMOS NUESTROS RESIDUOS DE MANERA SEGURA Y EFICIENTE,
-                    <br>SOMOS UNA EMPRESA COMPROMETIDA CON EL MEDIO AMBIENTE</p>
-                </section>
-            </div>
+        <div class="container">
+            <a class="logo" href="INDEX.html"><img src="../Imagenes/Logo_48_white.png" alt="RecordAutoak LOGO"></a>
         </div>
-
-        <!--APARTADO BARRA DE NAVEGACIÓN-->
-        <nav>
-            <!--El logo esta fuera de la lista para que los recuadros no fuesen de distintos tamaños-->
-            <a href="INDEX.html" id="Logo_coche"><img src="../Imagenes/Logo.png"></a>
-            <!--Lista con todos los links a las distintas paginas creadas-->
-            <ul id="desplegable">
-                <a href="QUIENES_SOMOS.html"><li class="botones">¿Quiénes somos?</li></a>
-                <!--<a href="CONSEJOS.html"><li class="botones">Consejos</li></a>-->
-                <a href="COMPROMISO.html"><li class="botones">Compromiso Medioambiental</li></a>
-                <a href="CONTACTO.html"><li class="botones">Contacto</li></a>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="../Hojas HTML/INDEX.html"><i class="fas fa-home site-nav--icon"></i>Home</a></li>
+                <li><a href="../Hojas HTML/SERVICIOS.html"><i class="fas fa-tools site-nav--icon"></i>Servicios</a></li>
+                <li><a href="../Hojas HTML/QUIENES_SOMOS.html"><i class="fa fa-info site-nav--icon"></i>Nosotros</a></li>
+                <li><a href="../Hojas HTML/COMPROMISO.html"><i class="fas fa-tree site-nav--icon"></i>Compromiso medioambiente</a></li>
+                <li><a href="../Hojas HTML/CONTACTO.html"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
             </ul>
         </nav>
-    </header> 
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+<!-------------------- Fin Barra de Navegacion-------------------------------->
     <h1>NUESTRA POLÍTICA MEDIOAMBIENTAL</h1>
     <!-- Seccion gestion de residuos -->
     <section>
@@ -123,15 +122,42 @@
         </div>
     </section>
    
-    <!--Footer-->
-    <footer>
-        <div id="Pie">
-            <p id="Copyright">Todos los derechos reservados ©2020</p>
-            <p id="Aviso"> Aviso legal - Designed by <b><i>Turborepair</i></b>. Diseño y mantenimiento de sitios web
-                corporativos, gestores de contenidos y blogs. Planes SEO continuos.
-                <br>Web Marketing. Diseño gráfico, identidad corporativa, logos.
-            </p>
-        </div>
+<!---------------------- FOOTER----------------------------------------->
+<footer>
+    <section id="menu_rapido">
+        <article class="redes">
+            <h2 class="footer">Nuestras Redes</h2>
+            <p class="parrafo_footer">
+                RecordAutoak ha estado proporcionando servicios de mantenimiento 
+                confiables para vehículos de todos los tamaños y fabricantes desde 2002.</p>    
+            <a href="https://www.instagram.com/"><img class="icon" src="../svg/instagram-brands.svg" alt="icono instagram"/></a>
+            <a href="https://es-es.facebook.com/"><img class="icon" src="../svg/facebook-square-brands.svg" alt="icono facebook"/></a>
+            <a href="https://www.youtube.com/"><img class="icon" src="../svg/youtube-square-brands.svg" alt="icono youtube"/></a>
+            <a href=""><img  class="icon" src="../svg/twitter-square-brands.svg" alt="icono twitter"/></a>
+        </article>
+        <article class="enlaces">
+            <h2 class="footer">Enlaces rápidos</h2>
+            <div class="grid_footer">
+                <div><a href="../Hojas HTML/INDEX.html">informacion</a></div>
+                <div><a href="../Hojas HTML/SERVICIOS.html">Servicios</a></div>
+                <div><a href="../Hojas HTML/QUIENES_SOMOS.html">Nosotros</a></div>
+                <div><a href="../Hojas HTML/QUIENES_SOMOS.html">equipo</a></div>
+            </div>     
+        </article>
+        <article class="contactanos">
+            <h2 class="footer">contactanos</h2>
+            <ul>
+                <li><i class="far fa-envelope"></i><a class="color" href="#">info@RecordAutoak</a></li>
+                <li><i class="fas fa-phone"></i>  (944) 123 321</li>
+                <li><i class="fas fa-map-marker-alt"></i>  Avenida Jesus Galindez s/n, 48004 Bilbao</li>
+            </ul>
+        </article>
+    </section>
+        <p class="parrafo_footer"> ©2020 GeekDesigne &nbsp  <a class="color" href="#">Politica de Privacidad</a></p>
     </footer>
-</body>
-</html>
+     
+    <script src="../jc/Menu.js"></script>
+    
+    </body>
+    
+    </html>
