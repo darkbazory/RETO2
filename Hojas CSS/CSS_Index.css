@@ -1,54 +1,58 @@
 
+ /*-------------------- VERSION MOVIL -------------------------------------*/
+ 
+ /*---------------------- inicio -----------------*/
+
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
-    
-     background-image: url('../Imagenes/Portada_movil.png');
-     background-repeat:no-repeat;
-     height: 600px;
- }
- .texto1{
-     text-align: center;
-     padding:  5%;
-     font-size: 15px;
-     text-transform: uppercase; /*trasformamos en mayusculas*/
-     color: white;
+    background-image: url('../Imagenes/Portada_movil.png');
+    background-repeat:no-repeat;
+    height: 600px;
+}
 
- }
- .texto2{
-     padding: 10%;
-     text-align: center;
-     font-size: 20px;
-     color: white;
+.texto1{
+    text-align: center;
+    padding:  5%;
+    font-size: 15px;
+    text-transform: uppercase; /*trasformamos en mayusculas*/
+    color: white;
+}
+
+.texto2{
+    padding: 10%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
  
- }
+body > div > a{
+    text-align: end;
+}
 
- body > div > a{
-     text-align: end;
-
- }
-
- .btn_cita{
+.btn_cita{
     position: absolute;
     margin-left: 100px;
-     margin-top: 180px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     padding-left: 20px;
-     padding-right: 20px;
-     text-transform: uppercase;
-     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-     font-size: 20px;
-     border: 2px solid white;
-     color: white;
-     text-decoration: none;
- }
+    margin-top: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
+    font-size: 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+}
  
  .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
      background-color: darksalmon;
      border: 2px solid darksalmon;
      color:white;
  }
+
  /* ---------------Seción informacion---------------*/
+
  #informacion {
     display: block;
  }
@@ -73,28 +77,27 @@ span{
 
 /*--------- Sección Servicios-------------------*/
 
-
-
-p{
-    text-align: center;
-    padding-bottom:2%;
-}
-table{
-    margin: auto;
-}
-
-.iconos{
+#servicios h2{
+    text-transform: uppercase;
+} 
+.iconos {
     margin-left: auto;
     margin-right: auto;
 }
 
-.parrafo_gris{
+.parrafo_gris {
     color: gray;
     font-size: 18px;
-   
-}.item img{
+    text-align: center;
+}
+
+.item img {
     display: block;
     margin: auto;
+}
+
+.item p {
+    text-align: center;
 }
 
 .btn_servicios{
@@ -121,6 +124,7 @@ table{
     margin-top: 10%;
     margin-left: 5%;
     width:300px;
+    margin-bottom: 20px;
 }
 
 /*------------ Sobre Nosotros---------------*/
@@ -162,20 +166,19 @@ table{
     margin: 5%;
     padding: 20%;
     background-color:cornflowerblue;
-
-}
-/*--------------opiniones----------------------*/
-.sede{
     display: inline-block;
 }
+
+/*--------------opiniones----------------------*/
+
 .opiniones{
     width: 70%;
     border-radius: 50%;
     margin-left: 15%;
-    
 }
 
-/*-------------- Trabajadores-------------------*/
+/*-------------- Equipo -------------------*/
+
 .trabajador1 {
     margin: 5%;
     background-color:whitesmoke;
@@ -191,6 +194,8 @@ table{
 }
 .gray{
     color: gray;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 /*------------------------- Mapa--------------------*/
@@ -208,151 +213,134 @@ table{
    
     /*--------------------------inicio----------------------------------*/
     body > div{
-        background-image: url(../Imagenes/Inicio_Tablet.png);
-        
-        
+        background-image: url(../Imagenes/Inicio_Tablet.png); 
     }
+
     .inicio {
         width: 100%;
         margin: 0px;
         padding: 0px;
     }
+
     .texto1{
         text-align: justify;
         padding:  1%;
         padding-top: 100px;
         margin-left: 50px;
         font-size: 15px;
-        text-transform: uppercase; /*trasformamos en mayusculas*/
-        color: white;
     }
-    .texto2{
-        padding:20px;
-        margin-left: 150px;
-        font-size: 20px;
-        color: white;
-    
+
+    .texto2 {
+        margin: 0px;
+        padding: 0px;
     }
+
     body > div > a{
         align-content: center;
     }
 
     .btn_cita{
-        position: absolute;
         margin-top: 200px;
         margin-left: 45%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
-    .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
-        background-color: darksalmon;
-        border: 2px solid darksalmon;
-        color:white;
-    }
- 
-    .texto2 {
-        margin: 0px;
-        padding: 0px;
-    }
  /* ---------------Seción informacion---------------*/
+
     #informacion {
         display:flex;
         justify-content: space-between;
         background-color: whitesmoke;
-    
-
     }
  
  /*----------------------servicios---------------------------*/
 
-    .parrafo_gris {
-        text-align: center;
-        font-size: 20px;
-        color: gray;
-    }
     .imagen img{
         margin-top: 10%;
         margin-left: 15%;
         width:80%;   
     }
 
- /*-----------------iconos-------------------------*/
+    .iconos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .parrafo_gris {
+        font-size: 20px;
+    }
  
- .iconos {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  width: 70%;
- }
+    .item {
+        padding: 20px;
+        text-align: center;
+    }
  
- .item {
- padding: 20px;
- text-align: center;
- }
- 
- .btn_servicios{
-  position: absolute;
-  right: 35%;
-  top: 150%;
- }
+    .btn_servicios{
+        position: absolute;
+        right: 35%;
+        top: 145%;
+    }
  
 
  /*----------------------------sobre nosotros------------------------*/
  
-.white{
-    padding-top: 10px;
-}
-.parrafo_nosotros{
-    padding-bottom: 10px;
-}
-.btn_saber{
-    margin-left: 40%;
-}
-.sede{
-    padding: 2%;
-}
-.opiniones{
-    margin: 0px;
-    padding: 0px;
-    width: 15%;
-}
-#float_rigth {
-    float: right;
-    margin-right: 200px;
-    margin-top: 50px;
-}
-/*-------------- Trabajadores-------------------*/
-.trabajador1 {
-    float: left;
-    margin-left: 10%;
-    width: 250px;
-}
-.trabajador2 {
-    float: left;
-    margin-left: 10%;
-    width: 250px;
+    .white{
+        padding-top: 10px;
+    }
 
-}
-.img_equipo {
-    margin-left: 20%;
-    padding-top: 15px;
-    
-}
-.tb_left{
-    text-align: center;
-}
-.gray{
-    text-align: center;
-}
+    .parrafo_nosotros{
+        padding-bottom: 10px;
+    }
+
+    .btn_saber{
+        margin-left: 40%;
+    }
+
+    .sede{
+        padding: 2%;
+    }
+
+    .opiniones{
+        margin: 0px;
+        padding: 0px;
+        width: 15%;
+    }
+
+    #float_rigth {
+        float: right;
+        margin-right: 200px;
+        margin-top: 50px;
+    }
+
+/*-------------- Equipo -------------------*/
+
+    .trabajador1 {
+        float: left;
+        margin-left: 10%;
+        width: 250px;
+    }
+
+    .trabajador2 {
+        float: left;
+        margin-left: 10%;
+        width: 250px;
+    }
+
+    .img_equipo {
+        margin-left: 20%;
+        padding-top: 15px; 
+    }
+
+    .gray{
+        text-align: center;
+    }
 
 /*------------------------- Mapa--------------------*/
-.i_mapa{
-    width:1024px;
-    height:400px;  
-}
+    .i_mapa{
+        width:1024px;
+        height:400px;  
+    }
 
 }
 /*-------------------------------Versión Web-------------------------------------*/
@@ -368,10 +356,8 @@ table{
 
     .texto1{
         position: absolute;
-        padding:  1%;
         padding-top: 150px;
         margin-left: 70%;
-        font-size: 15px;
     }
 
     .texto2{
@@ -379,10 +365,8 @@ table{
         padding:20px;
         margin-left: 65%;
         padding-top: 300px;
-    
     }
   
-
     .btn_cita{
         position: absolute;
         margin-top: 470px;
