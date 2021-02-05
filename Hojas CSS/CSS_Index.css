@@ -357,34 +357,7 @@ table{
 }
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
-    .menu-toggle{
-        display: none;
-    } 
-    .site-nav{
-        height: auto;
-        position: relative;
-        background: transparent;
-        float: right;
-        margin-right: 10px;
-        clip-path: initial;
-    } 
-    .site-nav li{
-        display: inline-block;
-        border: none;
-    }
-  
-    .site-nav a{
-        padding: 0;
-        margin-left: 3em;
-    }
-    .site-nav--icon{
-        display: none;
-    }
-    .site-nav a:hover,
-    .site-nav a:focus{
-        background: transparent;
-    }
-
+    
      /*--------------------------inicio----------------------------------*/
      body > div{
         background-image: url(../Imagenes/Inicio.jpg);   
