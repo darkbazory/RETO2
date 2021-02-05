@@ -1,4 +1,5 @@
 /*                     Elementos Comunes                 */
+
 body{
     background: white;
     font-family: 'Roboto', sans-serif;
@@ -16,33 +17,33 @@ header::after{
     clear: both;
     display: block;
 }
+
 h1 {
     text-align: center;
 }
+
 h2 {
     font-size: 20px;
     text-align: center;
     
 }
-p{
-    text-align: center;
-    padding-bottom: 2%;
-}
-table{
-    margin: auto;
-}
+
 h3 {
     text-align: center;
     text-transform: uppercase;
 }
+
 h4 {
     text-align: center;
 }
+
 /*--------------------------------------- Version Movil ---------------------------------------------*/
 /*---------------Barra de Navegacion-----------------*/
+
 .logo{
     margin: 0;
 }
+
 .container{
     width: 100%;
     max-width: 400px;
@@ -51,26 +52,31 @@ h4 {
 
 .site-nav{
     right:0;
-    position: absolute;
+    position: absolute; /* lo colocamos en la esquina superior derecha*/
     background:royalblue;
     clip-path: circle(0px at top right);
-    transition: clip-path ease-in-out 700ms;
+    transition: clip-path ease-in-out 700ms; /* le ponemos tiempo al efecto*/
 }
+
 .site-nav-open{
     clip-path: circle(150% at top right); /* al hacer click se abre
                                          de manera circular*/
 }
+
 .site-nav ul{
     margin-top: 40px;
     list-style: none;
 }
+
 .site-nav li{
     border-bottom: 1px solid white;
 }
+
 .site-nav li:last-child{/* ponemos esto para que el ultimo 
                            elemento no tenga borde*/
     border-bottom: none;
 }
+
 .site-nav a{
     color: white;
     display: block;
@@ -78,10 +84,12 @@ h4 {
     text-transform: uppercase;
     text-decoration: none;
 }
+
 .site-nav a:hover,
 .site-nav a:focus{
     color: darksalmon;
 }
+
 /* le damos forma a los iconos de dentro del menu*/
 .site-nav--icon{
     display: inline-block;
@@ -97,19 +105,22 @@ h4 {
     padding: 1em;
     position: absolute;
     top: .5em;
-    right: .5em;  
-    
+    right: .5em;   
 }
+
 /* Hacemos una animacion girando las lineas para que seas aspas*/
 .menu-open .hamburger{
     transform: rotate(45deg);
 }
+
 .menu-open .hamburger::before{
     opacity: 0;
 }
+
 .menu-open .hamburger::after{
     transform: translateY(-3px) rotate(-90deg);
 }
+
 /*configuramos el css para hacer un icono de menu tipo hambuerguesa*/
 .hamburger,
 .hamburger::before,
@@ -122,105 +133,139 @@ h4 {
     border-radius: 3px;
     transition: all ease-in-out 500ms;
 }
+
 .hamburger::before{
     transform: translateY(-6px);
 }
+
 .hamburger::after{
     transform: translateY(3px);
 }
 
+/*----------------------Footer- Menú rápido -----------------*/
 
-/*---------------------- Menú rápido -----------------*/
+footer {
+    background-color: rgb(27, 27, 92);
+}
 
-    footer {
-        background-color: rgb(27, 27, 92);
-    }
+#menu_rapido {
+    background-color:rgb(32, 52, 114);
+}
 
-    #menu_rapido {
-        background-color:rgb(32, 52, 114);
-    }
+#menu_rapido a {
+    text-decoration: none;
+    color: white;
+}
 
-    #menu_rapido a {
-        text-decoration: none;
-        color: white;
-    }
+.footer {
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+}
 
-    .footer {
-        margin: 0px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        text-transform: uppercase;
-        color: white;
-    }
+.parrafo_footer {
+    color:white;
+}
 
-    .parrafo_footer {
-        color:white;
-    }
+.parrafo_footer a {
+    text-decoration: none;
+    color: white;
+}
 
-    .parrafo_footer a {
-        text-decoration: none;
-        color: white;
-    }
+.icon {
+    width: 10%;
+    display: inline;
+    margin-left: 12%;     
+}
 
-    .icon {
-        width: 10%;
-        display: inline;
-        margin-left: 12%;     
-    }
+.icon:hover {
+    -webkit-transform: scale(1.6); 
+    -moz-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+}
 
-    .icon:hover {
-        -webkit-transform: scale(1.6); 
-        -moz-transform: scale(1.6);
-        -o-transform: scale(1.6);
-        transform: scale(1.6);
-    }
+.grid_footer{
+    display: grid;
+    grid-template-columns:150px 150px;
+    grid-template-rows: 40px 40px;
+    margin-left: 50px;
+}
 
-    .grid_footer{
-        display: grid;
-        grid-template-columns:150px 150px;
-        grid-template-rows: 40px 40px;
-        margin-left: 50px;
-    }
+.grid_footer a{
+    text-transform: uppercase;
+    margin: 10px;
+}
 
-    .grid_footer a{
-        text-transform: uppercase;
-        margin: 10px;
-    }
-
-    .color:hover {
-        color: darksalmon;
-    }
+.color:hover {
+    color: darksalmon;
+}
    
-    .contactanos ul {
-        color: white;
-    }
+.contactanos ul {
+    color: white;
+}
 
-    .contactanos li {
-       list-style: none;
-    }
+.contactanos li {
+    list-style: none;
+}
 
-    .contactanos i {
-        padding: 10px;
-    }
-
- 
-
-    
-
-
+.contactanos i {
+    padding: 10px;
+}
 
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
-  
 
+    .container{
+        margin-left: 20px;
+    }
+   
+   /*----------------------Footer- Menú rápido -----------------*/ 
 
+    #menu_rapido {
+        display: grid;
+        grid-template-areas: "redes enlaces"
+                             " contactanos contactanos";
+    }
 
+    .redes {
+        grid-area: redes;
+    }
+
+    .enlaces {
+        grid-area: enlaces;
+    }
+
+    .contactanos {
+        grid-area: contactanos;
+    }
+
+    .redes p {
+        margin-top: 0px;
+    }
+
+    .contactanos li {
+        margin-left: 200px;
+    }
+
+    .grid_footer {
+        margin: 0px;
+    }
+
+    .grid_footer a{
+        margin-left: 20px;
+    }
 }
+
 /*-------------------------------Versión Web-------------------------------------*/
+
 @media only screen and (min-width:1200px){
     .menu-toggle{
         display:none ;
     } 
+
     .site-nav{
         height: auto;
         position: relative;
@@ -229,6 +274,7 @@ h4 {
         margin-right: 10px;
         clip-path: initial;
     } 
+
     .site-nav li{
         display: inline-block;
         border: none;
@@ -238,12 +284,50 @@ h4 {
         padding: 0;
         margin-left: 3em;
     }
+
     .site-nav--icon{
         display: none;
     }
+
     .site-nav a:hover,
     .site-nav a:focus{
         background: transparent;
     }
 
+    /*----------------------Footer- Menú rápido -----------------*/ 
+
+    #menu_rapido {
+        grid-template-areas: "redes enlaces contactanos";
+    }
+
+    .icon {
+        width: 5%;
+        margin-left: 12%;     
+    }
+
+    .redes {
+        width: 600px;
+    }
+    
+    .enlaces {
+        width: 600px;
+    }
+
+    .grid_footer a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 225px;
+    }
+
+    .contactanos li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .parrafo_footer {
+        padding-bottom: 15px;
+    }
 }
