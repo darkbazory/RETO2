@@ -1,22 +1,9 @@
-/*                     Elementos Comunes                 */
-body{
-    background: white;
-    font-family: 'Roboto', sans-serif;
-}
 
-header{
-    background:royalblue;
-    color:darksalmon;
-    position: relative;
-    display: flex;
-}
-
-header::after{
-    content: '';
-    clear: both;
-    display: block;
+h1 {
+    text-align: center;
 }
 h2 {
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -35,95 +22,6 @@ h4 {
     text-align: center;
 }
 
-/*-----------------------Barra de Navegacion--------------------------------*/
-.logo{
-    margin: 0;
-}
-.container{
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.site-nav{
-    right:0;
-    position: absolute;
-    background:royalblue;
-    clip-path: circle(0px at top right);
-    transition: clip-path ease-in-out 700ms;
-}
-.site-nav-open{
-    clip-path: circle(150% at top right); /* al hacer click se abre
-                                         de manera circular*/
-}
-.site-nav ul{
-    margin-top: 40px;
-    list-style: none;
-}
-.site-nav li{
-    border-bottom: 1px solid white;
-}
-.site-nav li:last-child{/* ponemos esto para que el ultimo 
-                           elemento no tenga borde*/
-    border-bottom: none;
-}
-.site-nav a{
-    color: white;
-    display: block;
-    padding: 2em 6em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.site-nav a:hover,
-.site-nav a:focus{
-    color: darksalmon;
-}
-/* le damos forma a los iconos de dentro del menu*/
-.site-nav--icon{
-    display: inline-block;
-    font-size: 1.5em;
-    margin-right: 1em;
-    width: 1.1em;
-    text-align: right;
-    color:white;
-}
-
-.menu-toggle{
-    padding: 1em;
-    position: absolute;
-    top: .5em;
-    right: .5em;  
-    
-}
-/* Hacemos una animacion girando las lineas para que seas aspas*/
-.menu-open .hamburger{
-    transform: rotate(45deg);
-}
-.menu-open .hamburger::before{
-    opacity: 0;
-}
-.menu-open .hamburger::after{
-    transform: translateY(-3px) rotate(-90deg);
-}
-/*configuramos el css para hacer un icono de menu tipo hambuerguesa*/
-.hamburger,
-.hamburger::before,
-.hamburger::after{
-    content: '';
-    display: block;
-    background: white;
-    height: 3px;
-    width: 1.75em;
-    border-radius: 3px;
-    transition: all ease-in-out 500ms;
-}
-.hamburger::before{
-    transform: translateY(-6px);
-}
-.hamburger::after{
-    transform: translateY(3px);
-}
-/*-----------------------------------------------------------------------*/
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
     
@@ -134,7 +32,7 @@ body > div{
  .texto1{
      text-align: center;
      padding:  5%;
-     font-size: 30px;
+     font-size: 15px;
      text-transform: uppercase; /*trasformamos en mayusculas*/
      color: white;
 
@@ -149,12 +47,13 @@ body > div{
 
  body > div > a{
      text-align: end;
+
  }
 
  .btn_cita{
     position: absolute;
-     margin-top: 80%;
-     margin-left: 25%;
+    margin-left: 100px;
+     margin-top: 180px;
      padding-top: 10px;
      padding-bottom: 10px;
      padding-left: 20px;
@@ -174,58 +73,44 @@ body > div{
  }
  /* ---------------Seción informacion---------------*/
  #informacion {
-     display: block;
-
+    display: block;
  }
- table{
-     padding: 5%;
- }
- .contacto{
-     padding-left: 130px;
- }
-
-.horas{
-    padding-left: 140px;
+.titulo1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.tabla {
+    text-align: center;
+}
+span{
+    color: black;
+}
+.gris{
+    text-align: center;
     color: gray;
 }
-.titulo1{
-    padding: 4%;
-    text-transform: uppercase;
-}
-.titulo2{
-    padding-bottom: 4%;
-    text-transform: uppercase;
-    padding-left: 40%;
-}
-.titulo3{
-    padding-bottom: 10%;
-    text-transform: uppercase;
-    
-}
+
 #telefono{
     color: royalblue;
 }
 
-/*---------------------------------- Sección Servicios---------------------------------------*/
-<<<<<<< HEAD
-<<<<<<< HEAD
+/*--------- Sección Servicios-------------------*/
 
-=======
+
+
 p{
     text-align: center;
-    padding-bottom: 2%;
+    padding-bottom:2%;
 }
 table{
     margin: auto;
 }
-=======
 
->>>>>>> 82c92460d5c61c23369b7c68224b6edc071a43bc
 .iconos{
     margin-left: auto;
     margin-right: auto;
 }
->>>>>>> de703bef851a99d440fc0e4965ee7918edb51989
+
 .parrafo_gris{
     color: gray;
     font-size: 18px;
@@ -261,7 +146,7 @@ table{
     width:300px;
 }
 
-/*------------------------------------- Sobre Nosotros------------------------------------------------*/
+/*------------ Sobre Nosotros---------------*/
 #nosotros{
     background-color: royalblue;
 }
@@ -302,7 +187,7 @@ table{
     background-color:cornflowerblue;
 
 }
-/*-----------------------------------------opiniones--------------------------------------*/
+/*--------------opiniones----------------------*/
 .sede{
     display: inline-block;
 }
@@ -313,8 +198,12 @@ table{
     
 }
 
-/*------------------------------------------ Trabajadores---------------------------------------*/
+/*-------------- Trabajadores-------------------*/
 .trabajador1 {
+    margin: 5%;
+    background-color:whitesmoke;
+}
+.trabajador2 {
     margin: 5%;
     background-color:whitesmoke;
 
@@ -327,158 +216,92 @@ table{
     color: gray;
 }
 
-/*---------------------------------------- Mapa---------------------------------------*/
-#mapa {
-    margin:auto;
-    margin-left: 5%;
+/*------------------------- Mapa--------------------*/
 
-}
-
-/*------------------------------- Menú rápido --------------------------------------------*/
-#menu_rapido {
-    background-color:rgb(32, 52, 114);
-   
-}
-.icon {
-    margin-left: 12%; 
+.i_mapa{
+    width:600px;
+    height:300px; 
+    border: style 0;  
 }
 
-.icon img {
-    width: 10%;
-    display: inline;
-    margin-left: 5%;
-    margin-right: 5%;     
-}
-.icon img:hover {
-    -webkit-transform: scale(1.6); 
-    -moz-transform: scale(1.6);
-    -o-transform: scale(1.6);
-    transform: scale(1.6);
-}
-.enlaces {
-    margin-left:  2%;
-}
 
-.atajos {
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
-    padding-bottom: 100px;
-}
-.atajos:hover {
-    transition: 0.2s;
-    color: darksalmon;
-    text-decoration: underline;
-}
-.contactanos li {
-    color: white;
-    padding: 20px;
-    list-style: none;
-}
-.contactanos i {
-    padding-left: 10px;
-}
 
-.contactanos  a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10px;
-}
-/*------------------------ Footer --------------------------------------*/
-footer {
-  
-    background-color: rgb(27, 27, 92);
-}
-.p_white {
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-}
-.p_white a{
-    text-decoration: none;
-    color: white;
-}
-.p_white a:hover{
-    color:darksalmon;
-}
-
-/*----------------version tablet----------------*/
+/*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
-    .menu-toggle{
-        display: none;
-    } 
-    .site-nav{
-        height: auto;
-        position: relative;
-        background: transparent;
-        float: right;
-        margin-right: 10px;
-        clip-path: initial;
-    } 
-    .site-nav li{
-        display: inline-block;
-        border: none;
-    }
-  
-    .site-nav a{
-        padding: 0;
-        margin-left: 3em;
-    }
-    .site-nav--icon{
-        display: none;
-    }
-    .site-nav a:hover,
-    .site-nav a:focus{
-        background: transparent;
-    }
+   
     /*--------------------------inicio----------------------------------*/
     body > div{
-        background-image: url(../Imagenes/Inicio.jpg);
-        height:650px ;
+        background-image: url(../Imagenes/Inicio_Tablet.png);
+        
+        
     }
-
+    .inicio {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .texto1{
+        text-align: justify;
+        padding:  1%;
+        padding-top: 100px;
+        margin-left: 50px;
+        font-size: 15px;
+        text-transform: uppercase; /*trasformamos en mayusculas*/
+        color: white;
+    }
     .texto2{
-        padding-bottom: 1%;
+        padding:20px;
+        margin-left: 150px;
+        font-size: 20px;
+        color: white;
+    
+    }
+    body > div > a{
+        align-content: center;
     }
 
     .btn_cita{
         position: absolute;
-        right: 0;
-        margin-top: 20px;
-        margin-right: 450px;
+        margin-top: 200px;
+        margin-left: 45%;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 20px;
         padding-right: 20px;
-       
     }
+
+    .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
+        background-color: darksalmon;
+        border: 2px solid darksalmon;
+        color:white;
+    }
+ 
+    .texto2 {
+        margin: 0px;
+        padding: 0px;
+    }
+ /* ---------------Seción informacion---------------*/
+    #informacion {
+        display:flex;
+        justify-content: space-between;
+        background-color: whitesmoke;
     
- 
 
- /* ---------------Seción ventajas---------------*/
-
- .tl_horario {
-    float: 50px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    }
  
-      background-color: whitesmoke;
-  }
-  #telefono {
-      color: cornflowerblue;
-      font-size: 20px;
-  }
  /*----------------------servicios---------------------------*/
- .servicios { 
-   display: flex
- }
- .parrafo_gris {
-   text-align: center;
-   font-size: 20px;
-   color: gray;
- }
+
+    .parrafo_gris {
+        text-align: center;
+        font-size: 20px;
+        color: gray;
+    }
+    .imagen img{
+        margin-top: 10%;
+        margin-left: 15%;
+        width:80%;   
+    }
+
  /*-----------------iconos-------------------------*/
  
  .iconos {
@@ -491,89 +314,93 @@ footer {
  .item {
  padding: 20px;
  text-align: center;
+ }
  
- }
- .imagen {
-  display: inline;
- }
  .btn_servicios{
   position: absolute;
-  right: 45%;
-  top: 152%;
-  padding: 1%;
-  width: 130px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-  font-size: 15px;
-  border: 2px solid lightgrey;
-  color:grey;
-  text-decoration: none;
+  right: 35%;
+  top: 150%;
  }
  
- .btn_servicios:hover { /* le decimos que cambie de color cuando pase por encima */
-  background-color: darkorange;
-  color:white;
- }
+
  /*----------------------------sobre nosotros------------------------*/
  
- #nosotros{
-     background-color: royalblue;
- }
- 
- .white {
-     padding-top: 20px;
-     color: white;
- }
- 
- .parrafo_nosotros {
-  text-align: justify;
-  font-size: 20px;
-  color: white;
-  padding-bottom: 30px;
- }
- 
- 
- .about {
-  padding-top: 1%;
-  background-color: royalblue;
-  display: flex;
- }
- 
- .historia {
-  padding-left: 15%;
-  width: 400px;
-  height: 300px;
-  
- }
- .sede {
-  margin-left: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
-  display: inline;
-  width: 500px;
-  height: 400px;
-  background-color: steelblue;
- }
- .btn_saber{
-  padding: 1%;
-  width: 130px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-  font-size: 15px;
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
- }
- 
- .btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
-  background-color: darkorange;
-  color:white;
- }
- 
+.white{
+    padding-top: 10px;
+}
+.parrafo_nosotros{
+    padding-bottom: 10px;
+}
+.btn_saber{
+    margin-left: 40%;
+}
+.sede{
+    padding: 2%;
+}
+.opiniones{
+    margin: 0px;
+    padding: 0px;
+    width: 15%;
+}
+#float_rigth {
+    float: right;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+/*-------------- Trabajadores-------------------*/
+.trabajador1 {
+    float: left;
+    margin-left: 10%;
+    width: 250px;
+}
+.trabajador2 {
+    float: left;
+    margin-left: 10%;
+    width: 250px;
+
+}
+.img_equipo {
+    margin-left: 20%;
+    padding-top: 15px;
+    
+}
+.tb_left{
+    text-align: center;
+}
+.gray{
+    text-align: center;
 }
 
+/*------------------------- Mapa--------------------*/
+.i_mapa{
+    width:1024px;
+    height:400px; 
+     
+}
+/*---------------------- Menú rápido -----------------*/
+#menu_rapido{
+    display: flex;
+}
+.icon{
+    width: 30px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 0%;     
+}
+.enlaces {
+    margin-left: 1%;
+}
+.contactanos li:hover {
+    color: darksalmon;   
+}
+.contactanos i {
+    padding-left: 10px;
+}
+.contactanos li a:hover {
+    color: darksalmon;
+}
+
+}
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     .menu-toggle{
@@ -602,5 +429,57 @@ footer {
     .site-nav a:hover,
     .site-nav a:focus{
         background: transparent;
+    }
+
+     /*--------------------------inicio----------------------------------*/
+     body > div{
+        background-image: url(../Imagenes/Inicio.jpg);   
+    }
+    .inicio {
+        position: relative;
+    }
+
+    .texto1{
+        position: absolute;
+        padding:  1%;
+        padding-top: 150px;
+        margin-left: 70%;
+        font-size: 15px;
+    }
+
+    .texto2{
+        position: absolute;
+        padding:20px;
+        margin-left: 65%;
+        padding-top: 300px;
+    
+    }
+  
+
+    .btn_cita{
+        position: absolute;
+        margin-top: 470px;
+        margin-left: 73%;
+    }
+
+ /* ---------------Seción informacion---------------*/
+    #informacion {
+        width: 900px;
+        margin-left: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+/*----------------------servicios---------------------------*/
+
+     .parrafo_gris {
+        text-align: center;
+        font-size: 20px;
+        color: gray;
+    }
+    .imagen img{
+        margin-top: 10%;
+        margin-left: 15%;
+        width:45%;   
     }
 }
