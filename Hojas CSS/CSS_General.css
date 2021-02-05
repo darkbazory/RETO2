@@ -157,6 +157,11 @@ footer {
     color: white;
 }
 
+#menu_rapido a:hover {
+    text-decoration: underline;
+    color:darksalmon;
+}
+
 .footer {
     margin: 0px;
     padding-top: 15px;
@@ -193,13 +198,15 @@ footer {
     display: grid;
     grid-template-columns:150px 150px;
     grid-template-rows: 40px 40px;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .grid_footer a{
     text-transform: uppercase;
     margin: 10px;
 }
+
+
 
 .color:hover {
     color: darksalmon;
@@ -230,6 +237,11 @@ footer {
         display: grid;
         grid-template-areas: "redes enlaces"
                              " contactanos contactanos";
+    }
+
+    #menu_rapido a:hover {
+        text-decoration: underline;
+        color:darksalmon;
     }
 
     .redes {
@@ -300,6 +312,11 @@ footer {
 
     #menu_rapido {
         grid-template-areas: "redes enlaces contactanos";
+    }
+
+    #menu_rapido a:hover {
+        text-decoration: underline;
+        color:darksalmon;
     }
 
     .icon {

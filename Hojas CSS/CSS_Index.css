@@ -32,7 +32,7 @@ body > div > a{
 .btn_cita{
     position: absolute;
     margin-left: 100px;
-    margin-top: 180px;
+    margin-top: 195px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -45,17 +45,17 @@ body > div > a{
     text-decoration: none;
 }
  
- .btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
+.btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
      background-color: darksalmon;
      border: 2px solid darksalmon;
      color:white;
- }
+}
 
  /* ---------------Seción informacion---------------*/
 
- #informacion {
+#informacion {
     display: block;
- }
+}
 .titulo1{
     text-align: center;
     text-transform: uppercase;
@@ -120,30 +120,39 @@ span{
     border: 2px solid darksalmon;
     color: white;
 }
-.imagen img{
+
+.img_web {
     margin-top: 10%;
     margin-left: 5%;
-    width:300px;
     margin-bottom: 20px;
+    width: 300px
 }
 
 /*------------ Sobre Nosotros---------------*/
 #nosotros{
     background-color: royalblue;
 }
+
 .white{
     color: white;
     text-transform: uppercase;
     padding-top: 10%;
     text-align: center;
-
 }
+
+.historia h3 {
+    color: white;
+}
+
 .parrafo_nosotros{
     text-align: center;
     color: white;
     padding-bottom: 5%;
+    margin: 0px;
+
 
 }
+
 .btn_saber{
     margin-left: 30%;
     padding-top: 10px;
@@ -157,24 +166,27 @@ span{
     color: white;
     text-decoration: none; 
 }
+
 .btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
     background-color: darksalmon;
     border: 2px solid darksalmon;
     color:white;
 }
+
 .sede{
     margin: 5%;
-    padding: 20%;
+    padding: 10%;
     background-color:cornflowerblue;
-    display: inline-block;
+    display: grid;
 }
 
 /*--------------opiniones----------------------*/
 
 .opiniones{
-    width: 70%;
+    width: 60%;
     border-radius: 50%;
-    margin-left: 15%;
+    align-self: center;
+    justify-self: center;
 }
 
 /*-------------- Equipo -------------------*/
@@ -183,15 +195,18 @@ span{
     margin: 5%;
     background-color:whitesmoke;
 }
+
 .trabajador2 {
     margin: 5%;
     background-color:whitesmoke;
 
 }
+
 .img_equipo {
     margin-left: 25%;
     padding-top: 30px;
 }
+
 .gray{
     color: gray;
     text-align: center;
@@ -254,10 +269,10 @@ span{
  
  /*----------------------servicios---------------------------*/
 
-    .imagen img{
-        margin-top: 10%;
-        margin-left: 15%;
-        width:80%;   
+    .img_web{
+        margin-top: 0%;
+        margin-left: 10%;
+        width:600px;
     }
 
     .iconos {
@@ -275,45 +290,64 @@ span{
         padding: 20px;
         text-align: center;
     }
- 
-    .btn_servicios{
-        position: absolute;
-        right: 35%;
-        top: 145%;
+
+    .boton {
+        height: 80px;
+    }
+
+    .btn_servicios {
+        margin-left: 40%;
     }
  
-
  /*----------------------------sobre nosotros------------------------*/
  
     .white{
-        padding-top: 10px;
+        padding-top: 15px;
+        font-size: 25px;
     }
 
-    .parrafo_nosotros{
-        padding-bottom: 10px;
+    .historia h3 {
+        text-align: left;
+        padding-left: 30px;
     }
 
-    .btn_saber{
+    .parrafo_nosotros {
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .btn_saber {
         margin-left: 40%;
     }
 
-    .sede{
-        padding: 2%;
+    .sede {
+        grid-template-areas: "opiniones nombre"
+        "parrafo_nosotros parrafo_nosotros";
     }
 
-    .opiniones{
-        margin: 0px;
+    .opiniones {
+        grid-area: opiniones;
+        width: 100px;
+        justify-self: start;
+    }
+
+    #nombre {
+        grid-area: nombre;
+        justify-self: start;
+    }
+
+    .parrafo_nosotros {
+        margin-top: 20px;
+        grid-area: parrafo_nosotros;
         padding: 0px;
-        width: 15%;
-    }
-
-    #float_rigth {
-        float: right;
-        margin-right: 200px;
-        margin-top: 50px;
     }
 
 /*-------------- Equipo -------------------*/
+    #equipo h2 {
+        text-transform: uppercase;
+        font-size: 25px;
+    }
 
     .trabajador1 {
         float: left;
@@ -390,10 +424,6 @@ span{
 
 /*----------------------servicios---------------------------*/
 
-    img {
-        margin: 0px;
-    }
-    
     #servicios {
         margin-top: 160px;
     }
@@ -405,19 +435,26 @@ span{
     .padre {
         display: grid;
         grid-template-areas: "iconos imagen";
+        height: 550px;
     }
 
     .iconos {
+        justify-self: center;
+        align-self: center;
         grid-area: iconos;
         margin-left: 300px;
+        width: 600px;
     }
 
     .imagen {
-        align-self: start;
         grid-area: imagen;
+        width: 650px;
+        justify-self: start;
     }
 
- 
+    .img_web {
+        margin: 0px;
+    }
 
     .item p {
         font-size: 20px;
@@ -429,9 +466,79 @@ span{
         color: gray;
     }
 
-    .imagen img{
-        margin-top: 10%;
-        margin-left: 15%;
-        width:45%;   
+    .btn_servicios {
+        margin: 550px;
     }
+
+/*------------------  Sección Nosotros  -----------------*/
+
+    .contenedor {
+       display: inline-flex; 
+    }
+
+    .white {
+        padding-top: 50px;
+    }
+
+    .historia {
+        width: 500px;
+        margin-left: 400px;
+        margin-top: 100px;  
+    }
+
+    .historia h3{
+        margin: 0px;
+        padding-left: 0px;
+    }
+
+    .sede {
+        width: 400px;
+        margin-left: 100px;
+        margin-right: 50px;
+        padding: 50px;
+        padding-top: 0px;       
+        margin-top: 50px;
+    }
+
+    .parrafo_nosotros {
+        margin-left: 0px;
+    }
+
+    .btn_saber {
+        margin-left: 0px;
+        position: absolute;
+        margin-top: 50px;   
+    }
+
+/*----------------------- Nuestro Equipo ----------------*/
+    #equipo h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+   .contenedor_trabajadores {
+       margin-left: 400px;
+   }
+
+    .trabajador1{
+        margin: 15px;
+        
+    }
+
+    .trabajador2 {
+        margin: 15px;
+    }
+
+    .img_equipo {
+        width: 150px;
+        height: 170px;
+    }
+/*------------------------- Mapa--------------------*/
+
+    .i_mapa{
+        width: 1900px;
+        height: 500px;
+    }
+
+    
 }

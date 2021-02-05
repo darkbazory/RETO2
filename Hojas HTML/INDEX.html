@@ -49,7 +49,7 @@
         <div class="texto2">
             <h4>Un cambio de aceite gratis con tu primera revisión.</h4>
         </div>
-        <a href="#cita" class="btn_cita">Pide tu cita</a>    
+        <a href="#email" class="btn_cita">Pide tu cita</a>    
     </div>
 <!---------------------  Sección información---------------------------------->
 <section id="informacion" >
@@ -114,52 +114,59 @@
         <a  class="btn_servicios" href="../Hojas HTML/SERVICIOS.html">Ver Servicios</a>  
     </div> 
 </section>
+<!------------------  Sección Nosotros  ----------------->
 <section id="nosotros">
     <h2 class="white">Sobre nosotros</h2>
-    <div class="historia">
-        <h3 class="white">Trabajamos desde 2002</h3>
-        <p class="parrafo_nosotros">Ofrecemos una gama completa de servicios mecánicos a los propietarios 
+    <article class="contenedor">
+        <div class="historia">
+            <h3>Trabajamos desde 2002</h3>
+            <p class="parrafo_nosotros">Ofrecemos una gama completa de servicios mecánicos a los propietarios 
                 de vehículos de la zona. Nuestros profesionales saben cómo manejar
                  una amplia gama de servicios de automóviles. 
                  Ya sea un turismo, un camión mediano 
                  o un SUV, nuestros mecánicos se esfuerzan por garantizar 
                  que su vehículo funcione de la mejor manera antes de salir 
                  de nuestro taller de reparación. Sabemos cómo cuidar su vehículo.</p>
-        <a href="../Hojas HTML/QUIENES_SOMOS.html" class="btn_saber">Saber más</a>
-    </div>
-    <div class="sede">
-        <img class="opiniones" src="../Imagenes/op3.jpg"/>    
-        <h3 class="white" id="float_rigth">Nicolás Gonzalez</h3>
-        <p class="parrafo_nosotros">En cuanto a la cita hicieron lo posible
-                 por adecuarse a mis horarios, una atención al cliente impecable,
-                  parece que respetan todos los protocolos covid. </p>      
-    </div>
+            <a href="../Hojas HTML/QUIENES_SOMOS.html" class="btn_saber">Saber más</a>
+        </div>
+        <div class="sede">
+            <img class="opiniones" src="../Imagenes/op3.jpg"/>    
+            <h3 class="white" id="nombre">Nicolás Gonzalez</h3>
+            <p class="parrafo_nosotros"> He utilizado los servicios de RecordAutoak
+                durante 2 años. En cuanto a las citas siempre han hecho lo posible 
+                por adecuarse a mis horarios. Una atención al cliente impecable y
+                además respetan siguen todos los protocolos anti-covid. </p>      
+        </div>
+    </article>
 </section>
+<!-------------- Sección Equipo ----------------->
 <section id="equipo">
     <h2>Nuestro Equipo</h2>
-    <div class="trabajador1">
-        <img class="img_equipo" src="../Imagenes/dir.jpg"/>
-        <h3>Pilar Tellez</h3>
-        <h4 class="gray">Directora General</h4>
-        <p class="gray">tel: 600-123-456</p>
-    </div>
-    <div class="trabajador1">
-        <img class="img_equipo" src="../Imagenes/sec1.jpg"/>
-        <h3>Christofer Arranz</h3>
-        <h4 class="gray">Encargado de Administración</h4>
-        <p class="gray">tel: 601-123-456</p>
-    </div>
-    <div class="trabajador2">
-        <img class="img_equipo" src="../Imagenes/mec1.jpg"/>
-        <h3>Carmen & Oscar</h3>
-        <h4 class="gray">Mecánicos</h4>
-        <p class="gray">tel: 602-123-456</p>
-    </div>
-    <div class="trabajador2">
-        <img class="img_equipo" src="../Imagenes/res1.jpg"/>
-        <h3>Antonio Gonzalez</h3>
-        <h4 class="gray">Encargado de Residuos</h4>
-        <p class="gray">tel: 603-123-456</p>
+    <div class="contenedor_trabajadores">
+        <div class="trabajador1">
+            <img class="img_equipo" src="../Imagenes/dir.jpg"/>
+            <h3>Pilar Tellez</h3>
+            <h4 class="gray">Directora General</h4>
+            <p class="gray">tel: 600-123-456</p>
+        </div>
+        <div class="trabajador1">
+            <img class="img_equipo" src="../Imagenes/sec1.jpg"/>
+            <h3>Christofer Arranz</h3>
+            <h4 class="gray">Encargado de Administración</h4>
+            <p class="gray">tel: 601-123-456</p>
+        </div>
+        <div class="trabajador2">
+            <img class="img_equipo" src="../Imagenes/mec1.jpg"/>
+            <h3>Carmen & Oscar</h3>
+            <h4 class="gray">Mecánicos</h4>
+            <p class="gray">tel: 602-123-456</p>
+        </div>
+        <div class="trabajador2">
+            <img class="img_equipo" src="../Imagenes/res1.jpg"/>
+            <h3>Antonio Gonzalez</h3>
+            <h4 class="gray">Encargado de Residuos</h4>
+            <p class="gray">tel: 603-123-456</p>
+        </div>
     </div>
 </section>
 <section id="mapa">
@@ -194,7 +201,7 @@
     <article class="contactanos">
         <h2 class="footer">contactanos</h2>
         <ul>
-            <li><i class="far fa-envelope"></i><a class="color" href="#">info@RecordAutoak</a></li>
+            <li><i class="far fa-envelope"></i><a name="email" class="color" href="#">info@RecordAutoak</a></li>
             <li><i class="fas fa-phone"></i>  (944) 123 321</li>
             <li><i class="fas fa-map-marker-alt"></i>  Avenida Jesus Galindez s/n, 48004 Bilbao</li>
         </ul>
