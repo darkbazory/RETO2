@@ -1,6 +1,10 @@
 
 
 /*-------------------------------------------version tablet------------------------------------*/
-@media (min-width:600px){}
+@media (min-width:600px){
+    
+}
 /*-------------------------------Versión Web-------------------------------------*/
-@media only screen and (min-width:1200px){}
+@media only screen and (min-width:1200px){
+
+}
