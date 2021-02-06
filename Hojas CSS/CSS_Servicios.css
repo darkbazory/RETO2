@@ -7,11 +7,10 @@
     display:list-item;
 }
 
-
 /*------------ Sección servicios--------------*/
 
 .servicios {
-    display:list-item;
+    display:list-item; /* ponemos los elementos en lidea*/
 }
 
 .item {
@@ -19,14 +18,15 @@
 }
 
 .item img {
-    justify-self: center;
+    justify-self: center; /* centramos la imagen horizontalmente*/
 }
 
 .p_gray {
     color: gray;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 40px;
+    width: 270px;
+    height: 209px;
+    justify-self: center;
 }
 
 /*------------ servicios Adicionales --------------*/
@@ -40,18 +40,20 @@
     padding-top: 50px;
 }
 
-.item2 {
+.item_a ,.item_b ,.item_c { /*los 3 elementos comparten las mismas
+                            propiedades pero mas adelante los tendremos
+                            que diferenciar para hacer un grid area*/
     display: grid;
 }
 
-.item2 h4 {
+.item_a h4, .item_b h4, .item_c h4{
     font-size: 20px;
     color: white;
     margin: 5%;
     margin-top: 0px;
 }
 
-.item2 img {
+.item_a img,.item_b img, .item_c img{
     justify-self: center;
     width: 150px;
     margin-bottom: 10px;
@@ -65,38 +67,110 @@
 
 /*------------ Otros  servicios --------------*/
 .otros {
-    display: list-item;
+    display: list-item; /*utilizamos list-item para poder
+                        poner los elementos en filas*/
 }
 
 .item3 {
-    display: grid;
+    display: grid; /*lo utilizamos para dar propiedades grid a
+                    los elementos interiores*/
 }
 
 .item3 p {
-    text-align: center;
+    text-align: center; /* centramos el texto*/
 }
 
 .item3 img {
-    justify-self: center;
+    justify-self: center; /* lo centramos horizontalmente*/
 }
-
-
-
-
-
-
-
-
 
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
-  
+    .servicios {
+        display: grid; /*utilizamos el grid para separar en columnas iguales*/
+        grid-template-columns: repeat(2, 1fr);  /* le indicamos que se repita
+                                            el patrón de 2 columnas*/
     }
+
+    .item {
+       width: 350px;
+       justify-self: center; 
+    }
+
+    .p_gray {
+        width: 270px;
+        justify-self: center;
+    }
+
+/*------------ servicios Adicionales --------------*/
+
+    .adicionales {
+        display: grid;
+        grid-template-areas: "h2 h2" /* Aqui utilizamos el grid area*/
+                             "a b"  /* Por eso necesitabamos las distintas clases*/
+                             "c c";
+    }
+    .adicionales h2{
+        grid-area: h2;
+    }
+    .item_a {
+        grid-area: a;
+        width: 350px;
+    }
+    .item_b {
+        grid-area: b;
+        width: 350px;
+    }
+    .item_c {
+        grid-area: c;
+        width: 350px;
+        justify-self: center;
+    }
+
+/*------------ Otros  servicios --------------*/
+
+    .grid_column {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  /* Aqui le damos un patrón de 3 columnas*/
+    }
+}
 
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  /* Aqui le damos un patrón de 3 columnas*/
+    }
+/*------------ servicios Adicionales --------------*/
+
+    .adicionales {
+        display: grid;
+        grid-template-areas: "h2 h2 h2" /* Aqui utilizamos el grid area*/
+                              "a b c"; /* Por eso necesitabamos las distintas clases*/
+        justify-content: center; /*el contenedor se alinea en el centro*/
+                                 
+    }
+
+    .item_a ,.item_b ,.item_c { 
+        margin-top: 30px;
+    }
+
+    .p_white {
+        margin: 0%;
+        padding-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+/*-------------------- Otros  Servicios ----------------*/
+
+    .grid_column {
+        grid-template-columns: repeat(6, 200px);
+        justify-content: center;
+    }
+
+   
+  
+    
     
 }
-
-
-
