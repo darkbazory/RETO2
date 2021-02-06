@@ -1,332 +1,95 @@
-/*                     Elementos Comunes                 */
-body{
-    background: white;
-    font-family: 'Roboto', sans-serif;
+#servicios h2 {
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
-header{
-    background:royalblue;
-    color:darksalmon;
-    position: relative;
-    display: flex;
+.servicios {
+    display:list-item;
 }
 
-header::after{
-    content: '';
-    clear: both;
-    display: block;
+
+/*------------ Sección servicios--------------*/
+
+.servicios {
+    display:list-item;
 }
-h1 {
+
+.item {
+    display: grid;
+}
+
+.item img {
+    justify-self: center;
+}
+
+.p_gray {
+    color: gray;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
-h2 {
+
+/*------------ servicios Adicionales --------------*/
+
+.adicionales {
+    background-color: royalblue;
+}
+
+.adicionales h2 {
+    color: white;
+    padding-top: 50px;
+}
+
+.item2 h4 {
     font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-}
-p{
-    text-align: center;
-    padding-bottom: 2%;
-}
-table{
-    margin: auto;
-}
-h3 {
-    text-align: center;
-    text-transform: uppercase;
-}
-h4 {
-    text-align: center;
-}
-a {
-    text-decoration: underline;
-}
-
-tr {
-    border: 2px solid black;
-     
-}
-th {
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-}
-td {
-    padding: 1%;
-    text-align: center;
-    font-size: 15px;
-}
-
-/*---------------Barra de Navegacion-----------------*/
-.logo{
-    margin: 0;
-}
-.container{
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.site-nav{
-    right:0;
-    position: absolute;
-    background:royalblue;
-    clip-path: circle(0px at top right);
-    transition: clip-path ease-in-out 700ms;
-}
-.site-nav-open{
-    clip-path: circle(150% at top right); /* al hacer click se abre
-                                         de manera circular*/
-}
-.site-nav ul{
-    margin-top: 40px;
-    list-style: none;
-}
-.site-nav li{
-    border-bottom: 1px solid white;
-}
-.site-nav li:last-child{/* ponemos esto para que el ultimo 
-                           elemento no tenga borde*/
-    border-bottom: none;
-}
-.site-nav a{
     color: white;
-    display: block;
-    padding: 2em 6em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.site-nav a:hover,
-.site-nav a:focus{
-    color: darksalmon;
-}
-/* le damos forma a los iconos de dentro del menu*/
-.site-nav--icon{
-    display: inline-block;
-    font-size: 1.5em;
-    margin-right: 1em;
-    width: 1.1em;
-    text-align: right;
-    color:white;
+    margin: 5%;
+    margin-top: 0px;
 }
 
-/* ponemos las tres rayas para el menu*/
-.menu-toggle{
-    padding: 1em;
-    position: absolute;
-    top: .5em;
-    right: .5em;  
-    
-}
-/* Hacemos una animacion girando las lineas para que seas aspas*/
-.menu-open .hamburger{
-    transform: rotate(45deg);
-}
-.menu-open .hamburger::before{
-    opacity: 0;
-}
-.menu-open .hamburger::after{
-    transform: translateY(-3px) rotate(-90deg);
-}
-/*configuramos el css para hacer un icono de menu tipo hambuerguesa*/
-.hamburger,
-.hamburger::before,
-.hamburger::after{
-    content: '';
-    display: block;
-    background: white;
-    height: 3px;
-    width: 1.75em;
-    border-radius: 3px;
-    transition: all ease-in-out 500ms;
-}
-.hamburger::before{
-    transform: translateY(-6px);
-}
-.hamburger::after{
-    transform: translateY(3px);
+.item2 img {
+    justify-self: center;
 }
 
-/*----------------------------sobre nosotros------------------------*/
-
-.white{
-    color: white;
-    text-transform: uppercase;
-    padding-top: 10%;
-    text-align: center;
-
-}
-
-/*---------------------- Menú rápido -----------------*/
-#menu_rapido {
-    background-color:rgb(32, 52, 114); 
-}
-
-.icon {
-    width: 10%;
-    display: inline;
-    margin-left: 12%;     
-}
-.icon:hover {
-    -webkit-transform: scale(1.6); 
-    -moz-transform: scale(1.6);
-    -o-transform: scale(1.6);
-    transform: scale(1.6);
-}
-.enlaces {
-    margin-left:  2%;
-}
-
-.atajos {
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
-    padding-bottom: 100px;
-}
-.atajos:hover {
-    transition: 0.2s;
-    color: darksalmon;
-    text-decoration: underline;
-}
-.contactanos li {
-    color: white;
-    padding: 20px;
-    list-style: none;
-}
-.contactanos i {
-    padding-left: 10px;
-}
-
-.contactanos  a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10px;
-   
-}
-/*------------------------ Footer -----------------*/
-footer {
-  
-    background-color: rgb(27, 27, 92);
-}
 .p_white {
-    color: white;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.p_white a{
-    text-decoration: none;
     color: white;
+    margin: 5%;
 }
-.p_white a:hover{
-    color:darksalmon;
+
+/*------------ Otros  servicios --------------*/
+.otros {
+    display: list-item;
 }
+
+.item3 {
+    display: grid;
+}
+
+.item3 p {
+    text-align: center;
+}
+
+.item3 img {
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
-    .menu-toggle{
-        padding: 1em;
-        position: absolute;
-        top: .5em;
-        right: .5em;  
-    } 
-    .site-nav{
-        right:0;
-        position: absolute;
-        background:royalblue;
-        clip-path: circle(0px at top right);
-        transition: clip-path ease-in-out 700ms;
+  
     }
-    .site-nav-open{
-        clip-path: circle(150% at top right); /* al hacer click se abre
-                                             de manera circular*/
-    }
-    .site-nav ul{
-        margin-top: 40px;
-        list-style: none;
-    }
-    .site-nav li{
-        border-bottom: 1px solid white;
-    }
-    .site-nav li:last-child{/* ponemos esto para que el ultimo 
-                               elemento no tenga borde*/
-        border-bottom: none;
-    }
-    .site-nav a{
-        color: white;
-        display: block;
-        padding: 2em 6em;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-    .site-nav a:hover,
-    .site-nav a:focus{
-        color: darksalmon;
-    }
-    /* le damos forma a los iconos de dentro del menu*/
-    .site-nav--icon{
-        display: inline-block;
-        font-size: 1.5em;
-        margin-right: 1em;
-        width: 1.1em;
-        text-align: right;
-        color:white;
-    }
-
-    /*---------------------- Menú rápido -----------------*/
-#menu_rapido{
-    display: flex;
-}
-.icon{
-    width: 30px;
-    display: inline-block;
-    margin-left: 10%;
-    margin-right: 0%;     
-}
-.enlaces {
-    margin-left: 1%;
-}
-.contactanos li:hover {
-    color: darksalmon;   
-}
-.contactanos i {
-    padding-left: 10px;
-}
-.contactanos li a:hover {
-    color: darksalmon;
-}
-
-}
 
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
-    .menu-toggle{
-        display: none;
-    } 
-    .site-nav{
-        height: auto;
-        position: relative;
-        background: transparent;
-        float: right;
-        margin-right: 10px;
-        clip-path: initial;
-    } 
-    .site-nav li{
-        display: inline-block;
-        border: none;
-    }
-  
-    .site-nav a{
-        padding: 0;
-        margin-left: 3em;
-    }
-    .site-nav--icon{
-        display: none;
-    }
-    .site-nav a:hover,
-    .site-nav a:focus{
-        background: transparent;
-    }
+    
 }
 
 
