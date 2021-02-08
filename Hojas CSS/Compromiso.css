@@ -1,0 +1,52 @@
+/*-----------MOVILES-------------*/
+
+
+.div_filtrado {
+    list-style: none;
+    text-align: left;
+}
+
+img {
+    width: 100%;
+}
+
+.btn_residuos{
+	width: 20%;
+    height: 2.725rem;
+    transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
+    font-size: 20px;
+    border: 0.125rem solid royalblue;
+    border-radius: 0.25rem;
+    background-color: royalblue;
+	color: #fff;
+	text-decoration: none;
+    margin-left: 30%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.btn_residuos:hover { /* le decimos que cambie de color cuando pase por encima */
+    background-color: rgb(40, 85, 219);
+    border-color: rgb(40, 85, 219);
+}
+
+.btn_residuos:active{
+    background-color: blue;
+    border-color: blue;
+}
+
+
+/*-------PC----------*/
+@media only screen and (min-width: 1200px){
+
+    .div_filtrado {
+        list-style: none;
+        text-align: left;
+    }
+    
+    img {
+        width: 25%;
+    }
+
+
+}
