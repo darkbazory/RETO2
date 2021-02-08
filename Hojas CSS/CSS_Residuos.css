@@ -1,87 +1,119 @@
-/*Importamos las fuentes que vamos a usar*/
+ /*-------------------- VERSION MOVIL -------------------------------------*/
+ h2 {
+     text-align: center;
+     font-size: 20px;
+     text-transform: uppercase;
+ }
 
-@font-face {
-    font-family: 'Quicksand';
-    src: url(../Fuentes/Quicksand/Quicksand-SemiBold.ttf);
-    src: url(../Fuentes/Quicksand/Quicksand-Bold.ttf)
+ span {
+     color: black;
+ }
+ 
+.introduccion {
+    display: grid;
 }
 
-/* elementos comunes en toda la página */
-h1{
-    font-size: 36px;
+.grid_1 {
+    justify-self: center;
+}
+
+.p_intro {
+    color: gray;
+    width: 300px;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 2%;
 }
 
-h3{
-    font-size: 25px;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    color: red;
+.img_intro {
+    justify-self: center;
+    width: 300px;
+}
+ 
+ /*--------- Residuos taller -----------*/
+
+ .residuos_taller {
+    background-color: royalblue;
+    display: grid;
 }
 
-p{
-    font-family: "Quicksand-Bold" ;
-    font-size: 21px;
+.residuos_taller h2 {
+    color: white;
 }
 
-/* elementos con clase */
-.p_final{
-    padding-top: 2%;
+.residuos_taller p {
+    color: white;
+    width: 300px;
+    justify-self: center;
 }
 
-.contenedor{
-    width: 60%;
-    font-family: 'Quicksand';
+.li_re {
+    width: 280px;
+    justify-self: center;
+    color: white;
 }
 
-/* imagen introduccion */
-.img_intro{
-    display: block; /* añadimos un display block para hacer
-                     que el comportamiento del elemento sea como un bloque. */
-    align-items: center; /* lo alineamos en el centro */
-    width: 500px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+.imagen {
+    display: grid;
+    margin-bottom: 40px;
 }
 
-/* imagenes de tipos de residuos*/
-.img_residuos{
-    display: block; /* añadimos un display block para hacer
-                     que el comportamiento del elemento sea como un bloque. */
-    align-items: center; /* lo alineamos en el centro */
-    padding-top: 3%;
-    padding-bottom: 3%;
+.img_residuos {
+    width: 300px;
+    justify-self: center;
 }
 
-/* hacemos bloque el contenedor de las listas */
-.ul_left{
-    display: block;
-    padding-left: 5%;
-    
+/*------------Normativa---------*/
+.normativa {
+    display: grid;
 }
 
-/* ponemos estilo a la lista */
-.li_re{
-    font-family: "Quicksand-Bold" ;
-    font-size: 20px;
-    list-style: disc;
-    padding-top: 1%;
-    padding-top: 1%;
+.normativa p {
+    justify-self: center;
+    width: 300px;
+    color: gray;
 }
- /* CSS enlaces */
+.ul_nor {
+    width: 280px;
+    color: gray;
+}
+
 .a_color{ /*le damos color a los enlaces */
     text-decoration: none;
-    color: rgb(11, 214, 194);  
+    color:royalblue;  
 }
+
+.a_color:hover {
+    color: darksalmon;
+    text-decoration: underline;
+}
+ 
+ 
+ /*----------- Obligaciones ----------*/
+.obligaciones {
+    background-color: royalblue;
+    display: grid;
+}
+
+.obligaciones h2 {
+    color: white;
+}
+
+.obligaciones p {
+    color: white;
+    width: 300px;
+    justify-self: center;
+}
+
+/*-------- Tipo Residuos --------*/
+
+.tipos {
+    display: grid;
+}
+
+.tl_residuos {
+    justify-self: center;
+}
+ 
 /* CSS Tabla distintos residuos */
-
-.tl_residuos{
-    width: 80%;
-}
-
 .tl_residuos th{ /* le damos un estilo a la cabecera para diferenciar del cuerpo */
     padding: 5px;
     font-size: 16px;
@@ -119,3 +151,19 @@ p{
     border-right-color: #A4C4D0;
     border-bottom-color: #A4C4D0;
     }
+
+
+/*-------------------------------------------version tablet------------------------------------*/
+@media (min-width:600px){
+
+    
+
+
+
+}
+
+/*-----------------------------------------------------------Versión Web-------------------------------------------------------*/
+@media only screen and (min-width:1200px){
+
+
+}
