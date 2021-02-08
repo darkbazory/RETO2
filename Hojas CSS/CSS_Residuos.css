@@ -53,6 +53,7 @@
 
 .imagen {
     display: grid;
+    justify-content: center;
     margin-bottom: 40px;
 }
 
@@ -156,9 +157,26 @@
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
 
-    
+    .introduccion {
+        display: grid;
+        grid-template-areas: "a b";
+    }
 
+    .grid_1 {
+        grid-area: a;
+    }
 
+    .imagen {
+        grid-area: b;
+    }
+
+    .img_intro {
+        margin-top: 70px;
+    }
+
+    .p_intro {
+        text-align: left;
+    }
 
 }
 
