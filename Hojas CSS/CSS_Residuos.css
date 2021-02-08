@@ -23,12 +23,18 @@
     text-align: center;
 }
 
+.imagen {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
 .img_intro {
     justify-self: center;
     width: 300px;
 }
  
- /*--------- Residuos taller -----------*/
+/*--------- Residuos taller -----------*/
 
  .residuos_taller {
     background-color: royalblue;
@@ -39,10 +45,18 @@
     color: white;
 }
 
+.re_solidos {
+    display: grid;
+}
+
 .residuos_taller p {
     color: white;
     width: 300px;
     justify-self: center;
+}
+
+.re_ambientales {
+    display: grid;
 }
 
 .li_re {
@@ -51,15 +65,10 @@
     color: white;
 }
 
-.imagen {
-    display: grid;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
 .img_residuos {
     width: 300px;
     justify-self: center;
+    margin-bottom: 30px;
 }
 
 /*------------Normativa---------*/
@@ -94,12 +103,21 @@
     display: grid;
 }
 
+.area1 {
+    display: grid;
+}
+
 .obligaciones h2 {
     color: white;
 }
 
-.obligaciones p {
+.area1 p {
     color: white;
+    width: 300px;
+    justify-self: center;
+}
+
+.img_res {
     width: 300px;
     justify-self: center;
 }
@@ -178,10 +196,108 @@
         text-align: left;
     }
 
+ /*--------- Residuos taller -----------*/
+    .residuos_taller {
+        grid-template-areas: "h2 h2"
+                             "a b"
+                             "c c" ;
+    }
+
+    .residuos_taller h2{
+        grid-area: h2;
+    }
+
+    .re_solidos {
+        grid-area: a;
+    }
+
+    .re_ambientales {
+        grid-area: b;
+    }
+     .img_residuos {
+         grid-area: c;
+         width: 600px;
+    }
+
+/*--------- Normativa -----------*/
+    .normativa p{
+        width: 650px;
+    }
+
+    .ul_nor {
+        width: 650px;
+    }
+
+/*--------- Obligaciones--------*/
+
+    .obligaciones {
+        grid-template-areas: "h2 h2"
+                              "a  b"  ;
+    }
+
+    .obligaciones h2 {
+        grid-area: h2;
+    }
+
+    .area1 {
+        grid-area: a;
+    }
+
+    .area2 {
+        grid-area: b;
+    }
+
+    .img_res {
+        margin-bottom: 40px;
+    }
+
 }
 
 /*-----------------------------------------------------------Versión Web-------------------------------------------------------*/
 @media only screen and (min-width:1200px){
+
+    .tl_residuos {
+        width: 1000px;
+    }
+
+/*--------- Seccion taller --------*/
+    .residuos_taller {
+        grid-template-areas: none;
+    }
+
+    .re_solidos {
+        display: block;
+    }
+
+    .re_solidos p{
+        width: 1000px;
+        
+    }
+
+    .re_ambientales {
+        grid: ;
+    }
+
+    .re_ambientales p {
+        width: 1000px;
+    }
+
+    .li_re {
+        width: 1000px;
+    }
+
+    
+
+
+/*--------- Normativa -----------*/
+    .normativa p{
+        width: 1000px;
+    }
+
+    .ul_nor {
+        width: 1000px;
+        justify-self: center;
+    }
 
 
 }
