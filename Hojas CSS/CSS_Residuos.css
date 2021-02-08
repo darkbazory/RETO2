@@ -264,8 +264,19 @@
         display: list-item;
     }
 
+    .grid_1 {
+        display: grid;
+    }
+
     .p_intro {
         width: 1000px;
+        justify-self: center;
+    }
+
+    .img_intro {
+        width: 600px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
 /*--------- Residuos taller --------*/
@@ -274,14 +285,22 @@
         display: list-item;
     }
 
-    .re_solidos p{
+    .re_solidos {
         display: grid;
+    }
+
+    .re_solidos p{
+        justify-self: center;
         width: 1000px; 
     }
 
     .re_ambientales p {
         width: 1000px;
         
+    }
+
+    .ul_re {
+        display: grid;
     }
 
     .li_re {
