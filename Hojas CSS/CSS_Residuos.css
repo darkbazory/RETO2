@@ -260,30 +260,37 @@
         width: 1000px;
     }
 
-/*--------- Seccion taller --------*/
-    .residuos_taller {
-        grid-template-areas: none;
+    .introduccion {
+        display: list-item;
     }
 
-    .re_solidos {
-        display: block;
+    .p_intro {
+        width: 1000px;
+    }
+
+/*--------- Residuos taller --------*/
+    .residuos_taller {
+        grid-template-areas: none;
+        display: list-item;
     }
 
     .re_solidos p{
-        width: 1000px;
-        
-    }
-
-    .re_ambientales {
-        grid: ;
+        display: grid;
+        width: 1000px; 
     }
 
     .re_ambientales p {
         width: 1000px;
+        
     }
 
     .li_re {
         width: 1000px;
+        justify-self: center;
+    }
+
+    .img_residuos {
+        justify-self: center;
     }
 
     
@@ -298,6 +305,26 @@
         width: 1000px;
         justify-self: center;
     }
+
+/*-------- Obligaciones -----------*/
+
+    .obligaciones {
+        grid-template-areas: none;
+        
+    }
+
+    .obligaciones p {
+        width: 800px;
+    }
+    .area1 {
+        display: inline-block;
+    }
+
+    .area2 {
+        display: inline-block;
+    }
+
+
 
 
 }
