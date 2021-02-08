@@ -1,25 +1,214 @@
-
-/* seccion sobre nosotros*/
-.nosotros{ 
-    text-align: left;
-    display:block; /* El valor inline-flex hace que el contenedor flexible 
-                         sea un elemento "en línea" dentro del elemento "padre" al que pertenezca.
-                        Nota: Cuando utilices un prefijo para el tipo de navegador, ponlo en la 
-                        propiedad "display" no en el atributo "display". */
-    width: 100%;
+ /*-------------------- VERSION MOVIL -------------------------------------*/
+ 
+ /*---------------------- inicio -----------------*/
+#nosotros {
+    display: grid;
 }
-    #div_nosotros{
-        width: 60%; /* Le damos tamaño al div para centrarlo */
+
+.nosotros h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0%;
+    margin-top: 40px;
+}
+
+.nosotros h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+ .p_historia {
+    color: gray;
+    text-align: center;
+}
+
+ .imagen {
+    display: grid;
+    margin-bottom: 70px;
+}
+
+ .img_nosotros {
+    width: 300px;
+    justify-self: center;
+}
+
+/*------------------ Diferencias------------------*/
+
+.diferencias {
+    background-color: royalblue;
+    display: list-item;
+}
+
+.diferencias h2 {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.item1, .item2, .item3, .item4 {
+    display: grid;
+
+}
+
+.item1 img, .item2 img, .item3 img, .item4 img {
+    justify-self: center;
+}
+
+.item1 h4, .item2 h4, .item3 h4, .item4 h4 {
+    justify-self: center;
+    color: white;
+}
+
+.p_item {
+    justify-self: center;
+    color: white;
+    text-align: center;
+    width: 300px;
+}
+
+/*------------ Nuestro Equipo------------*/
+
+#equipo h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.trabajador1 {
+    display: grid;
+    margin: 5%;
+    background-color:whitesmoke;
+}
+
+.trabajador2 {
+    display: grid;
+    margin: 5%;
+    background-color:whitesmoke;
+
+}
+
+.img_equipo {
+    justify-self: center;
+    padding-top: 30px;
+    width: 165px;
+    height: 150px;
+}
+
+.gray{
+    color: gray;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+ /*-------------------------------------------version tablet------------------------------------*/
+@media (min-width:600px){
+  
+    .nosotros {
+        display: grid;
+        grid-template-areas:    "h1 h1"
+                                "a b";
     }
 
-.h_nosotros {
-    text-align: left;
+    .nosotros h1 {
+        grid-area: h1;
+    }
+
+    .historia {
+        grid-area: a;
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+
+    .imagen {
+        grid-area: b;  
+    }
+
+    .img_nosotros {
+        width: 400px;
+        margin-top: 100px;
+    }
+
+/*------------- Diferencias----------------------*/
+
+    .diferencias h2{
+        margin-top: 50px;
+    }
+
+    .padre {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item1, .item2, .item3, .item4 {
+        margin-top: 30px;
+    }
+
+    .item3, .item4 {
+        margin-bottom: 50px;
+    }
+
+    /*-------------- Equipo -------------------*/
+    
+    .contenedor_trabajadores {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-p {
-    text-align: left;
-}
-.personal {
-    display: flex;
-    flex-direction: column;
-    direction: ltr;
+
+/*-------------------------------Versión Web-------------------------------------*/
+@media only screen and (min-width:1200px){
+    
+/*--------------------------inicio----------------------------------*/
+
+    .nosotros {
+        justify-content: center;
+    }
+
+    .historia {
+        width: 600px;
+    }
+
+    .p_historia {
+        text-align: left;
+    }
+
+    .img_nosotros {
+        width: 600px;
+        margin-left: 150px;
+    }
+   
+/*------------- Diferencias---------------------*/   
+
+    .padre {
+        justify-content: center;
+        grid-template-columns: repeat(4, 300px);
+        column-gap: 20px; /* le ponemos espacio entre las columnas*/
+        
+    }
+
+    .item1, .item2, .item3, .item4 {
+        height: 302px;
+        
+    }
+
+    .p_item {
+        height: 95px;
+    }
+
+/*----------- Nuestro equipo --------------*/
+    .contenedor_trabajadores {
+        justify-content: center;
+        grid-template-columns: repeat(4, 300px);
+        column-gap: 20px;
+    }
+
+    
+  
+
+
+  
+
+
+
 }
