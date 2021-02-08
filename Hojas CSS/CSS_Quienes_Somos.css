@@ -150,25 +150,53 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-  
-
 }
-
-
-
-
-
-
-
-
-
 
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     
-    /*--------------------------inicio----------------------------------*/
+/*--------------------------inicio----------------------------------*/
+
+    .nosotros {
+        justify-content: center;
+    }
+
+    .historia {
+        width: 600px;
+    }
+
+    .p_historia {
+        text-align: left;
+    }
+
+    .img_nosotros {
+        width: 600px;
+        margin-left: 150px;
+    }
    
-   
+/*------------- Diferencias---------------------*/   
+
+    .padre {
+        justify-content: center;
+        grid-template-columns: repeat(4, 300px);
+        column-gap: 20px; /* le ponemos espacio entre las columnas*/
+        
+    }
+
+    .item1, .item2, .item3, .item4 {
+        height: 302px;
+        
+    }
+
+    .p_item {
+        height: 95px;
+    }
+
+    
+  
+
+
+  
 
 
 
