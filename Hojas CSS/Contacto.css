@@ -1,125 +1,4 @@
-/*-------------MOVILES-----------*/
 
-
-    /*                     Elementos Comunes                 */
-    body{
-        background: white;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    header{
-        background:royalblue;
-        color:darkorange;
-        position: relative;
-        display: flex;
-    }
-    
-    header::after{
-        content: '';
-        clear: both;
-        display: block;
-    }
-    
-    p{
-        text-align: center;
-                    -bottom: 2%;
-    }
-    table{
-        margin: auto;
-    }
-
-    #h_mapa {
-        text-align: left;
-        text-transform: uppercase;
-    }
-    /*------------------Barra de Navegacion--------------------------------*/
-    .logo{
-        margin: 0;
-    }
-    .container{
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    
-    .site-nav{
-        right:0;
-        position: absolute;
-        background:royalblue;
-        clip-path: circle(0px at top right);
-        transition: clip-path ease-in-out 700ms;
-    }
-    .site-nav-open{
-        clip-path: circle(150% at top right); /* al hacer click se abre
-                                             de manera circular*/
-    }
-    .site-nav ul{
-        margin-top: 40px;
-        list-style: none;
-    }
-    .site-nav li{
-        border-bottom: 1px solid white;
-    }
-    .site-nav li:last-child{/* ponemos esto para que el ultimo 
-                               elemento no tenga borde*/
-        border-bottom: none;
-    }
-    .site-nav a{
-        color: white;
-        display: block;
-        padding: 2em 6em;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-    .site-nav a:hover,
-    .site-nav a:focus{
-        color: darkorange;
-    }
-    /* le damos forma a los iconos de dentro del menu*/
-    .site-nav--icon{
-        display: inline-block;
-        font-size: 1.5em;
-        margin-right: 1em;
-        width: 1.1em;
-        text-align: right;
-        color:white;
-    }
-    
-    .menu-toggle{
-        padding: 1em;
-        position: absolute;
-        top: .5em;
-        right: .5em;  
-        
-    }
-    /* Hacemos una animacion girando las lineas para que seas aspas*/
-    .menu-open .hamburger{
-        transform: rotate(45deg);
-    }
-    .menu-open .hamburger::before{
-        opacity: 0;
-    }
-    .menu-open .hamburger::after{
-        transform: translateY(-3px) rotate(-90deg);
-    }
-    /*configuramos el css para hacer un icono de menu tipo hambuerguesa*/
-    .hamburger,
-    .hamburger::before,
-    .hamburger::after{
-        content: '';
-        display: block;
-        background: white;
-        height: 3px;
-        width: 1.75em;
-        border-radius: 3px;
-        transition: all ease-in-out 500ms;
-    }
-    .hamburger::before{
-        transform: translateY(-6px);
-    }
-    .hamburger::after{
-        transform: translateY(3px);
-    }
     
     /*------------------------------formulario--------------------------------------*/
     
@@ -283,7 +162,132 @@
     
     }
     
+
+/*------------TABLET-----------*/
+@media only screen and (min-width: 600px){
+
+
+ 
     
+    
+    /*------------------------------formulario--------------------------------------*/
+    
+            
+            
+    .contenedor2 {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        border-radius: 4px;
+        
+    }
+    
+    .contacto {
+        width: 80%;
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    input[type="text"], select {
+        width: 75%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+    
+    input[type="tel"], select {
+        width: 75%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="email"], select {
+        width: 75%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+    
+    input[type=submit] {
+        width: 15%;
+        background-color: royalblue;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: rgb(40, 85, 219);
+    }
+    
+    input[type=submit]:active {
+        background-color: blue;
+    }
+    
+    textarea, select {
+        width: 75%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="range"], select {
+        width: 50%;
+    
+    }
+
+    input[type="date"], select {
+        width: 25%;
+        padding: 12px 20px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+    
+    /*mapa*/
+    
+    
+    #contenedor3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    }
+    
+    iframe {
+    
+    height: 25em;
+    width: 40em;
+    }
+    
+    }
+    
+       
     
     
 
@@ -295,71 +299,9 @@
 @media only screen and (min-width: 1200px){
 
 
-/*-----------------------Barra de Navegacion--------------------------------*/
-
-/* 
-.menu-toggle{
-    display: none;
-} 
-.site-nav{
-    height: auto;
-    position: relative;
-    background: transparent;
-    float: right;
-    margin-right: 10px;
-    clip-path: initial;
-}  */
-.site-nav li{
-    display: inline-block;
-    border: none;
-}
-
-.site-nav a{
-    padding: 0;
-    margin-left: 3em;
-}
-.site-nav--icon{
-    display: none;
-}
-.site-nav a:hover,
-.site-nav a:focus{
-    background: transparent;
-}
 
 
 
-
-
-/*                     Elementos Comunes                 */
-body{
-    background: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-header{
-    background:royalblue;
-    color:darkorange;
-    position: relative;
-    display: flex;
-}
-
-header::after{
-    content: '';
-    clear: both;
-    display: block;
-}
-
-p{
-    text-align: center;
-                -bottom: 2%;
-}
-table{
-    margin: auto;
-}
-h3 {
-    text-align: center;
-    text-transform: uppercase;
-}
 
 
 /*------------------------------formulario--------------------------------------*/
@@ -506,193 +448,4 @@ width: 50em;
 
 
 
-/*------------TABLET-----------*/
-@media only screen and (min-width: 768px){
-
-
-    /*-----------------------Barra de Navegacion--------------------------------*/
-    
-    
-    .menu-toggle{
-        display: none;
-    } 
-    .site-nav{
-        height: auto;
-        position: relative;
-        background: transparent;
-        float: right;
-        margin-right: 10px;
-        clip-path: initial;
-    } 
-    .site-nav li{
-        display: inline-block;
-        border: none;
-    }
-    
-    .site-nav a{
-        padding: 0;
-        margin-left: 3em;
-    }
-    .site-nav--icon{
-        display: none;
-    }
-    .site-nav a:hover,
-    .site-nav a:focus{
-        background: transparent;
-    }
-    
-    
-    
-    
-    
-    /*                     Elementos Comunes                 */
-    body{
-        background: white;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    header{
-        background:royalblue;
-        color:darkorange;
-        position: relative;
-        display: flex;
-    }
-    
-    header::after{
-        content: '';
-        clear: both;
-        display: block;
-    }
-  
-    p{
-        text-align: center;
-                    -bottom: 2%;
-    }
-    table{
-        margin: auto;
-    }
-    h3 {
-        text-align: center;
-        text-transform: uppercase;
-    }
-    
-    
-    /*------------------------------formulario--------------------------------------*/
-    
-            
-            
-    .contenedor2 {
-        width: 100%;
-        margin-top: 10px;
-        display: flex;
-        border-radius: 4px;
-        
-    }
-    
-    .contacto {
-        width: 80%;
-        display: inline-block;
-        display: flex;
-        flex-direction: column;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    input[type="text"], select {
-        width: 75%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    
-    }
-    
-    input[type="tel"], select {
-        width: 75%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    
-    input[type="email"], select {
-        width: 75%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    
-    }
-    
-    input[type=submit] {
-        width: 15%;
-        background-color: royalblue;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    
-    input[type=submit]:hover {
-        background-color: rgb(40, 85, 219);
-    }
-    
-    input[type=submit]:active {
-        background-color: blue;
-    }
-    
-    textarea, select {
-        width: 75%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    
-    input[type="range"], select {
-        width: 50%;
-    
-    }
-
-    input[type="date"], select {
-        width: 25%;
-        padding: 12px 20px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    
-    }
-    
-    /*mapa*/
-    
-    
-    #contenedor3 {
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    }
-    
-    iframe {
-    
-    height: 25em;
-    width: 40em;
-    }
-    
-    }
-    
-    
     
