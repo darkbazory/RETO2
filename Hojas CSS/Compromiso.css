@@ -1,5 +1,8 @@
 /*-----------MOVILES-------------*/
 
+.contenedor {
+    margin-bottom: 4em;
+}
 
 .div_filtrado {
     list-style: none;
@@ -35,6 +38,28 @@ img {
     border-color: blue;
 }
 
+/*-------TABLET----------*/
+@media only screen and (min-width: 768px){
+
+    img {
+        width: 80%;
+        margin-left: 0%;
+    }
+
+    .contenedor {
+        margin-left: 15%;
+        margin-right: 10%;
+        margin-bottom: 4em;
+    }
+
+    .btn_residuos{
+        margin-left: 5%;
+    }
+    .txt_filtrado {
+        font-size: 20px;
+        text-align: left;
+    }
+}
 
 /*-------PC----------*/
 @media only screen and (min-width: 1200px){
@@ -75,25 +100,3 @@ img {
     }
 }
 
-/*-------TABLET----------*/
-@media only screen and (min-width: 768px){
-
-    img {
-        width: 80%;
-        margin-left: 0%;
-    }
-
-    .contenedor {
-        margin-left: 15%;
-        margin-right: 10%;
-        margin-bottom: 4em;
-    }
-
-    .btn_residuos{
-        margin-left: 5%;
-    }
-    .txt_filtrado {
-        font-size: 20px;
-        text-align: left;
-    }
-}
