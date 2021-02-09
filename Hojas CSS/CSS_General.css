@@ -142,7 +142,7 @@ h4 {
     transform: translateY(3px);
 }
 
-/*----------------------Footer- Menú rápido -----------------*/
+/*----------------------Footer- Menú rápido Movil -----------------*/
 
 footer {
     background-color: rgb(27, 27, 92);
@@ -152,21 +152,15 @@ footer {
     background-color:rgb(32, 52, 114);
 }
 
-#menu_rapido a {
-    text-decoration: none;
+#menu_rapido h2{
+    margin: 0px;
+    padding-top: 15px;
+    text-transform: uppercase;
     color: white;
 }
 
-#menu_rapido a:hover {
-    text-decoration: underline;
-    color:darksalmon;
-}
-
-.footer {
-    margin: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-transform: uppercase;
+.re_sociales {
+    text-decoration: none;
     color: white;
 }
 
@@ -176,11 +170,6 @@ footer {
     padding-bottom: 20px;
 }
 
-.parrafo_footer a {
-    text-decoration: none;
-    color: white;
-}
-
 .icon {
     width: 10%;
     display: inline;
@@ -188,41 +177,64 @@ footer {
 }
 
 .icon:hover {
-    -webkit-transform: scale(1.6); 
+  /*  -webkit-transform: scale(1.6); 
     -moz-transform: scale(1.6);
-    -o-transform: scale(1.6);
+    -o-transform: scale(1.6);*/
     transform: scale(1.6);
+}
+
+.enlaces h2{
+    padding-bottom: 20px;
 }
 
 .grid_footer{
     display: grid;
-    grid-template-columns:150px 150px;
-    grid-template-rows: 40px 40px;
-    margin-left: 40px;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10px;
+    
+}
+
+.grid_footer div {
+    justify-self: center;
 }
 
 .grid_footer a{
     text-transform: uppercase;
     margin: 10px;
+    text-decoration: none;
+    color: white;
 }
 
+.grid_footer a:hover{
+    text-decoration: underline;
+    color: darksalmon;
+}
 
+.color {
+    text-decoration: none;
+    color: white;
+}
 
 .color:hover {
     color: darksalmon;
 }
    
-.contactanos ul {
+.grid_li {
     color: white;
+    display: grid;
 }
 
-.contactanos li {
+.grid_li li {
+    width: 300px;
     list-style: none;
+    
+    gap: 10px;
 }
 
-.contactanos i {
+.grid_li i {
     padding: 10px;
 }
+
 
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
@@ -233,44 +245,28 @@ footer {
    
    /*----------------------Footer- Menú rápido -----------------*/ 
 
-    #menu_rapido {
-        display: grid;
-        grid-template-areas: "redes enlaces"
-                             " contactanos contactanos";
-    }
+   #menu_rapido {
+       display: grid;
+       grid-template-areas: "a b"
+                            "c c";
+   }
 
-    #menu_rapido a:hover {
-        text-decoration: underline;
-        color:darksalmon;
-    }
+   .icon {
+       width: 8%;
+   }
 
-    .redes {
-        grid-area: redes;
-    }
+   .redes {
+       grid-area: a;
+   }
+   .enlaces {
+       grid-area: b;
+   }
+   .contactanos {
+       grid-area: c;
+       justify-self: center;
+   }
 
-    .enlaces {
-        grid-area: enlaces;
-    }
-
-    .contactanos {
-        grid-area: contactanos;
-    }
-
-    .redes p {
-        margin-top: 0px;
-    }
-
-    .contactanos li {
-        margin-left: 200px;
-    }
-
-    .grid_footer {
-        margin: 0px;
-    }
-
-    .grid_footer a{
-        margin-left: 20px;
-    }
+  
 }
 
 /*-------------------------------Versión Web-------------------------------------*/
@@ -309,44 +305,11 @@ footer {
     }
 
     /*----------------------Footer- Menú rápido -----------------*/ 
-
     #menu_rapido {
-        grid-template-areas: "redes enlaces contactanos";
+        width: 100%;
+                    
     }
 
-    #menu_rapido a:hover {
-        text-decoration: underline;
-        color:darksalmon;
-    }
-
-    .icon {
-        width: 5%;
-        margin-left: 12%;     
-    }
-
-    .redes {
-        width: 600px;
-    }
     
-    .enlaces {
-        width: 600px;
-    }
-
-    .grid_footer a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 225px;
-    }
-
-    .contactanos li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-    }
-
-    .parrafo_footer {
-        padding-bottom: 15px;
-    }
+   
 }
