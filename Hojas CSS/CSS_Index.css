@@ -370,6 +370,19 @@ span{
         font-size: 25px;
     }
 
+    .contenedor_trabajadores {
+        display: grid;
+        grid-template-areas: "a b"
+                            "c d";
+       
+    }
+
+    .trabajador {
+        width: 30vw;
+    }
+
+}
+
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     
