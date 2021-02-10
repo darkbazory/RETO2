@@ -272,6 +272,10 @@ footer {
 /*-------------------------------Versión Web-------------------------------------*/
 
 @media only screen and (min-width:1200px){
+    .container {
+        width: 10vw;
+    }
+
     .menu-toggle{
         display:none ;
     } 
@@ -281,8 +285,9 @@ footer {
         position: relative;
         background: transparent;
         float: right;
-        margin-right: 10px;
+        margin-right: 1em;
         clip-path: initial;
+        margin-top: 1.7em;
     } 
 
     .site-nav li{
