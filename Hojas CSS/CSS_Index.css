@@ -13,7 +13,7 @@ body > div{
 .texto1{
     text-align: center;
     padding:  5%;
-    font-size: 15px;
+    font-size: 15px; /*todos los tamaños de texto van fijos en px para mantener la uniformidad*/
     text-transform: uppercase; /*trasformamos en mayusculas*/
     color: white;
 }
@@ -31,12 +31,12 @@ body > div > a{
 
 .btn_cita{
     position: absolute;
-    margin-left: 100px;
-    margin-top: 195px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 27%;
+    margin-top: 30%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
     font-size: 20px;
@@ -80,9 +80,29 @@ span{
 #servicios h2{
     text-transform: uppercase;
 } 
+
 .iconos {
-    margin-left: auto;
-    margin-right: auto;
+    display: grid; /*utilizamos grid para poder centrar todos los elementos*/
+}
+
+.item {
+    display: grid;
+    width: 50vw;
+    justify-self: center;
+}
+
+.item img {
+    justify-self: center;
+}
+
+.imagen {
+    display: grid;
+}
+
+.img_web {
+    justify-self: center;
+    width: 70vw; /* ponemos la imagen en "Viewport width" para que 
+                varie el tamaño según el dispositivo*/
 }
 
 .parrafo_gris {
@@ -91,21 +111,21 @@ span{
     text-align: center;
 }
 
-.item img {
-    display: block;
-    margin: auto;
-}
-
 .item p {
     text-align: center;
 }
 
+.boton {
+    display: grid;
+}
+
 .btn_servicios{
-    margin-left: 25%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-self: center;
+    padding-top: 0.5em; /*ponemos esta medida ya que es responsive*/
+    padding-bottom: 0.5em; /* 1em equivaldria a 20px */
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 2em;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
     font-size: 20px;
@@ -121,50 +141,49 @@ span{
     color: white;
 }
 
-.img_web {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-bottom: 20px;
-    width: 300px
-}
-
 /*------------ Sobre Nosotros---------------*/
 #nosotros{
-    background-color: royalblue;
+    background-color: royalblue; /*le damos un color de fondo a la sección*/
+    display: grid;
 }
 
-.white{
+#nosotros h2, #nosotros h3{
     color: white;
     text-transform: uppercase;
-    padding-top: 10%;
+    padding-top: 0.5em;
     text-align: center;
+    justify-self: center;
 }
 
-.historia h3 {
-    color: white;
+.contenedor {
+    display: grid;
+}
+
+.historia {
+    display: grid;
+    justify-self: center;
 }
 
 .parrafo_nosotros{
-    text-align: center;
+    text-align: justify;
     color: white;
-    padding-bottom: 5%;
-    margin: 0px;
-
-
+    width: 80vw;
 }
 
 .btn_saber{
-    margin-left: 30%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-self: center;
+    padding-top: 0.5em; /*ponemos esta medida ya que es responsive*/
+    padding-bottom: 0.5em; /* 1em equivaldria a 20px */
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: em;
+    margin-bottom: 2em;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
     font-size: 20px;
     border: 2px solid white;
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
@@ -173,55 +192,66 @@ span{
     color:white;
 }
 
-.sede{
-    margin: 5%;
-    padding: 10%;
+.opiniones{
+    justify-self: center;
+    width: 80vw;
     background-color:cornflowerblue;
     display: grid;
+    margin-bottom: 2em;
 }
 
-/*--------------opiniones----------------------*/
+.opiniones p {
+    width: 60vw;
+    justify-self: center;
+    color: white;
+}
 
-.opiniones{
-    width: 60%;
+.img_op{
+    width: 35%;
+    margin-top: 1em;
     border-radius: 50%;
     align-self: center;
     justify-self: center;
 }
 
 /*-------------- Equipo -------------------*/
-
-.trabajador1 {
-    margin: 5%;
-    background-color:whitesmoke;
+.equipo h2 {
+    text-transform: uppercase;
 }
 
-.trabajador2 {
-    margin: 5%;
-    background-color:whitesmoke;
+.contenedor_trabajadores {
+    display: grid;
+}
 
+.trabajador {
+    display: grid;
+    width: 80vw;
+    margin: 5%;
+    background-color: whitesmoke;
+    justify-self: center;
 }
 
 .img_equipo {
-    margin-left: 25%;
-    padding-top: 30px;
+  justify-self: center;
+  margin-top: 1em;
 }
 
 .gray{
     color: gray;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 0.5em;
 }
 
 /*------------------------- Mapa--------------------*/
-
-.i_mapa{
-    width:300px;
-    height:300px; 
-    border: style 0;  
+.container_map {
+    margin: 00.5em;
+    width: 90vw;
+    height: 50vh;
 }
-
-
+.i_mapa {
+    width: 100%;
+    height: 100%;
+}
 
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
@@ -232,22 +262,20 @@ span{
     }
 
     .inicio {
+        display: grid;
         width: 100%;
         margin: 0px;
         padding: 0px;
     }
 
-    .texto1{
-        text-align: justify;
-        padding:  1%;
-        padding-top: 100px;
-        margin-left: 50px;
-        font-size: 15px;
+    .texto1 {
+        padding: 1%;
+        padding-top: 10em;
     }
 
     .texto2 {
-        margin: 0px;
-        padding: 0px;
+        justify-self: center;
+        padding: 1%;
     }
 
     body > div > a{
@@ -255,7 +283,7 @@ span{
     }
 
     .btn_cita{
-        margin-top: 200px;
+        margin-top: 8em;
         margin-left: 45%;
     }
 
@@ -371,10 +399,7 @@ span{
     }
 
 /*------------------------- Mapa--------------------*/
-    .i_mapa{
-        width:1024px;
-        height:400px;  
-    }
+  
 
 }
 /*-------------------------------Versión Web-------------------------------------*/
@@ -535,10 +560,7 @@ span{
     }
 /*------------------------- Mapa--------------------*/
 
-    .i_mapa{
-        width: 1900px;
-        height: 500px;
-    }
+   
 
     
 }
