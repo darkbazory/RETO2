@@ -160,7 +160,6 @@ span{
 }
 
 .historia {
-    display: grid;
     justify-self: center;
 }
 
@@ -168,6 +167,10 @@ span{
     text-align: justify;
     color: white;
     width: 80vw;
+}
+
+.tablet {
+    display: grid;
 }
 
 .btn_saber{
@@ -296,79 +299,69 @@ span{
     }
  
  /*----------------------servicios---------------------------*/
-
-    .img_web{
-        margin-top: 0%;
-        margin-left: 10%;
-        width:600px;
-    }
-
     .iconos {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        width: 70%;
+        grid-template-areas: "a b c"
+                            "d e f";
+        justify-content: center; 
     }
 
-    .parrafo_gris {
-        font-size: 20px;
-    }
- 
     .item {
-        padding: 20px;
-        text-align: center;
+        width: 40vw;
     }
 
-    .boton {
-        height: 80px;
+    .img_web {
+        width: 50vw;
     }
-
-    .btn_servicios {
-        margin-left: 40%;
-    }
+  
  
  /*----------------------------sobre nosotros------------------------*/
- 
-    .white{
-        padding-top: 15px;
-        font-size: 25px;
+    .contenedor {
+        width: 90vw;
     }
 
-    .historia h3 {
-        text-align: left;
-        padding-left: 30px;
+
+    .historia {
+        display: grid;
+        grid-template-columns: repeat(2,1fr );  
     }
 
     .parrafo_nosotros {
-        text-align: left;
-        margin-left: 30px;
-        margin-bottom: 30px;
+        width: 30vw;
+        margin-left: 2em;
     }
 
     .btn_saber {
-        margin-left: 40%;
+        justify-self: left;
+        margin-left: 4em;
     }
-
-    .sede {
-        grid-template-areas: "opiniones nombre"
-        "parrafo_nosotros parrafo_nosotros";
-    }
-
+ 
     .opiniones {
-        grid-area: opiniones;
-        width: 100px;
-        justify-self: start;
+        float: right;
+        display: grid; 
+        grid-template-areas: "a nombre"
+                            "c c";
+        justify-content: center; 
+        width: 50vw; 
+        height: 35vh;
+        margin-top: 4em;                 
+    }
+    .opiniones p {
+        width: 35vw;
     }
 
     #nombre {
-        grid-area: nombre;
-        justify-self: start;
+        display: grid;
+        align-self: center;
     }
 
-    .parrafo_nosotros {
-        margin-top: 20px;
-        grid-area: parrafo_nosotros;
-        padding: 0px;
+    .opiniones p{
+        grid-area: c;
+    }
+
+    .img_op {
+        grid-area: a;
+        width: 12vw;
+        justify-self: left;
     }
 
 /*-------------- Equipo -------------------*/
@@ -377,31 +370,6 @@ span{
         font-size: 25px;
     }
 
-    .trabajador1 {
-        float: left;
-        margin-left: 10%;
-        width: 250px;
-    }
-
-    .trabajador2 {
-        float: left;
-        margin-left: 10%;
-        width: 250px;
-    }
-
-    .img_equipo {
-        margin-left: 20%;
-        padding-top: 15px; 
-    }
-
-    .gray{
-        text-align: center;
-    }
-
-/*------------------------- Mapa--------------------*/
-  
-
-}
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     
@@ -446,6 +414,7 @@ span{
         padding-right: 50px;
         background-color: white;
     }
+
 
 /*----------------------servicios---------------------------*/
 
