@@ -1,27 +1,23 @@
+/*------------ Sección servicios--------------*/
+
 #servicios h2 {
     text-transform: uppercase;
     font-size: 25px;
 }
 
-.servicios {
-    display:list-item;
+#servicios  article{
+    display:list-item; /*utilizamos este display para poner en fila los elementos*/
 }
 
-/*------------ Sección servicios--------------*/
-
-.servicios {
-    display:list-item; /* ponemos los elementos en lidea*/
-}
-
-.item {
+#servicios  article  div {
     display: grid;
 }
 
-.item img {
-    justify-self: center; /* centramos la imagen horizontalmente*/
+#servicios img {
+    justify-self: center;
 }
 
-.p_gray {
+#servicios p {
     color: gray;
     text-align: center;
     width: 270px;
@@ -31,35 +27,29 @@
 
 /*------------ servicios Adicionales --------------*/
 
-.adicionales {
+#adicionales {
     background-color: royalblue;
 }
 
-.adicionales h2 {
+#adicionales h2 {
     color: white;
     padding-top: 50px;
 }
 
-.item_a ,.item_b ,.item_c { /*los 3 elementos comparten las mismas
-                            propiedades pero mas adelante los tendremos
-                            que diferenciar para hacer un grid area*/
-    display: grid;
-}
-
-.item_a h4, .item_b h4, .item_c h4{
+#adicionales h4 {
     font-size: 20px;
     color: white;
     margin: 5%;
     margin-top: 0px;
 }
 
-.item_a img,.item_b img, .item_c img{
+#adicionales img {
     justify-self: center;
     width: 150px;
     margin-bottom: 10px;
 }
 
-.p_white {
+#adicionales p {
     text-align: center;
     color: white;
     margin: 5%;
@@ -69,11 +59,6 @@
 .otros {
     display: list-item; /*utilizamos list-item para poder
                         poner los elementos en filas*/
-}
-
-.item3 {
-    display: grid; /*lo utilizamos para dar propiedades grid a
-                    los elementos interiores*/
 }
 
 .item3 p {
@@ -86,42 +71,32 @@
 
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
-    .servicios {
+    #servicios  article {
         display: grid; /*utilizamos el grid para separar en columnas iguales*/
         grid-template-columns: repeat(2, 1fr);  /* le indicamos que se repita
                                             el patrón de 2 columnas*/
     }
 
-    .item {
-       width: 350px;
-       justify-self: center; 
-    }
-
-    .p_gray {
-        width: 270px;
-        justify-self: center;
-    }
-
 /*------------ servicios Adicionales --------------*/
 
-    .adicionales {
+    #adicionales {
         display: grid;
         grid-template-areas: "h2 h2" /* Aqui utilizamos el grid area*/
                              "a b"  /* Por eso necesitabamos las distintas clases*/
                              "c c";
     }
-    .adicionales h2{
+    #adicionales h2{
         grid-area: h2;
     }
-    .item_a {
+    #a {
         grid-area: a;
         width: 350px;
     }
-    .item_b {
+    #b {
         grid-area: b;
         width: 350px;
     }
-    .item_c {
+    #c {
         grid-area: c;
         width: 350px;
         justify-self: center;
@@ -137,7 +112,7 @@
 
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
-    .servicios {
+    #servicios  article {
         display: grid;
         grid-template-columns: repeat(4, 1fr);  /* Aqui le damos un patrón de 3 columnas*/
     }
