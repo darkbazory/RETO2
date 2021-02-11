@@ -424,7 +424,7 @@ span{
 /*----------------------servicios---------------------------*/
 
     #servicios {
-        margin-top: 160px;
+        margin-top: 12em;
     }
 
     #servicios h2 {
@@ -432,26 +432,24 @@ span{
     }
 
     .padre {
+        height: 60vh;
+        width: 1200px;
         display: grid;
         grid-template-areas: "iconos imagen";
-        height: 550px;
+       
     }
 
     .iconos {
-        justify-self: center;
-        align-self: center;
-        grid-area: iconos;
-        margin-left: 300px;
-        width: 600px;
+      
     }
 
     .imagen {
         grid-area: imagen;
-        width: 650px;
-        justify-self: start;
+        
     }
 
     .img_web {
+        width: 15vw;
         margin: 0px;
     }
 
