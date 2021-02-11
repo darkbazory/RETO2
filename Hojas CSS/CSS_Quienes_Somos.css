@@ -46,16 +46,16 @@
     text-transform: uppercase;
 }
 
-.item1, .item2, .item3, .item4 {
+.padre > div {
     display: grid;
 
 }
 
-.item1 img, .item2 img, .item3 img, .item4 img {
+.padre > div > img{
     justify-self: center;
 }
 
-.item1 h4, .item2 h4, .item3 h4, .item4 h4 {
+.padre > div > h4{
     justify-self: center;
     color: white;
 }
@@ -140,7 +140,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .item1, .item2, .item3, .item4 {
+    .padre > div {
         margin-top: 30px;
     }
 
@@ -187,9 +187,8 @@
         
     }
 
-    .item1, .item2, .item3, .item4 {
+    .padre > div { /*con este selector nos ahorramos poner clases*/
         height: 302px;
-        
     }
 
     .p_item {

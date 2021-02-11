@@ -5,13 +5,13 @@
 
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
-    background-image: url('../Imagenes/Portada_movil.png');
+    background-image: url('../Imagenes/Portada_movil.png'); /*Ponemos para cada dispositivo una imagen distinta*/
     background-repeat:no-repeat;
-    height: 600px;
+    height: 600px; /*le damos un largo fijo */
 }
 
 .texto1{
-    text-align: center;
+    text-align: center; 
     padding:  5%;
     font-size: 15px; /*todos los tamaños de texto van fijos en px para mantener la uniformidad*/
     text-transform: uppercase; /*trasformamos en mayusculas*/
@@ -20,22 +20,17 @@ body > div{
 
 .texto2{
     padding: 10%;
-    text-align: center;
     font-size: 20px;
     color: white;
 }
  
-body > div > a{
-    text-align: end;
-}
-
 .Inicio {
-    display: grid;
+    display: grid; /*Le ponemos un grid para poder centrar a los hijos*/
 }
 
-.btn_cita{
+#btn_cita{
     padding: 1em;
-    justify-self: center;
+    justify-self: center; /*centramos el boton en horizontal*/
     align-self: center;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
@@ -45,7 +40,7 @@ body > div > a{
     text-decoration: none;
 }
  
-.btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
+#btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
      background-color: darksalmon;
      border: 2px solid darksalmon;
      color:white;
@@ -54,7 +49,7 @@ body > div > a{
  /* ---------------Seción informacion---------------*/
 
 #informacion {
-    display: block;
+    display: block; /*le ponemos el display block para que se alinen directamente*/
 }
 .titulo1{
     text-align: center;
@@ -72,7 +67,7 @@ span{
 }
 
 #telefono{
-    color: royalblue;
+    color: royalblue; /*le asisnamos un id para cambiarle el color*/
 }
 
 /*--------- Sección Servicios-------------------*/
@@ -82,12 +77,12 @@ span{
 } 
 
 .iconos {
-    display: grid; /*utilizamos grid para poder centrar todos los elementos*/
+    display: grid; /*utilizamos grid para poder centrar todos los elementos con justify*/
 }
 
-.item {
+.iconos > div {
     display: grid;
-    width: 50vw;
+    width: 50vw; /*le damos el tamaño en "viewport width" para que sea responsive*/
     justify-self: center;
 }
 
@@ -121,10 +116,7 @@ span{
 
 .btn_servicios{
     justify-self: center;
-    padding-top: 0.5em; /*ponemos esta medida ya que es responsive*/
-    padding-bottom: 0.5em; /* 1em equivaldria a 20px */
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em,2em;
     margin-bottom: 2em;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
@@ -175,10 +167,7 @@ span{
 
 .btn_saber{
     justify-self: center;
-    padding-top: 10px; 
-    padding-bottom: 10px; 
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px, 20px;
     margin-top: 1em;  /*ponemos esta medida ya que es responsive*/
     margin-bottom: 2em; /* 1em equivaldria a 20px */
     text-transform: uppercase;
@@ -217,51 +206,14 @@ span{
     justify-self: center;
 }
 
-/*-------------- Equipo -------------------*/
-.equipo h2 {
-    text-transform: uppercase;
-}
 
-.contenedor_trabajadores {
-    display: grid;
-}
-
-.trabajador {
-    display: grid;
-    width: 80vw;
-    margin: 5%;
-    background-color: whitesmoke;
-    justify-self: center;
-}
-
-.img_equipo {
-  justify-self: center;
-  margin-top: 1em;
-}
-
-.gray{
-    color: gray;
-    text-align: center;
-    padding-bottom: 0.5em;
-}
-
-/*------------------------- Mapa--------------------*/
-.container_map {
-    margin: 00.5em;
-    width: 90vw;
-    height: 50vh;
-}
-.i_mapa {
-    width: 100%;
-    height: 100%;
-}
 
 /*-------------------------------------------version tablet------------------------------------*/
-@media (min-width:600px){
+@media (min-width:600px){ /*cuando la pantalla llega a 600px se carga este CSS*/
    
     /*--------------------------inicio----------------------------------*/
     body > div{
-        background-image: url(../Imagenes/Inicio_Tablet.png); 
+        background-image: url(../Imagenes/Inicio_Tablet.png); /*cambiamos la imagen del background*/
     }
 
     .inicio {
@@ -291,7 +243,7 @@ span{
  
  /*----------------------servicios---------------------------*/
     .iconos {
-        grid-template-areas: "a b c"
+        grid-template-areas: "a b c" /*le damos un grid areas */
                             "d e f";
         justify-content: center; 
     }
@@ -311,7 +263,7 @@ span{
 
     .historia {
         display: grid;
-        grid-template-columns: repeat(2,1fr );  
+        grid-template-columns: repeat(2,1fr );  /* ponemos un grid de 2 columnas simple*/
     }
 
     .parrafo_nosotros {
@@ -320,12 +272,12 @@ span{
     }
 
     .btn_saber {
-        justify-self: left;
+        justify-self: left; /*lo movemos a la izquierda*/
         margin-left: 4em;
     }
  
     .opiniones {
-        float: right;
+        float: right; /*le damos un float para que quede por encima del contenedor*/
         display: grid; 
         grid-template-areas: "a nombre"
                             "c c";
@@ -351,7 +303,7 @@ span{
     .img_op {
         grid-area: a;
         width: 12vw;
-        justify-self: left;
+        justify-self: left; */
     }
 
 /*-------------- Equipo -------------------*/
