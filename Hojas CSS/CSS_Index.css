@@ -5,38 +5,33 @@
 
  /* ponemos un selector avanzado para poner un fondo al primer div del body*/
 body > div{
-    background-image: url('../Imagenes/Portada_movil.png');
+    background-image: url('../Imagenes/Portada_movil.png'); /*Ponemos para cada dispositivo una imagen distinta*/
     background-repeat:no-repeat;
-    height: 600px;
+    height: 600px; /*le damos un largo fijo */
 }
 
 .texto1{
-    text-align: center;
+    text-align: center; 
     padding:  5%;
-    font-size: 15px;
+    font-size: 15px; /*todos los tamaños de texto van fijos en px para mantener la uniformidad*/
     text-transform: uppercase; /*trasformamos en mayusculas*/
     color: white;
 }
 
 .texto2{
     padding: 10%;
-    text-align: center;
     font-size: 20px;
     color: white;
 }
  
-body > div > a{
-    text-align: end;
+.Inicio {
+    display: grid; /*Le ponemos un grid para poder centrar a los hijos*/
 }
 
-.btn_cita{
-    position: absolute;
-    margin-left: 100px;
-    margin-top: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+#btn_cita{
+    padding: 1em;
+    justify-self: center; /*centramos el boton en horizontal*/
+    align-self: center;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
     font-size: 20px;
@@ -45,7 +40,7 @@ body > div > a{
     text-decoration: none;
 }
  
-.btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
+#btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
      background-color: darksalmon;
      border: 2px solid darksalmon;
      color:white;
@@ -54,7 +49,7 @@ body > div > a{
  /* ---------------Seción informacion---------------*/
 
 #informacion {
-    display: block;
+    display: block; /*le ponemos el display block para que se alinen directamente*/
 }
 .titulo1{
     text-align: center;
@@ -72,7 +67,7 @@ span{
 }
 
 #telefono{
-    color: royalblue;
+    color: royalblue; /*le asisnamos un id para cambiarle el color*/
 }
 
 /*--------- Sección Servicios-------------------*/
@@ -80,9 +75,29 @@ span{
 #servicios h2{
     text-transform: uppercase;
 } 
+
 .iconos {
-    margin-left: auto;
-    margin-right: auto;
+    display: grid; /*utilizamos grid para poder centrar todos los elementos con justify*/
+}
+
+.iconos > div {
+    display: grid;
+    width: 50vw; /*le damos el tamaño en "viewport width" para que sea responsive*/
+    justify-self: center;
+}
+
+.item img {
+    justify-self: center;
+}
+
+.imagen {
+    display: grid;
+}
+
+.img_web {
+    justify-self: center;
+    width: 70vw; /* ponemos la imagen en "Viewport width" para que 
+                varie el tamaño según el dispositivo*/
 }
 
 .parrafo_gris {
@@ -91,21 +106,18 @@ span{
     text-align: center;
 }
 
-.item img {
-    display: block;
-    margin: auto;
-}
-
 .item p {
     text-align: center;
 }
 
+.boton {
+    display: grid;
+}
+
 .btn_servicios{
-    margin-left: 25%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-self: center;
+    padding: 1em,2em;
+    margin-bottom: 2em;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
     font-size: 20px;
@@ -121,50 +133,49 @@ span{
     color: white;
 }
 
-.img_web {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-bottom: 20px;
-    width: 300px
-}
-
 /*------------ Sobre Nosotros---------------*/
 #nosotros{
-    background-color: royalblue;
+    background-color: royalblue; /*le damos un color de fondo a la sección*/
+    display: grid;
 }
 
-.white{
+#nosotros h2, #nosotros h3{
     color: white;
     text-transform: uppercase;
-    padding-top: 10%;
+    padding-top: 0.5em;
     text-align: center;
+    justify-self: center;
 }
 
-.historia h3 {
-    color: white;
+.contenedor {
+    display: grid;
+}
+
+.historia {
+    justify-self: center;
 }
 
 .parrafo_nosotros{
-    text-align: center;
+    text-align: justify;
     color: white;
-    padding-bottom: 5%;
-    margin: 0px;
+    width: 80vw;
+}
 
-
+.tablet {
+    display: grid;
 }
 
 .btn_saber{
-    margin-left: 30%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-self: center;
+    padding: 10px, 20px;
+    margin-top: 1em;  /*ponemos esta medida ya que es responsive*/
+    margin-bottom: 2em; /* 1em equivaldria a 20px */
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
     font-size: 20px;
     border: 2px solid white;
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
@@ -173,90 +184,53 @@ span{
     color:white;
 }
 
-.sede{
-    margin: 5%;
-    padding: 10%;
+.opiniones{
+    justify-self: center;
+    width: 80vw;
     background-color:cornflowerblue;
     display: grid;
+    margin-bottom: 2em;
 }
 
-/*--------------opiniones----------------------*/
+.opiniones p {
+    width: 60vw;
+    justify-self: center;
+    color: white;
+}
 
-.opiniones{
-    width: 60%;
+.img_op{
+    width: 35%;
+    margin-top: 1em;
     border-radius: 50%;
     align-self: center;
     justify-self: center;
 }
 
-/*-------------- Equipo -------------------*/
-
-.trabajador1 {
-    margin: 5%;
-    background-color:whitesmoke;
-}
-
-.trabajador2 {
-    margin: 5%;
-    background-color:whitesmoke;
-
-}
-
-.img_equipo {
-    margin-left: 25%;
-    padding-top: 30px;
-}
-
-.gray{
-    color: gray;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-/*------------------------- Mapa--------------------*/
-
-.i_mapa{
-    width:600px;
-    height:300px; 
-    border: style 0;  
-}
-
 
 
 /*-------------------------------------------version tablet------------------------------------*/
-@media (min-width:600px){
+@media (min-width:600px){ /*cuando la pantalla llega a 600px se carga este CSS*/
    
     /*--------------------------inicio----------------------------------*/
     body > div{
-        background-image: url(../Imagenes/Inicio_Tablet.png); 
+        background-image: url(../Imagenes/Inicio_Tablet.png); /*cambiamos la imagen del background*/
     }
 
     .inicio {
+        display: grid;
         width: 100%;
         margin: 0px;
         padding: 0px;
     }
 
-    .texto1{
-        text-align: justify;
-        padding:  1%;
-        padding-top: 100px;
-        margin-left: 50px;
-        font-size: 15px;
+    .texto1 {
+        padding: 1%;
+        padding-top: 10em;
     }
 
     .texto2 {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    body > div > a{
-        align-content: center;
-    }
-
-    .btn_cita{
-        margin-top: 200px;
-        margin-left: 45%;
+        justify-self: center;
+        padding: 1%;
     }
 
  /* ---------------Seción informacion---------------*/
@@ -268,79 +242,68 @@ span{
     }
  
  /*----------------------servicios---------------------------*/
-
-    .img_web{
-        margin-top: 0%;
-        margin-left: 10%;
-        width:600px;
-    }
-
     .iconos {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        width: 70%;
+        grid-template-areas: "a b c" /*le damos un grid areas */
+                            "d e f";
+        justify-content: center; 
     }
 
-    .parrafo_gris {
-        font-size: 20px;
-    }
- 
     .item {
-        padding: 20px;
-        text-align: center;
+        width: 35vw;
     }
 
-    .boton {
-        height: 80px;
+    .img_web {
+        width: 50vw;
     }
-
-    .btn_servicios {
-        margin-left: 40%;
-    }
- 
+  
  /*----------------------------sobre nosotros------------------------*/
- 
-    .white{
-        padding-top: 15px;
-        font-size: 25px;
+    .contenedor {
+        width: 90vw;
     }
 
-    .historia h3 {
-        text-align: left;
-        padding-left: 30px;
+    .historia {
+        display: grid;
+        grid-template-columns: repeat(2,1fr );  /* ponemos un grid de 2 columnas simple*/
     }
 
     .parrafo_nosotros {
-        text-align: left;
-        margin-left: 30px;
-        margin-bottom: 30px;
+        width: 30vw;
+        margin-left: 2em;
     }
 
     .btn_saber {
-        margin-left: 40%;
+        justify-self: left; /*lo movemos a la izquierda*/
+        margin-left: 4em;
     }
-
-    .sede {
-        grid-template-areas: "opiniones nombre"
-        "parrafo_nosotros parrafo_nosotros";
-    }
-
+ 
     .opiniones {
-        grid-area: opiniones;
-        width: 100px;
-        justify-self: start;
+        float: right; /*le damos un float para que quede por encima del contenedor*/
+        display: grid; 
+        grid-template-areas: "a nombre"
+                            "c c";
+        justify-content: center; 
+        width: 50vw; 
+        height: 35vh;
+        margin-top: 4em;                 
+    }
+
+    .opiniones p {
+        width: 35vw;
     }
 
     #nombre {
-        grid-area: nombre;
-        justify-self: start;
+        display: grid;
+        align-self: center;
     }
 
-    .parrafo_nosotros {
-        margin-top: 20px;
-        grid-area: parrafo_nosotros;
-        padding: 0px;
+    .opiniones p{
+        grid-area: c;
+    }
+
+    .img_op {
+        grid-area: a;
+        width: 12vw;
+        justify-self: left; 
     }
 
 /*-------------- Equipo -------------------*/
@@ -349,83 +312,59 @@ span{
         font-size: 25px;
     }
 
-    .trabajador1 {
-        float: left;
-        margin-left: 10%;
-        width: 250px;
+    .contenedor_trabajadores {
+        display: grid;
+        grid-template-areas: "a b"
+                            "c d";
+       
     }
 
-    .trabajador2 {
-        float: left;
-        margin-left: 10%;
-        width: 250px;
-    }
-
-    .img_equipo {
-        margin-left: 20%;
-        padding-top: 15px; 
-    }
-
-    .gray{
-        text-align: center;
-    }
-
-/*------------------------- Mapa--------------------*/
-    .i_mapa{
-        width:1024px;
-        height:400px;  
+    .trabajador {
+        width: 30vw;
     }
 
 }
+
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     
-     /*--------------------------inicio----------------------------------*/
+/*--------------------------inicio----------------------------------*/
     body > div{
         background-image: url(../Imagenes/Inicio.jpg);   
     }
 
-    .inicio {
-        position: relative;
+    .texto1 {
+        justify-self: right;
+        margin-right: 6em;
     }
 
-    .texto1{
-        position: absolute;
-        padding-top: 100px;
-        margin-left: 65%;
-        font-size: 20px;
+    .texto2 {
+        justify-self: right;
     }
 
-    .texto2{
-        position: absolute;
-        padding:20px;
-        margin-left: 65%;
-        padding-top: 250px;
-    }
-  
-    .btn_cita{
-        position: absolute;
-        margin-top: 380px;
-        margin-left: 66%;
+    .btn_cita {
+        justify-self: right;
+        margin-bottom: 2.5em;
+        margin-right: 7em;
     }
 
- /* ---------------Seción informacion---------------*/
+/* ---------------Seción informacion---------------*/
     #informacion {
         position: absolute;
             top: 650px;
         box-shadow: 2px 2px 10px #666; /* Le ponemos un sombrado al contenedor
                                             para dar sensación de volumen*/
-        width: 900px;
-        margin-left: 480px;
-        padding-left: 50px;
-        padding-right: 50px;
+        width: 60vw;
+        margin-left: 15em;
+        padding-left: 3em;
+        padding-right: 3em;
         background-color: white;
     }
 
 /*----------------------servicios---------------------------*/
 
     #servicios {
-        margin-top: 160px;
+        margin-top: 12em;
     }
 
     #servicios h2 {
@@ -435,24 +374,19 @@ span{
     .padre {
         display: grid;
         grid-template-areas: "iconos imagen";
-        height: 550px;
     }
 
-    .iconos {
-        justify-self: center;
-        align-self: center;
-        grid-area: iconos;
-        margin-left: 300px;
-        width: 600px;
+    .item {
+        width: 20vw;
     }
 
     .imagen {
         grid-area: imagen;
-        width: 650px;
-        justify-self: start;
+        
     }
 
     .img_web {
+        width: 40vw;
         margin: 0px;
     }
 
@@ -467,47 +401,38 @@ span{
     }
 
     .btn_servicios {
-        margin: 550px;
+        margin-top: 2em;
     }
 
 /*------------------  Sección Nosotros  -----------------*/
-
-    .contenedor {
-       display: inline-flex; 
+    #nosotros {
+        height: 580px ;
     }
-
-    .white {
-        padding-top: 50px;
-    }
-
     .historia {
-        width: 500px;
-        margin-left: 400px;
-        margin-top: 100px;  
+        height: 60vh;
+        display: grid;
+        grid-template-areas: "a b"; 
     }
 
-    .historia h3{
-        margin: 0px;
-        padding-left: 0px;
-    }
-
-    .sede {
-        width: 400px;
-        margin-left: 100px;
-        margin-right: 50px;
-        padding: 50px;
-        padding-top: 0px;       
-        margin-top: 50px;
-    }
-
-    .parrafo_nosotros {
-        margin-left: 0px;
+    .tablet {
+        grid-area: a;
+        justify-content: center;
+        align-content: center;
     }
 
     .btn_saber {
-        margin-left: 0px;
-        position: absolute;
-        margin-top: 50px;   
+      justify-self: center;
+      margin-left: 0px;
+    }
+
+    .opiniones {
+        width: 40vw;
+        height: 40vh;
+        margin-left: 5em;
+    }
+
+    .img_op {
+        width: 100px;
     }
 
 /*----------------------- Nuestro Equipo ----------------*/
@@ -517,28 +442,17 @@ span{
     }
 
    .contenedor_trabajadores {
-       margin-left: 400px;
-   }
+       grid-template-areas: "a b c d";
+       gap: 10px;
 
-    .trabajador1{
-        margin: 15px;
-        
+    }
+    .trabajador {
+        width: 250px;
     }
 
-    .trabajador2 {
-        margin: 15px;
-    }
-
-    .img_equipo {
-        width: 150px;
-        height: 170px;
-    }
 /*------------------------- Mapa--------------------*/
 
-    .i_mapa{
-        width: 1900px;
-        height: 500px;
-    }
+   
 
     
 }
