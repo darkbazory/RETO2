@@ -311,10 +311,17 @@ footer {
 
     /*----------------------Footer- Menú rápido -----------------*/ 
     #menu_rapido {
+        grid-template-areas:"a b c";
         width: 100%;
                     
     }
+    .icon {
+        width: 7%;
+    }
+    .redes {
+        width: 40vw;
+    }
 
-    
+ 
    
 }
