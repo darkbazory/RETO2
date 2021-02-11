@@ -2,15 +2,6 @@
     
     /*------------------------------formulario--------------------------------------*/
     
-            
-            
-    .contenedor2 {
-        width: 100%;
-        margin-top: 10px;
-        display: flex;
-        border-radius: 4px;
-    }
-    
     .contacto {
         width: 100%;
         display: inline-block;
@@ -18,35 +9,42 @@
         flex-direction: column;
         margin-left: 0%;
         margin-right: 0%;
+        margin-top: 10px;
     }
+
     /*Si el contenido del formulario es valido*/
     #form1 :valid {
         border: 1px solid rgb(97, 204, 97);
     }
-    
+
+    /*Si el contenido del formulario NO es valido*/
     #form1 :invalid {
         border: 1px solid rgb(221, 46, 34);
     }
 
+    /*Tag que se usa cuando se ha clickeado sobre un campo del formulario*/
     :focus {
         color: rgb(8, 8, 8);
         background-color: rgb(200, 225, 230);
         font-size: medium;
         font-weight: 600;
     }
-    
+
+    /*Zona que rodea cada parte del formulario para hacerlo mas facil de identificar*/
     fieldset {
         border: 1px solid royalblue;
         border-radius: 4px;
         margin-bottom: 3em;
     }
 
+    /*Para el aviso del campo obligatorio*/
     #obligatorio  {
         margin-bottom: 1em;
         margin-left: 50%;
         color: rgb(255, 60, 0);
     }
 
+/*Estilo para las etiquetas del formulario*/
     input[type="text"], select {
         width: 100%;
         padding: 12px 20px;
@@ -106,6 +104,23 @@
         margin-bottom: 1em;
     }
 
+    textarea, select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    input[type="range"], select {
+        width: 100%;
+    }
+/*Estilo para las etiquetas del formulario*/ 
+
+/*BOTON DE ENVIO*/
     input[type=submit] {
         width: 30%;
         background-color: royalblue;
@@ -124,104 +139,64 @@
     input[type=submit]:active {
         background-color: blue;
     }
-    
-    textarea, select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    input[type="range"], select {
-        width: 100%;
-    
-    }
-    
-    
-    
+/*BOTON DE ENVIO*/
+
     /*mapa*/
     
     
     #contenedor3 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 0%;
-    margin-right: 0%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     
     iframe {
-    
-    height: 20em;
-    width: 22.5em;
-    
-    
+        height: 20em;
+        width: 22.5em;
     }
     
+    /*mapa*/
 
 /*------------TABLET-----------*/
 @media only screen and (min-width: 600px){
 
-
- 
-    
-    
-    /*------------------------------formulario--------------------------------------*/
-    
-            
-            
-    .contenedor2 {
-        width: 100%;
-        margin-top: 10px;
-        display: flex;
-        border-radius: 4px;
-        
-    }
+/*------------------------------formulario--------------------------------------*/
     
     .contacto {
         width: 80%;
-        display: inline-block;
-        display: flex;
-        flex-direction: column;
         margin-left: 10%;
         margin-right: 10%;
     }
+
+/*Estilo para las etiquetas del formulario*/
     input[type="text"], select {
         width: 75%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    
     }
     
     input[type="tel"], select {
         width: 75%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
     }
     
     input[type="email"], select {
         width: 75%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    
     }
     
+    textarea, select {
+        width: 75%;
+    }
+    
+    input[type="range"], select {
+        width: 50%;
+    }
+
+    input[type="date"], select {
+        width: 25%;
+    }
+/*Estilo para las etiquetas del formulario*/    
+
+/*BOTON DE ENVIO*/
     input[type=submit] {
         width: 15%;
         background-color: royalblue;
@@ -232,212 +207,85 @@
         border-radius: 4px;
         cursor: pointer;
     }
-    
-    input[type=submit]:hover {
-        background-color: rgb(40, 85, 219);
-    }
-    
-    input[type=submit]:active {
-        background-color: blue;
-    }
-    
-    textarea, select {
-        width: 75%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    
-    input[type="range"], select {
-        width: 50%;
-    
-    }
 
-    input[type="date"], select {
-        width: 25%;
-        padding: 12px 20px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    
-    }
-    
     /*mapa*/
-    
-    
     #contenedor3 {
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
     iframe {
-    
-    height: 25em;
-    width: 40em;
+        height: 25em;
+        width: 40em;
     }
-    
-    }
-    
-       
-    
-    
+    /*mapa*/
 
-
-
-
+}
+    
 
 /*------------PC-----------*/
 @media only screen and (min-width: 1200px){
 
-
-
-
-
-
-
 /*------------------------------formulario--------------------------------------*/
-
-        
-        
-.contenedor2 {
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    border-radius: 4px;
-    
-}
 
 .contacto {
     width: 80%;
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    margin-left: 25%;
-    margin-right: 25%;
 }
 
+/*Estilo para las etiquetas del formulario*/
+    input[type="text"], select {
+        width: 75%;
+    }
 
-input[type="text"], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    input[type="tel"], select {
+        width: 75%;
+    }
 
-}
+    input[type="email"], select {
+        width: 75%;
+    }
 
-input[type="tel"], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+    input[type="date"], select {
+        width: 25%;
+    }
 
-input[type="email"], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    #hora {
+        width: 25%;
+    }
 
-}
+    input[type="checkbox"], select {
+        margin-bottom: 1em;
+    }
 
-input[type="date"], select {
-    width: 25%;
-    padding: 12px 20px;
-    margin-top: 8px;
-    margin-bottom: 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    textarea, select {
+        width: 75%;
+    }
 
-}
+    input[type="range"], select {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+/*Estilo para las etiquetas del formulario*/
 
-#hora {
-    width: 25%;
-    padding: 12px 20px;
-    margin-top: 8px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-
-}
-
-input[type="checkbox"], select {
-    margin-bottom: 1em;
-}
-
-input[type=submit] {
-    width: 10%;
-    background-color: royalblue;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: rgb(40, 85, 219);
-}
-
-input[type=submit]:active {
-    background-color: blue;
-}
-
-textarea, select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="range"], select {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-
+/*BOTON DE ENVIO*/
+    input[type=submit] {
+        width: 10%;
+    }
 
 /*mapa*/
+    #contenedor3 {
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
 
-
-#contenedor3 {
-margin-left: 25%;
-margin-right: 25%;
-display: flex;
-flex-direction: column;
-margin-top: 20px;
-}
-
-iframe {
-
-height: 50em;
-width: 50em;
-}
-
+    iframe {
+        height: 40em;
+        width: 100%;
+    }
+/*mapa*/
 }
 
 
