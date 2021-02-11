@@ -29,14 +29,14 @@ body > div > a{
     text-align: end;
 }
 
+.Inicio {
+    display: grid;
+}
+
 .btn_cita{
-    position: absolute;
-    margin-left: 27%;
-    margin-top: 30%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
+    justify-self: center;
+    align-self: center;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
     font-size: 20px;
@@ -281,15 +281,6 @@ span{
         padding: 1%;
     }
 
-    body > div > a{
-        align-content: center;
-    }
-
-    .btn_cita{
-        margin-top: 8em;
-        margin-left: 45%;
-    }
-
  /* ---------------Seción informacion---------------*/
 
     #informacion {
@@ -306,14 +297,13 @@ span{
     }
 
     .item {
-        width: 40vw;
+        width: 35vw;
     }
 
     .img_web {
         width: 50vw;
     }
   
- 
  /*----------------------------sobre nosotros------------------------*/
     .contenedor {
         width: 90vw;
@@ -386,40 +376,38 @@ span{
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
     
-     /*--------------------------inicio----------------------------------*/
+/*--------------------------inicio----------------------------------*/
     body > div{
         background-image: url(../Imagenes/Inicio.jpg);   
     }
 
-    .inicio {
-        display: grid;
+    .texto1 {
+        justify-self: right;
+        margin-right: 6em;
     }
 
-    .texto1{
+    .texto2 {
         justify-self: right;
     }
 
-    .texto2{
+    .btn_cita {
         justify-self: right;
-    }
-  
-    .btn_cita{
-        justify-self: right;
+        margin-bottom: 2.5em;
+        margin-right: 7em;
     }
 
- /* ---------------Seción informacion---------------*/
+/* ---------------Seción informacion---------------*/
     #informacion {
         position: absolute;
             top: 650px;
         box-shadow: 2px 2px 10px #666; /* Le ponemos un sombrado al contenedor
                                             para dar sensación de volumen*/
         width: 60vw;
-        margin-left: 20em;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-left: 15em;
+        padding-left: 3em;
+        padding-right: 3em;
         background-color: white;
     }
-
 
 /*----------------------servicios---------------------------*/
 
@@ -432,15 +420,12 @@ span{
     }
 
     .padre {
-        height: 60vh;
-        width: 1200px;
         display: grid;
         grid-template-areas: "iconos imagen";
-       
     }
 
-    .iconos {
-      
+    .item {
+        width: 20vw;
     }
 
     .imagen {
@@ -449,7 +434,7 @@ span{
     }
 
     .img_web {
-        width: 15vw;
+        width: 40vw;
         margin: 0px;
     }
 
@@ -464,47 +449,52 @@ span{
     }
 
     .btn_servicios {
-        margin: 550px;
+        margin-top: 2em;
     }
 
 /*------------------  Sección Nosotros  -----------------*/
-
-    .contenedor {
-       display: inline-flex; 
+    #nosotros {
+        height: 60vh ;
     }
-
-    .white {
-        padding-top: 50px;
-    }
-
     .historia {
-        width: 500px;
-        margin-left: 400px;
-        margin-top: 100px;  
+      display: grid;
+      grid-template-areas: "a b"; 
     }
 
     .historia h3{
+        padding: 0px;
         margin: 0px;
-        padding-left: 0px;
+        margin-top: 2em;
     }
 
-    .sede {
-        width: 400px;
-        margin-left: 100px;
-        margin-right: 50px;
-        padding: 50px;
-        padding-top: 0px;       
-        margin-top: 50px;
+    .tablet {
+        grid-area: a;
+    }
+
+    .opiniones {
+        grid-area: b;
+        margin-top: 0px;
     }
 
     .parrafo_nosotros {
-        margin-left: 0px;
+        margin-top: 0em;
+        margin-left: 5em;
+        padding: 0px;
     }
 
     .btn_saber {
-        margin-left: 0px;
+        margin-left: 7em;
         position: absolute;
-        margin-top: 50px;   
+        margin-top: 16em;   
+    }
+
+    .opiniones {
+        width: 40vw;
+        margin-left: 5em;
+    }
+
+    .img_op {
+        width: 7vw;
     }
 
 /*----------------------- Nuestro Equipo ----------------*/
