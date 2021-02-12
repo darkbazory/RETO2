@@ -1,5 +1,8 @@
 /*-----------MOVILES-------------*/
 
+.contenedor {
+    margin-bottom: 2em;
+}
 
 .div_filtrado {
     list-style: none;
@@ -30,7 +33,7 @@ img {
     border-color: rgb(40, 85, 219);
 }
 
-.btn_residuos:active{
+.btn_residuos:active{ /*Se aplica cuando se pincha en el boton*/
     background-color: blue;
     border-color: blue;
 }
@@ -60,12 +63,7 @@ img {
 
 /*-------PC----------*/
 @media only screen and (min-width: 1200px){
-
-    .div_filtrado {
-        list-style: none;
-        text-align: left;
-    }
-    
+  
     img {
         width: 35%;
         float: right;
@@ -96,4 +94,3 @@ img {
         margin-top: 10%;
     }
 }
-
