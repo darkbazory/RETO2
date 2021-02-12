@@ -8,26 +8,19 @@ body > div{
     background-image: url('../Imagenes/Portada_movil.png'); /*Ponemos para cada dispositivo una imagen distinta*/
     background-repeat:no-repeat;
     height: 600px; /*le damos un largo fijo */
+    display: grid; /*Le ponemos un grid para poder centrar a los hijos*/
 }
-
-.texto1{
-    text-align: center; 
+#texto1{
     padding:  5%;
     font-size: 15px; /*todos los tamaños de texto van fijos en px para mantener la uniformidad*/
     text-transform: uppercase; /*trasformamos en mayusculas*/
     color: white;
 }
-
-.texto2{
+#texto2{
     padding: 10%;
     font-size: 20px;
     color: white;
 }
- 
-.Inicio {
-    display: grid; /*Le ponemos un grid para poder centrar a los hijos*/
-}
-
 #btn_cita{
     padding: 1em;
     justify-self: center; /*centramos el boton en horizontal*/
@@ -39,7 +32,6 @@ body > div{
     color: white;
     text-decoration: none;
 }
- 
 #btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
      background-color: darksalmon;
      border: 2px solid darksalmon;
@@ -51,21 +43,18 @@ body > div{
 #informacion {
     display: block; /*le ponemos el display block para que se alinen directamente*/
 }
-.titulo1{
+#informacion p{
     text-align: center;
-    text-transform: uppercase;
 }
-.tabla {
-    text-align: center;
+#informacion > article > p:first-child{
+    text-transform: uppercase;
 }
 span{
     color: black;
 }
 .gris{
-    text-align: center;
     color: gray;
 }
-
 #telefono{
     color: royalblue; /*le asisnamos un id para cambiarle el color*/
 }
@@ -75,48 +64,39 @@ span{
 #servicios h2{
     text-transform: uppercase;
 } 
-
-.iconos {
-    display: grid; /*utilizamos grid para poder centrar todos los elementos con justify*/
-}
-
-.iconos > div {
-    display: grid;
-    width: 50vw; /*le damos el tamaño en "viewport width" para que sea responsive*/
-    justify-self: center;
-}
-
-.item img {
-    justify-self: center;
-}
-
-.imagen {
-    display: grid;
-}
-
-.img_web {
-    justify-self: center;
-    width: 70vw; /* ponemos la imagen en "Viewport width" para que 
-                varie el tamaño según el dispositivo*/
-}
-
-.parrafo_gris {
+#servicios > p {
     color: gray;
     font-size: 18px;
     text-align: center;
 }
-
-.item p {
+.iconos {
+    display: grid; /*utilizamos grid para poder centrar todos los elementos con justify*/
+}
+.iconos > div {
+    display: grid;
+    justify-self: center;
+}
+.iconos > div >img {
+    justify-self: center;
+}
+.iconos p {
     text-align: center;
 }
 
+#imagen {
+    display: grid; /*utilizamos grid para poder centrar todos los elementos con justify*/
+}
+#imagen img {
+    justify-self: center;
+    width: 70vw; /* ponemos la imagen en "Viewport width" para que 
+                varie el tamaño según el dispositivo*/
+}
 .boton {
     display: grid;
 }
-
-.btn_servicios{
+.boton a{
     justify-self: center;
-    padding: 1em,2em;
+    padding: 0.5em 1em;
     margin-bottom: 2em;
     text-transform: uppercase;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
@@ -124,89 +104,12 @@ span{
     border: 2px solid darkgray;
     color: darkgray;
     text-decoration: none;
-
 }
-
-.btn_servicios:hover { /* le decimos que cambie de color cuando pase por encima */
+.boton a:hover { /* le decimos que cambie de color cuando pase por encima */
     background-color: darksalmon;
     border: 2px solid darksalmon;
     color: white;
 }
-
-/*------------ Sobre Nosotros---------------*/
-#nosotros{
-    background-color: royalblue; /*le damos un color de fondo a la sección*/
-    display: grid;
-}
-
-#nosotros h2, #nosotros h3{
-    color: white;
-    text-transform: uppercase;
-    padding-top: 0.5em;
-    text-align: center;
-    justify-self: center;
-}
-
-.contenedor {
-    display: grid;
-}
-
-.historia {
-    justify-self: center;
-}
-
-.parrafo_nosotros{
-    text-align: justify;
-    color: white;
-    width: 80vw;
-}
-
-.tablet {
-    display: grid;
-}
-
-.btn_saber{
-    justify-self: center;
-    padding: 10px, 20px;
-    margin-top: 1em;  /*ponemos esta medida ya que es responsive*/
-    margin-bottom: 2em; /* 1em equivaldria a 20px */
-    text-transform: uppercase;
-    transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
-    font-size: 20px;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-}
-
-.btn_saber:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: darksalmon;
-    border: 2px solid darksalmon;
-    color:white;
-}
-
-.opiniones{
-    justify-self: center;
-    width: 80vw;
-    background-color:cornflowerblue;
-    display: grid;
-    margin-bottom: 2em;
-}
-
-.opiniones p {
-    width: 60vw;
-    justify-self: center;
-    color: white;
-}
-
-.img_op{
-    width: 35%;
-    margin-top: 1em;
-    border-radius: 50%;
-    align-self: center;
-    justify-self: center;
-}
-
-
 
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){ /*cuando la pantalla llega a 600px se carga este CSS*/
@@ -215,20 +118,12 @@ span{
     body > div{
         background-image: url(../Imagenes/Inicio_Tablet.png); /*cambiamos la imagen del background*/
     }
-
-    .inicio {
-        display: grid;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .texto1 {
+    #texto1 {
         padding: 1%;
         padding-top: 10em;
     }
 
-    .texto2 {
+    #texto2 {
         justify-self: center;
         padding: 1%;
     }
@@ -236,8 +131,8 @@ span{
  /* ---------------Seción informacion---------------*/
 
     #informacion {
-        display:flex;
-        justify-content: space-between;
+        display:flex; /*utilizamos el flex para poner los elementos en linea horizontal*/
+        justify-content: space-between; /*les damos espacio entre ellos*/
         background-color: whitesmoke;
     }
  
@@ -248,81 +143,13 @@ span{
         justify-content: center; 
     }
 
-    .item {
+    .iconos  div {
         width: 35vw;
     }
 
-    .img_web {
+    #imagen img {
         width: 50vw;
     }
-  
- /*----------------------------sobre nosotros------------------------*/
-    .contenedor {
-        width: 90vw;
-    }
-
-    .historia {
-        display: grid;
-        grid-template-columns: repeat(2,1fr );  /* ponemos un grid de 2 columnas simple*/
-    }
-
-    .parrafo_nosotros {
-        width: 30vw;
-        margin-left: 2em;
-    }
-
-    .btn_saber {
-        justify-self: left; /*lo movemos a la izquierda*/
-        margin-left: 4em;
-    }
- 
-    .opiniones {
-        float: right; /*le damos un float para que quede por encima del contenedor*/
-        display: grid; 
-        grid-template-areas: "a nombre"
-                            "c c";
-        justify-content: center; 
-        width: 50vw; 
-        height: 35vh;
-        margin-top: 4em;                 
-    }
-
-    .opiniones p {
-        width: 35vw;
-    }
-
-    #nombre {
-        display: grid;
-        align-self: center;
-    }
-
-    .opiniones p{
-        grid-area: c;
-    }
-
-    .img_op {
-        grid-area: a;
-        width: 12vw;
-        justify-self: left; 
-    }
-
-/*-------------- Equipo -------------------*/
-    #equipo h2 {
-        text-transform: uppercase;
-        font-size: 25px;
-    }
-
-    .contenedor_trabajadores {
-        display: grid;
-        grid-template-areas: "a b"
-                            "c d";
-       
-    }
-
-    .trabajador {
-        width: 30vw;
-    }
-
 }
 
 /*-------------------------------Versión Web-------------------------------------*/
@@ -333,16 +160,16 @@ span{
         background-image: url(../Imagenes/Inicio.jpg);   
     }
 
-    .texto1 {
+    #texto1 {
         justify-self: right;
         margin-right: 6em;
     }
 
-    .texto2 {
+    #texto2 {
         justify-self: right;
     }
 
-    .btn_cita {
+    #btn_cita {
         justify-self: right;
         margin-bottom: 2.5em;
         margin-right: 7em;
@@ -351,6 +178,7 @@ span{
 /* ---------------Seción informacion---------------*/
     #informacion {
         position: absolute;
+        display: inline-flex; /*usamos el inline-flex para alinear en horizontal*/
             top: 650px;
         box-shadow: 2px 2px 10px #666; /* Le ponemos un sombrado al contenedor
                                             para dar sensación de volumen*/
@@ -366,93 +194,31 @@ span{
     #servicios {
         margin-top: 12em;
     }
-
     #servicios h2 {
         font-size: 35px;
     }
-
-    .padre {
+    #padre {
         display: grid;
         grid-template-areas: "iconos imagen";
     }
-
+    .iconos div {
+        width: 20vw;
+    }
     .item {
         width: 20vw;
     }
-
-    .imagen {
+    #imagen {
         grid-area: imagen;
-        
     }
-
-    .img_web {
-        width: 40vw;
-        margin: 0px;
+    #imagen img {
+        width: 30vw;
     }
-
-    .item p {
-        font-size: 20px;
-    }
-
-    .parrafo_gris {
-        text-align: center;
-        font-size: 20px;
-        color: gray;
-    }
-
     .btn_servicios {
         margin-top: 2em;
     }
+}
 
-/*------------------  Sección Nosotros  -----------------*/
-    #nosotros {
-        height: 580px ;
-    }
-    .historia {
-        height: 60vh;
-        display: grid;
-        grid-template-areas: "a b"; 
-    }
 
-    .tablet {
-        grid-area: a;
-        justify-content: center;
-        align-content: center;
-    }
 
-    .btn_saber {
-      justify-self: center;
-      margin-left: 0px;
-    }
-
-    .opiniones {
-        width: 40vw;
-        height: 40vh;
-        margin-left: 5em;
-    }
-
-    .img_op {
-        width: 100px;
-    }
-
-/*----------------------- Nuestro Equipo ----------------*/
-    #equipo h2 {
-        font-size: 30px;
-        text-transform: uppercase;
-    }
-
-   .contenedor_trabajadores {
-       grid-template-areas: "a b c d";
-       gap: 10px;
-
-    }
-    .trabajador {
-        width: 250px;
-    }
-
-/*------------------------- Mapa--------------------*/
-
-   
 
     
-}
