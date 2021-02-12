@@ -9,7 +9,7 @@
     display:list-item; /*utilizamos este display para poner en fila los elementos*/
 }
 
-#servicios  article  div {
+#servicios div {
     display: grid;
 }
 
@@ -33,7 +33,12 @@
 
 #adicionales h2 {
     color: white;
+    text-transform: uppercase;
     padding-top: 50px;
+}
+
+#a , #b , #c  {
+    display: grid;
 }
 
 #adicionales h4 {
@@ -56,16 +61,19 @@
 }
 
 /*------------ Otros  servicios --------------*/
-.otros {
-    display: list-item; /*utilizamos list-item para poder
-                        poner los elementos en filas*/
+
+#otros h2{
+    text-transform: uppercase;
+}
+#grid_column div{
+    display: grid;
 }
 
-.item3 p {
+#grid_column p {
     text-align: center; /* centramos el texto*/
 }
 
-.item3 img {
+#grid_column img {
     justify-self: center; /* lo centramos horizontalmente*/
 }
 
@@ -82,11 +90,12 @@
     #adicionales {
         display: grid;
         grid-template-areas: "h2 h2" /* Aqui utilizamos el grid area*/
-                             "a b"  /* Por eso necesitabamos las distintas clases*/
+                             "a b"  /* Por eso necesitabamos los distintos ID/*/
                              "c c";
     }
     #adicionales h2{
         grid-area: h2;
+        margin-bottom: 2em;
     }
     #a {
         grid-area: a;
@@ -103,10 +112,18 @@
     }
 
 /*------------ Otros  servicios --------------*/
-
-    .grid_column {
+    #otros {
+        display: block;
+        justify-content: center;
+    }
+    #grid_column {
         display: grid;
         grid-template-columns: repeat(3, 1fr);  /* Aqui le damos un patrón de 3 columnas*/
+    }
+
+    #grid_column p {
+        width: 2em;
+        height: 2em;
     }
 }
 
