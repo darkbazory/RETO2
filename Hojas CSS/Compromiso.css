@@ -9,39 +9,31 @@
     text-align: left;
 }
 
-img {
+.img {
     width: 100%;
 }
 
 .btn_residuos{
-	width: 20%;
-    height: 2.725rem;
     transition: all 0.2s; /* lo que tarda en hacer el cambio de color */
     font-size: 20px;
-    border: 0.125rem solid royalblue;
-    border-radius: 0.25rem;
-    background-color: royalblue;
-	color: #fff;
-	text-decoration: none;
+    border: 2px solid darkgray;
+    color: darkgray;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
     margin-left: 30%;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 
 .btn_residuos:hover { /* le decimos que cambie de color cuando pase por encima */
-    background-color: rgb(40, 85, 219);
-    border-color: rgb(40, 85, 219);
-}
-
-.btn_residuos:active{ /*Se aplica cuando se pincha en el boton*/
-    background-color: blue;
-    border-color: blue;
+    background-color: darksalmon;
+    border: 2px solid darksalmon;
+    color: white;
 }
 
 /*-------TABLET----------*/
 @media only screen and (min-width: 600px){
 
-    img {
+    .img{
         width: 80%;
         margin-left: 0%;
     }
@@ -64,7 +56,7 @@ img {
 /*-------PC----------*/
 @media only screen and (min-width: 1200px){
   
-    img {
+    .img {
         width: 35%;
         float: right;
         margin-left: 10%;
