@@ -227,8 +227,8 @@ footer {
 .grid_li li {
     width: 300px;
     list-style: none;
-    
     gap: 10px;
+    color: white;
 }
 
 .grid_li i {
