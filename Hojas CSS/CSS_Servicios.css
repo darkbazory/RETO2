@@ -1,11 +1,10 @@
-/*------------ Sección servicios--------------*/
-
-#servicios h2 {
+h2 {
     text-transform: uppercase;
-    font-size: 25px;
 }
 
-#servicios  article{
+/*------------ Sección servicios--------------*/
+
+#servicios {
     display:list-item; /*utilizamos este display para poner en fila los elementos*/
 }
 
@@ -33,7 +32,6 @@
 
 #adicionales h2 {
     color: white;
-    text-transform: uppercase;
     padding-top: 50px;
 }
 
@@ -62,9 +60,6 @@
 
 /*------------ Otros  servicios --------------*/
 
-#otros h2{
-    text-transform: uppercase;
-}
 #grid_column div{
     display: grid;
 }
@@ -79,7 +74,7 @@
 
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
-    #servicios  article {
+    #servicios {
         display: grid; /*utilizamos el grid para separar en columnas iguales*/
         grid-template-columns: repeat(2, 1fr);  /* le indicamos que se repita
                                             el patrón de 2 columnas*/
@@ -121,24 +116,23 @@
         grid-template-columns: repeat(3, 1fr);  /* Aqui le damos un patrón de 3 columnas*/
     }
 
-    #grid_column p {
-        width: 2em;
-        height: 2em;
+    #grid_column div {
+        justify-content: center;
     }
 }
 
 /*-------------------------------Versión Web-------------------------------------*/
 @media only screen and (min-width:1200px){
-    #servicios  article {
+    #servicios {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);  /* Aqui le damos un patrón de 3 columnas*/
+        grid-template-columns: repeat(4, 1fr);  /* Aqui le damos un patrón de 4 columnas*/
     }
 /*------------ servicios Adicionales --------------*/
 
-    .adicionales {
+    #adicionales {
         display: grid;
         grid-template-areas: "h2 h2 h2" /* Aqui utilizamos el grid area*/
-                              "a b c"; /* Por eso necesitabamos las distintas clases*/
+                              "a b c"; /* Por eso necesitabamos los distintos identificadores*/
         justify-content: center; /*el contenedor se alinea en el centro*/
                                  
     }
