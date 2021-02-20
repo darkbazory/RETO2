@@ -1,16 +1,27 @@
 /*-----------MOVILES-------------*/
+h1 {
+    text-transform: uppercase;
+}
 
-.contenedor {
+h2 {
+    text-transform: uppercase;
+}
+.gestion {
     margin-bottom: 2em;
 }
+
+.gestion img {
+    width: 100%;
+}
+
+.gestion li{
+    list-style: url(../svg/pagelines-brands.svg);
+}
+
 
 .div_filtrado {
     list-style: none;
     text-align: left;
-}
-
-.img {
-    width: 100%;
 }
 
 .btn_residuos{
