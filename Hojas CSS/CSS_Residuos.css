@@ -9,7 +9,7 @@
      color: black;
  }
  
-.introduccion {
+#introduccion {
     display: grid;
 }
 
@@ -17,13 +17,13 @@
     justify-self: center;
 }
 
-.p_intro {
+#introduccion > div p {
     color: gray;
     width: 300px;
     text-align: center;
 }
 
-.imagen {
+#introduccion div {
     display: grid;
     justify-content: center;
     margin-bottom: 40px;
@@ -36,30 +36,27 @@
  
 /*--------- Residuos taller -----------*/
 
- .residuos_taller {
+ #residuos_taller {
     background-color: royalblue;
     display: grid;
 }
 
-.residuos_taller h2 {
+#residuos_taller h2 {
     color: white;
 }
 
-.re_solidos {
+#residuos_taller div{
     display: grid;
 }
 
-.residuos_taller p {
+
+#residuos_taller p {
     color: white;
     width: 300px;
     justify-self: center;
 }
 
-.re_ambientales {
-    display: grid;
-}
-
-.li_re {
+#residuos_taller > div li{
     width: 280px;
     justify-self: center;
     color: white;
@@ -72,11 +69,11 @@
 }
 
 /*------------Normativa---------*/
-.normativa {
+#normativa {
     display: grid;
 }
 
-.normativa p {
+#normativa p {
     justify-self: center;
     width: 300px;
     color: gray;
@@ -86,35 +83,41 @@
     color: gray;
 }
 
-.a_color{ /*le damos color a los enlaces */
+.ul_nor a{ /*le damos color a los enlaces */
     text-decoration: none;
     color:royalblue;  
 }
 
-.a_color:hover {
+.ul_nor a:hover {
     color: darksalmon;
     text-decoration: underline;
 }
  
  
  /*----------- Obligaciones ----------*/
-.obligaciones {
+#obligaciones {
     background-color: royalblue;
     display: grid;
 }
 
-.area1 {
+#obligaciones div {
     display: grid;
 }
 
-.obligaciones h2 {
-    color: white;
-}
-
-.area1 p {
+#obligaciones > div p {
     color: white;
     width: 300px;
     justify-self: center;
+}
+
+#obligaciones > div li {
+    width: 280px;
+    justify-self: center;
+    color: white;
+}
+
+#obligaciones h2 {
+    color: white;
 }
 
 .img_res {
@@ -124,16 +127,16 @@
 
 /*-------- Tipo Residuos --------*/
 
-.tipos {
+#tipos {
     display: grid;
 }
 
-.tl_residuos {
+#tl_residuos {
     justify-self: center;
 }
  
 /* CSS Tabla distintos residuos */
-.tl_residuos th{ /* le damos un estilo a la cabecera para diferenciar del cuerpo */
+#tl_residuos th{ /* le damos un estilo a la cabecera para diferenciar del cuerpo */
     padding: 5px;
     font-size: 16px;
     background-color: #83aec0;
@@ -154,7 +157,7 @@
     text-transform: uppercase;
 }
 
-.tl_residuos td {
+#tl_residuos td {
     background-image: url(../Imagenes/fondo_tr01.png);
     background-position: left top;
     font-size: 15px;
@@ -175,16 +178,16 @@
 /*-------------------------------------------version tablet------------------------------------*/
 @media (min-width:600px){
 
-    .introduccion {
+    #introduccion {
         display: grid;
         grid-template-areas: "a b";
     }
 
-    .grid_1 {
+    #grid_1 {
         grid-area: a;
     }
 
-    .imagen {
+    #imagen {
         grid-area: b;
     }
 
@@ -192,36 +195,34 @@
         margin-top: 70px;
     }
 
-    .p_intro {
-        text-align: left;
-    }
-
  /*--------- Residuos taller -----------*/
-    .residuos_taller {
+    #residuos_taller {
         grid-template-areas: "h2 h2"
                              "a b"
                              "c c" ;
     }
 
-    .residuos_taller h2{
+    #residuos_taller h2{
         grid-area: h2;
     }
 
-    .re_solidos {
+    #re_solidos {
         grid-area: a;
     }
 
-    .re_ambientales {
+    #re_ambientales {
         grid-area: b;
     }
-     .img_residuos {
+
+    .img_residuos {
          grid-area: c;
          width: 600px;
     }
 
 /*--------- Normativa -----------*/
-    .normativa p{
-        width: 650px;
+    #normativa p  {
+        text-align: left;
+        width: 90%;
     }
 
     .ul_nor {
@@ -230,20 +231,20 @@
 
 /*--------- Obligaciones--------*/
 
-    .obligaciones {
+    #obligaciones {
         grid-template-areas: "h2 h2"
                               "a  b"  ;
     }
 
-    .obligaciones h2 {
+    #obligaciones h2 {
         grid-area: h2;
     }
 
-    .area1 {
+    #area1 {
         grid-area: a;
     }
 
-    .area2 {
+    #area2 {
         grid-area: b;
     }
 
@@ -260,18 +261,19 @@
         width: 1000px;
     }
 
-    .introduccion {
+    #introduccion {
         display: list-item;
+    }
+
+    #introduccion > div p {
+        width: 90%;
+        justify-self: center;
     }
 
     .grid_1 {
         display: grid;
     }
 
-    .p_intro {
-        width: 1000px;
-        justify-self: center;
-    }
 
     .img_intro {
         width: 600px;
@@ -285,41 +287,23 @@
         display: list-item;
     }
 
-    .re_solidos {
-        display: grid;
+    #residuos_taller p {
+        width: 600px;
     }
 
-    .re_solidos p{
-        justify-self: center;
-        width: 1000px; 
-    }
-
-    .re_ambientales p {
-        width: 1000px;
-        
+    #residuos_taller > div li{
+        width: 580px;
     }
 
     .ul_re {
         display: grid;
     }
 
-    .li_re {
-        width: 1000px;
-        justify-self: center;
-    }
-
     .img_residuos {
         justify-self: center;
     }
 
-    
-
-
 /*--------- Normativa -----------*/
-    .normativa p{
-        width: 1000px;
-    }
-
     .ul_nor {
         width: 1000px;
         justify-self: center;
@@ -327,21 +311,40 @@
 
 /*-------- Obligaciones -----------*/
 
-    .obligaciones {
-        grid-template-areas: none;
-        
+    #obligaciones {
+        display: flex; /* Utilizamos flex para ponerlo en una columna*/
+        flex-direction: column;
+    }
+   
+    #obligaciones > div p { 
+        width: 90%;  
     }
 
-    .obligaciones p {
-        width: 800px;
-    }
-    .area1 {
-        display: inline-block;
+    #obligaciones > div li {
+        width: 90%;
     }
 
-    .area2 {
-        display: inline-block;
+    #obligaciones h2 {
+        grid-area: none;
     }
+
+    #area1 {
+        grid-area: none;
+    }
+
+    #area2 {
+        grid-area: none;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
