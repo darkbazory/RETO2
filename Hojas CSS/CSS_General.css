@@ -108,7 +108,7 @@ h4 {
     right: .5em;   
 }
 
-/* Hacemos una animacion girando las lineas para que seas aspas*/
+/* Hacemos una animacion girando las lineas para que sean aspas*/
 .menu-open .hamburger{
     transform: rotate(45deg);
 }
@@ -159,80 +159,95 @@ footer {
     color: white;
 }
 
-.re_sociales {
+#redes a {
     text-decoration: none;
     color: white;
 }
 
-.parrafo_footer {
+#redes p{
     color:white;
     text-align: center;
     padding-bottom: 20px;
 }
 
-.icon {
+#redes img {
     width: 10%;
     display: inline;
     margin-left: 12%;     
 }
 
-.icon:hover {
+#redes img:hover {
   /*  -webkit-transform: scale(1.6); 
     -moz-transform: scale(1.6);
     -o-transform: scale(1.6);*/
     transform: scale(1.6);
 }
 
-.enlaces h2{
+#enlaces h2{
     padding-bottom: 20px;
 }
 
-.grid_footer{
+#enlaces > div{ /* Seleccionamos el primer div dentro del articulo enlaces*/
     display: grid;
-    grid-template-columns:repeat(2,1fr);
-    gap: 10px;
+    grid-template-columns:repeat(2,1fr); /* Lo posicionamos en 2 columnas del mismo tamaño*/
+    gap: 10px; /* le damos un espacio dijo entre columnas de 10px*/
     
 }
 
-.grid_footer div {
+#enlaces > div div {
     justify-self: center;
 }
 
-.grid_footer a{
+#enlaces > div a{
     text-transform: uppercase;
     margin: 10px;
     text-decoration: none;
     color: white;
 }
 
-.grid_footer a:hover{
+#enlaces > div div:hover{
     text-decoration: underline;
     color: darksalmon;
 }
 
-.color {
+#enlaces > div a:hover{
+    color: darksalmon;
+}
+
+#color {
     text-decoration: none;
     color: white;
 }
 
-.color:hover {
+#color:hover {
     color: darksalmon;
 }
    
-.grid_li {
+#contactanos ul {
     color: white;
     display: grid;
 }
 
-.grid_li li {
+#contactanos ul i {
+    padding-right: 1em;
+}
+
+#contactanos li {
     width: 300px;
     list-style: none;
     gap: 10px;
     color: white;
 }
 
-.grid_li i {
-    padding: 10px;
+footer > p{
+    color:white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer > p a{
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -251,17 +266,17 @@ footer {
                             "c c";
    }
 
-   .icon {
+   #redes img {
        width: 8%;
    }
 
-   .redes {
+   #redes {
        grid-area: a;
    }
-   .enlaces {
+   #enlaces {
        grid-area: b;
    }
-   .contactanos {
+   #contactanos {
        grid-area: c;
        justify-self: center;
    }
@@ -315,10 +330,10 @@ footer {
         width: 100%;
                     
     }
-    .icon {
+    #redes img {
         width: 7%;
     }
-    .redes {
+    #redes {
         width: 40vw;
     }
 
