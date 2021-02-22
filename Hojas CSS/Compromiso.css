@@ -6,22 +6,37 @@ h1 {
 h2 {
     text-transform: uppercase;
 }
-.gestion {
+#gestion {
     margin-bottom: 2em;
 }
 
-.gestion img {
+#gestion img {
     width: 100%;
 }
 
-.gestion li{
+#gestion li{
     list-style: url(../svg/pagelines-brands.svg);
 }
 
+/*------------ Residuos  e iniciativas  -------------------*/
 
-.div_filtrado {
+.contenedor img {
+    width: 80%;
+    justify-self: center;
+}
+
+.contenedor {
+    display:flex; /*Establece un contenedor en bloque, similar a block (ocupa todo el ancho del padre).*/
+    flex-direction: column; /*Establece la dirección del eje principal en vertical.*/
+    align-items: center; /*Usada para alinear los ítems del eje secundario (por defecto, el vertical).*/
+    row-gap: 2em; /*le ponemos distancia entre los items*/
+}
+
+.item {
+    display: grid;
+}
+.item1 li{
     list-style: none;
-    text-align: left;
 }
 
 .btn_residuos{
@@ -32,7 +47,6 @@ h2 {
     text-decoration: none;
     padding: 0.5em 1em;
     text-transform: uppercase;
-    margin-left: 30%;
 }
 
 .btn_residuos:hover { /* le decimos que cambie de color cuando pase por encima */
@@ -44,56 +58,11 @@ h2 {
 /*-------TABLET----------*/
 @media only screen and (min-width: 600px){
 
-    .img{
-        width: 80%;
-        margin-left: 0%;
-    }
-
-    .contenedor {
-        margin-left: 15%;
-        margin-right: 10%;
-        margin-bottom: 4em;
-    }
-
-    .btn_residuos{
-        margin-left: 5%;
-    }
-    .txt_filtrado {
-        font-size: 20px;
-        text-align: left;
-    }
+    
 }
 
 /*-------PC----------*/
 @media only screen and (min-width: 1200px){
   
-    .img {
-        width: 35%;
-        float: right;
-        margin-left: 10%;
-        
-    }
-
-    .img_in {
-    display: none;
-    }
-
-    .btn_residuos{
-        margin-left: 5%;
-    }
-
-    .contenedor {
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 4em;
-    }
-
-    .txt_filtrado {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    footer {
-        margin-top: 10%;
-    }
+   
 }

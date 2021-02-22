@@ -51,7 +51,7 @@
     <section>
         <h1>nuestra política medioambiental</h1>
         <!-- Seccion gestion de residuos -->
-        <article class="gestion">
+        <article id="gestion">
             <h2> Recogida, filtrado y gestión de residuos</h2>
             <div>
                 <p>
@@ -77,47 +77,51 @@
                         en el proceso de reciclaje.
                     </li>
                 </ul>
-                <img src="../Imagenes/residuos.jpg"/>
+                <img src="../Imagenes/residuos.jpg" />
             </div>
         </article>
-        <!-- Tipos de residuos que genera un taller-->
-        <article class="residuos">
-            <div class="superpuesto">
+        <!------- Tipos de residuos que genera un taller------->
+        <article>
+            <div class="contenedor">
                 <h2>Tipos de residuos que genera un taller</h2>
-                <ul>
-                    <li>Residuos peligrosos o tóxicos</li>
-                    <li>Residuos contaminados.</li>
-                    <li>Residuos inertes o no peligrosos</li>
-                </ul>
-                <a href="../Hojas HTML/RESIDUOS.html" class="btn_residuos">Saber más</a>
-                <img src="../Imagenes/gestionR.png"/>
+                <div class="item item1">
+                    <ul>
+                        <li>Residuos peligrosos o tóxicos</li>
+                        <li>Residuos contaminados.</li>
+                        <li>Residuos inertes o no peligrosos</li>
+                    </ul>
+                </div>
+                <div class="item item2">
+                    <a href="../Hojas HTML/RESIDUOS.html" class="btn_residuos">Saber más</a>
+                </div>
+                <div class="item item3">
+                    <img src="../Imagenes/gestionR.png" />
+                </div>
             </div>
         </article>
         <!--Iniciativas que apoyamos-->
         <article>
-            <div class="iniciativas">
-                <!--Creamos un contenedor para que las imagenes puedan flotar en linea-->
-                
-                <h2>Iniciativas que apoyamos</h2>
-                <div>
+            <h2>Iniciativas que apoyamos</h2>
+            <div class="contenedor">
+                <div class="item item1">
                     <p>
                         Creemos en la ecología y por eso contribuimos en iniciativas de ecopastoreo.
                     </p>
-                    <img src="../Imagenes/MA1.jpg"/>
+                    <img src="../Imagenes/MA1.jpg" />
                 </div>
-                <div>
+                <div class="item item2">
                     <p>
                         Todo en nuestros talleres tiene una segunda vida, tenemos una
                         política de reciclaje muy completa y eficaz.
                     </p>
-                    <img src="../Imagenes/MA2.jpg"/>
+                    <img src="../Imagenes/MA2.jpg" />
                 </div>
-                <div>
+                <div class="item item3">
                     <p>
                         La rehabilitación de zonas para plantar especies autóctonas
                         es una iniciativa tomada por nuestra compañía.
                     </p>
-                    <img src="../Imagenes/MA3.jpg"/>
+                    <img src="../Imagenes/MA3.jpg" />
                 </div>
             </div>
         </article>
