@@ -40,7 +40,8 @@ i {
 
 .contenedor img {
     width: 80%;
-    justify-self: center;  
+    justify-self: center;
+    margin-bottom: 2em;  
 }
 
 .contenedor {
