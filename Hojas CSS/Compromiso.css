@@ -74,6 +74,7 @@ i {
     text-decoration: none;
     padding: 0.5em 1em;
     text-transform: uppercase;
+    margin-left: 2em;
 }
 
 .btn_residuos:hover { /* le decimos que cambie de color cuando pase por encima */
@@ -126,8 +127,35 @@ i {
 
 /*-------PC----------*/
 @media only screen and (min-width: 1200px){
-  
+    
+    #gestion {
+        display: grid;
+    }
+
     #gestion img {
+        width: 1027px;
+        justify-self: center;
+    }
+
+      /*---------- Residuos e iniciativas ------------*/
+    .contenedor {
+        grid-template-areas: "item1 item2 item3";
+    }
+    .item p {
+        width: 420px;
+        text-align: center;
+    }
+
+    .item3 {
+        margin-bottom: 0;
+    }
+
+    .two {
+        margin-bottom: 3em;
+    }
+
+    #res_img {
         width: 80%;
     }
+
 }
