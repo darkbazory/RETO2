@@ -21,8 +21,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!--llama todos los iconos de fontawesome-->
-    <!-- Insertamos javascrip flecha-->
-
 
     <!--Titulo que queremos que tenga la pagina en concreto-->
     <title>Inicio</title>
@@ -34,8 +32,9 @@
             <a class="logo" href="INDEX.html"><img src="../Imagenes/Logo_48_white.png" alt="RecordAutoak LOGO"></a>
         </div>
         <nav id="site-nav" class="site-nav">
-            <ul>
-                <li><a href="../Hojas HTML/INDEX.html"><i class="fas fa-home site-nav--icon"></i>Home</a></li>
+            <ul>     <!-- Hemos utilizado iconos de fontawesone para la barra de navegacion-->
+                <li><a href="../Hojas HTML/INDEX.html"><i class="fas fa-home site-nav--icon"></i>Home</a></li> <!-- Además de la clase por defecto del icono de fontawesome le añadimos una propia
+                 site-nav--icon para poder añadir propiedades a los iconos-->
                 <li><a href="../Hojas HTML/SERVICIOS.html"><i class="fas fa-tools site-nav--icon"></i>Servicios</a></li>
                 <li><a href="../Hojas HTML/QUIENES_SOMOS.html"><i class="fa fa-info site-nav--icon"></i>Nosotros</a>
                 </li>
@@ -44,7 +43,8 @@
                 <li><a href="../Hojas HTML/CONTACTO.html"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
             </ul>
         </nav>
-        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()"> <!-- Usamos javascript nativo por lo que añadimos un evento
+        en nuestro caso onClick que llama al Menu.js-->
             <div class="hamburger"></div>
         </div>
     </header>
@@ -54,7 +54,7 @@
             <h1>Cuidamos de ti </br>y de tu familia</h1>
         </div>
         <div id="texto2">
-            <h4 class="animate__animated animate__fadeInUp">Un cambio de aceite gratis con tu primera revisión.</h4>
+            <h4 class="animate__animated animate__fadeInUp">Un cambio de aceite gratis con tu primera revisión.</h4> <!-- Aqui hemos añadido las clases de animate para usar animaciones-->
         </div>
         <a class="animate__animated animate__zoomIn"href="#email" id="btn_cita">Pide tu cita</a>
     </div>
@@ -62,13 +62,13 @@
     <section id="informacion">
         <article>
             <p><b>Nuestras Ventajas</b></p>
-            <p>&#10004 Diagnóstico gratuito y comprobación de frenos</p>
+            <p>&#10004 Diagnóstico gratuito y comprobación de frenos</p> <!-- Añadimos ticks con el código &#10004 -->
             <p>&#10004 Servicios de reparación certificado</p>
             <p>&#10004 Presupuesto a un precio justo</p>
         </article>
         <article>
             <p><b>Horario</b></p>
-            <p class="gris"><b><span>Entre semana:</span></b>&nbsp 5:00 - 22:00</p>
+            <p class="gris"><b><span>Entre semana:</span></b>&nbsp 5:00 - 22:00</p> <!-- Usamos &nbsp para dar un espacio entre los : y el horario -->
             <p class="gris"><b><span>Sábados:</span></b>&nbsp 10:00 - 16:00</p>
             <p class="gris"><b><span>Domingos:</span></b>&nbsp 10:00 - 15:00</p>
         </article>
@@ -113,7 +113,7 @@
                     <P>Bateria</P>
                 </div>
             </div>
-            <div id="imagen"> <!-- Cambiar para no justificar con grid-->
+            <div id="imagen"> <!--NOTA: *****Cambiar para no justificar con grid**** PENDIENTE-->
                 <img src="../Imagenes/Piezas_tablet.jpg" />
             </div>
         </div>

@@ -1,19 +1,21 @@
 /*                     Elementos Comunes                 */
 
 body{
-    background: white;
+    background: white; /* Le damos un color de fondo*/
     font-family: 'Roboto', sans-serif; /* Cargamos la misma fuente en el body para todas las páginas*/
 }
 
 header{
-    background:royalblue;
-    color:darksalmon;
+    background:royalblue; /*le damos un color de fondo a la barra de navegación*/
+    /*color:darksalmon;*/
     position: relative;
     display: flex;
 }
 
-header::after{
-    content: '';
+header::after{ /* Usamos este pseudo elemento y el clear both para indicar que queremos todos
+    los elementos flotantes dentro del contenedor*/
+
+    content: ''; /* El contenido lo dejamos vacio*/
     clear: both;
     display: block;
 }
@@ -41,66 +43,66 @@ h4 {
 /*---------------Barra de Navegacion-----------------*/
 
 .logo{
-    margin: 0;
+    margin: 0; /*como estaba en posicion relativa le damos margin 0 para posicionarlo arriba a la derecha*/
 }
 
 .container{
     width: 100%; /* el contenedor de la barra de navegación siempre va a ocupar el 100% de la página*/
     max-width: 400px; /*le damos un tamaño máximo fijo de 400px*/
-    margin: 0 auto;
+    margin: 0 auto; /* Para centrarlo*/
 }
 
 .site-nav{
     position: absolute; /* Le damos una posición absoluta */ 
     right:0; /*lo colocamos en la esquina superior derecha*/
-    background:royalblue;
+    background:royalblue; /* Le damos el mismo color que a la barra de navegación*/
     clip-path: circle(0px at top right); /* le decimos que posición va a tener normal  */
     transition: clip-path ease-in-out 700ms; /* le ponemos tiempo al efecto*/
 }
 
-.site-nav-open{
+.site-nav-open{ /*utilizamos la utilidad clip-path:*/
     clip-path: circle(150% at top right); /* al hacer click se abre
                                          de manera circular*/
 }
 
 .site-nav ul{
     margin-top: 1%;
-    list-style: none; /*al ser enlaces que llevan a otras paginas le quitamos el subrayado*/
+    list-style: none; /* Eliminamos la decoración por defecto (los puntos de la lista)*/
 }
 
 .site-nav li{
     border-bottom: 1px solid white; /* Le damos un borde para diferenciar los elementos de la lista*/
 }
 
-.site-nav li:last-child{/* ponemos esto para que el ultimo 
+.site-nav li:last-child{/* ponemos este selector avanzado para que el ultimo 
                            elemento no tenga borde*/
     border-bottom: none;
 }
 
 .site-nav a{
-    color: white;
+    color: white; /*Le damos color a los enlaces*/
     display: block;
-    padding: 1em 3em;
+    padding: 1em 3em; /*1 arriba y abajo, 3 derecha e izquierda*/
     text-transform: uppercase; /* Transformamos el texto a mayusculas*/
-    text-decoration: none;
+    text-decoration: none; /* Se le quita la decoración del enlace por defecto*/
 }
 
 .site-nav a:hover,
-.site-nav a:focus{
+.site-nav a:focus{ /*cuando pasemos por encima o hagamos foco en él*/
     color: darksalmon;
 }
 
 /* le damos forma a los iconos de dentro del menu*/
 .site-nav--icon{
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.5em; /*para el tamaño del texto*/
     margin-right: 1em;
     width: 1.1em;
-    text-align: right;
+    text-align: right; /*alineamos el texto a la derecha*/
     color:white;
 }
 
-/* ponemos las tres rayas para el menu*/
+/* Esto va a ser donde se coloque la hamburguesa de nuestro menú*/
 .menu-toggle{
     padding: 1em;
     position: absolute;
@@ -109,7 +111,8 @@ h4 {
 }
 
 /* Hacemos una animacion girando las lineas para que sean aspas*/
-.menu-open .hamburger{
+.menu-open .hamburger{ /*con esta clase hacemos girar las aspas debemos enlazarlo
+    en el javascript*/
     transform: rotate(45deg);
 }
 
@@ -131,15 +134,16 @@ h4 {
     height: 3px;
     width: 1.75em;
     border-radius: 3px;
-    transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms; /*le añadimos una transición a todos los elementos
+    de 500 milisegundos para que tarde un poco mas en girar las aspas*/
 }
 
 .hamburger::before{
-    transform: translateY(-6px);
+    transform: translateY(-6px); /*asi tenemos las 3 rayas de nuestro menu*/
 }
 
 .hamburger::after{
-    transform: translateY(3px);
+    transform: translateY(3px); /*asi tenemos las 3 rayas de nuestro menu*/
 }
 
 /*----------------------Footer- Menú rápido Movil -----------------*/
@@ -292,7 +296,7 @@ footer > p a{
     }
 
     .menu-toggle{
-        display:none ;
+        display:none ; /*con esto eliminamos la hamburguesa*/
     } 
 
     .site-nav{
@@ -306,8 +310,8 @@ footer > p a{
     } 
 
     .site-nav li{
-        display: inline-block;
-        border: none;
+        display: inline-block; /*Ponemos los elementos en linea*/
+        border: none; /*Quitamos los bordes*/
     }
   
     .site-nav a{
@@ -315,9 +319,9 @@ footer > p a{
         margin-left: 3em;
     }
 
-    .site-nav--icon{
+    /*.site-nav--icon{  si no queremos que se vean los iconos
         display: none;
-    }
+    }*/
 
     .site-nav a:hover,
     .site-nav a:focus{
