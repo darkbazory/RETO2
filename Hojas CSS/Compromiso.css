@@ -58,6 +58,8 @@ i {
 
 .two p {
     color: gray;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .item {
@@ -145,6 +147,7 @@ i {
     .item p {
         width: 420px;
         text-align: center;
+        margin-left: 15%;
     }
 
     .item3 {
