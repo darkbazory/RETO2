@@ -30,6 +30,7 @@ body > div{
     font-size: 20px;
     border: 2px solid white;
     color: white;
+    background-color: gray;
     text-decoration: none;
 }
 #btn_cita:hover { /* le decimos que cambie de color cuando pase por encima */
@@ -46,7 +47,8 @@ body > div{
 #informacion p{
     text-align: center;
 }
-#informacion > article > p:first-child{
+#informacion > article > p:first-child{ /* En los primeros hijos hacemos una transformación 
+    para el texto, lo ponemos en mayúculas*/
     text-transform: uppercase;
 }
 span{
@@ -74,7 +76,6 @@ span{
 }
 .iconos > div {
     display: grid;
-    justify-self: center;
 }
 .iconos > div >img {
     justify-self: center;
@@ -82,7 +83,7 @@ span{
 .iconos p {
     text-align: center;
 }
-
+/* CAMBIAR aqui hay que utilizar otras herramientas para centrar no hace falta grid*/
 #imagen {
     display: grid; /*utilizamos grid para poder centrar todos los elementos con justify*/
 }
@@ -200,6 +201,9 @@ span{
     #padre {
         display: grid;
         grid-template-areas: "iconos imagen";
+    }
+    .iconos {
+        grid-area: iconos;
     }
     .iconos div {
         width: 20vw;
